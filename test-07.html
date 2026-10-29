@@ -1,0 +1,1226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PELLACIA Stock Signals — 19 actionable — 2026-10-10 22:46:47</title>
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PW3T3JR0Z8"></script>
+    <!-- Google tag (gtag.js) -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-PW3T3JR0Z8');
+</script>
+    <script>
+(function(){
+  function trackEvent(name, props){
+    try{ if(window.plausible){ window.plausible(name, {props: props||{}}); } }catch(e){}
+    try{ if(window.gtag){ window.gtag('event', name, props||{}); } }catch(e){}
+  }
+  document.addEventListener('click', function(e){
+    var btn = e.target.closest && e.target.closest('.drop-down_button');
+    if(!btn) return;
+    var viewport = btn.closest && btn.closest('.card-viewport');
+    var tickerEl = viewport && viewport.querySelector('.ticker_name');
+    var ticker = tickerEl ? (tickerEl.textContent||'').trim() : '';
+    var expanded = btn.getAttribute('aria-expanded') === 'true';
+    trackEvent('toggle_card', {ticker: ticker, expanded: !expanded});
+  });
+})();
+</script>
+    
+    <!--Google Font imports -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+        
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            padding: 0;
+            margin: 0;
+            background: #272727;
+            color: #ffffff;
+            font-family: Source Sans 3, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0;
+        }
+
+        .header-wrapper,
+        .footer-wrapper {
+            width: 100%;
+            max-width: 420px;
+        }
+        
+        .content-wrapper {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 6px;
+            padding: 0px 0;
+            background: #272727;
+        }
+
+        .card-viewport {
+            position: relative;
+            width: 389px;                 /* 380px card + 9px left room for the filter_score star */
+            overflow-x: hidden;
+            overflow-y: hidden;
+            background: transparent;
+            margin-top: -9px;             /* cancels the 9px top padding so the card stays in place */
+            margin-left: -9px;            /* cancels the 9px left padding so the card stays centred */
+            margin-bottom: 0px;
+            padding-top: 9px;             /* room for the star above the card */
+            padding-left: 9px;            /* room for the star left of the card */
+            padding-bottom: 8px;
+        }
+        
+        /* Fading border line */
+        .card-viewport::after {
+        content: "";
+        position: absolute;
+        left: 9px;
+        bottom: 0;
+        width: 380px;
+        height: 1px;
+        background: linear-gradient(
+            to right,
+            transparent,
+            rgba(255, 255, 255, 0.3),
+            transparent
+        );
+        }
+
+        .container {
+            width: 1646px;
+            height: 176px;
+            position: relative;
+        }
+
+        .box {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Color classes */
+        .gray { background: #D9D9D9; }
+        .dark-black { background: #000000; }
+        .light-green { background: #D9EAD3; }
+        .pale-yellow { background: #FFF2CC; }
+        .light-grey { background: #8D8D8D; }
+        .dark-grey { background: #1A1A1A; }
+        .white { background: white; }
+        .black { background: black; }
+
+        /* Collapse/expand sections */
+        .container.collapsed .technical-label,
+        .container.collapsed .technical-label-number,
+        .container.collapsed .technical-value,
+        .container.collapsed .fundamental-label,
+        .container.collapsed .fundamental-label-number,
+        .container.collapsed .fundamental-value { display: none; }
+
+        /* Dropdown button visuals */
+        .drop-down_button { cursor: pointer; transition: background 180ms ease; }
+        .drop-down_button .icon { position: absolute; transition: opacity 180ms ease, transform 180ms ease; }
+        .drop-down_button .icon-expanded { opacity: 0; }
+        .container.expanded .drop-down_button .icon-collapsed { opacity: 0; transform: rotate(90deg); }
+        .container.expanded .drop-down_button .icon-expanded { opacity: 1; }
+        .container.expanded .drop-down_button {background: #8D8D8D}
+
+        /* Dynamic heights for collapse/expand */
+        .container.collapsed { height: 60px; }
+        .container.expanded { height: 158px; }
+
+        /* Fundamental horizontal scroller */
+        .fund-viewport { position: absolute; left: 0; top: 112px; width: 380px; height: 56px; overflow-x: auto; overflow-y: hidden; padding-bottom: 12px; -webkit-overflow-scrolling: touch; overscroll-behavior-x: contain; touch-action: pan-x; padding-right: 0; padding-left: 0;  }
+        .fund-inner .fundamental-value { top: 22px !important; }
+
+        .fund-viewport {
+            scrollbar-color: rgba(166, 166, 166, 0.3) transparent;
+            scrollbar-width: thin;
+        }
+
+        /* Page Header Styling */
+        .page-header {
+            padding: 20px 16px 16px 16px;
+        }
+        
+        .title-container {
+            margin-bottom: 12px;
+        }
+
+        .main-title {
+            font-family: Roboto Condensed, sans-serif;
+            font-size: 24px;
+            font-weight: 600;
+            color: #ffffff;
+            margin-bottom: 2px;
+            line-height: 1.2;
+        }
+
+        .subtitle {
+            font-family: 'IBM Plex Mono', monospace;
+            font-weight: 100;
+            font-style: normal;
+            font-size: 10px;
+            color: #ffffff;
+            text-align: right;
+            margin-right: 2px;
+        }
+
+        .beta-tag {
+            font-family: 'IBM Plex Mono', monospace;
+            display: inline-block;
+            font-size: 6px;
+            font-weight: 900;
+            color: #000000;
+            padding: 2px 6px;
+            background-color: #cacaca;
+            border-radius: 6px;
+            position: relative;
+            top: -12px;
+        }
+
+        .header-divider {
+            width: 100%;
+            height: 1px;
+            background-color: #333333;
+            margin-bottom: 12px;
+        }
+        
+        .timestamp {
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 10px;
+            font-weight: 300;
+            color: #e0e0e0;
+            text-align: left;
+        }
+
+        /* Page Footer Styling */
+        .page-footer {
+            padding: 16px 16px 20px 16px;
+        }
+
+        .footer-divider {
+            width: 100%;
+            height: 1px;
+            background-color: #333333;
+            margin-bottom: 16px;
+        }
+        
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .footer-main {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 11px;
+            color: #999999;
+        }
+
+        .footer-left {
+            font-family: 'IBM Plex Mono', monospace;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .generated-by {
+            font-weight: 400;
+            color: #cccccc;
+        }
+
+        .contact {
+            color: #888888;
+            text-decoration: none;
+            font-size: 10px;
+        }
+
+        .contact:hover {
+            color: #aaaaaa;
+        }
+
+        .update-frequency {
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 10px;
+            color: #777777;
+        }
+
+        .footer-bottom {
+            display: flex;
+            justify-content: center;
+            padding-top: 0px;
+        }
+
+        .power-button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        background-color: transparent;
+        border: none;
+        text-decoration: none;
+        transition: transform 0.25s ease;
+        cursor: pointer;
+        }
+
+        /* Zoom on hover (no fade/move) */
+        .power-button:hover {
+        transform: scale(1.05);
+        }
+
+        /* SVG sizing */
+        .power-button svg {
+        height: 60px;
+        width: auto;
+        }
+
+        /* Animate the yellow (#FFDD00) part with a flowing current effect */
+        .power-button svg [fill="#FFDD00"] {
+        animation: electricFlow 2s linear infinite;
+        }
+
+        /* Current-like glowing flow */
+        @keyframes electricFlow {
+        0% {
+            filter: drop-shadow(0 0 0px #ffffff);
+            opacity: 0.7;
+        }
+        25% {
+            filter: drop-shadow(0 0 5px #ffffff);
+            opacity: 1;
+        }
+        50% {
+            filter: drop-shadow(0 0 10px #ffffff);
+            opacity: 0.7;
+        }
+        75% {
+            filter: drop-shadow(0 0 5px #ffffff);
+            opacity: 1;
+        }
+        100% {
+            filter: drop-shadow(0 0 0px #ffffff);
+            opacity: 0.7;
+        }
+        }
+
+        /* QR Modal Styles */
+        .qr-modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0);
+            backdrop-filter: blur(0px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+            opacity: 0;
+            transition: opacity 0.3s ease, backdrop-filter 0.3s ease;
+        }
+
+        .qr-modal-overlay.active {
+            opacity: 1;
+            backdrop-filter: blur(8px);
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .qr-modal-content {
+            background: transparent;
+            padding: 2rem;
+            border-radius: 16px;
+            text-align: center;
+            position: relative;
+            transform: scale(0.9);
+            transition: transform 0.3s ease;
+        }
+
+        .qr-modal-overlay.active .qr-modal-content {
+            transform: scale(1);
+        }
+
+        .qr-close {
+            position: absolute;
+            top: 0.5rem;
+            right: 0.5rem;
+            background: none;
+            border: none;
+            font-size: 2rem;
+            cursor: pointer;
+            color: #666;
+            transition: color 0.2s;
+        }
+
+        .qr-close:hover {
+            color: #000;
+        }
+
+        .qr-image {
+            width: 250px;
+            height: 250px;
+            display: block;
+            margin: 0 auto 1rem;
+        }
+
+        .qr-modal-content p {
+            margin: 0;
+            color: #666;
+            font-size: 0.95rem;
+        }
+
+        /* Stock-Information */
+        .filter_score { left: 0; top: 0; width: 18px; height: 18px; 
+                        position: absolute;
+                        z-index: 10; 
+                    }
+        .filter_score svg { width: 18px; height: 18px; display: block; }
+        .chart_region { left: 0; top: 0; width: 60px; height: 60px; border-radius: 0px; background-color: #000000; }
+        .chart_region svg.price-chart { width: 100%; height: 100%; display: block; }
+        /* rvol_region: rendered over chart_region (not part of it), transparent so the chart shows through */
+        .rvol_region { left: 0; top: 0; width: 60px; height: 60px; border-radius: 0px; background-color: transparent; }
+        .rvol_region svg.rvol-chart { width: 100%; height: 100%; display: block; }
+        .ticker_name { left: 64px; top: 0; width: 124px; height: 28px; 
+                      position: absolute;
+                      color: #ff9d00;
+                      font-family: 'Source Sans 3', sans-serif;
+                      font-size: 14px;
+                      font-weight: 900;
+                      font-style: italic;
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      border-radius: 0px;
+                    }
+                    
+        .trust_score {
+        left: 192px;
+        top: 0;
+        width: 92px;
+        height: 28px;
+        border-radius: 0px;
+        }
+
+        .trust_score .grid {
+        display: flex;
+        gap: 0;
+        }
+
+        .trust_score .cell {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        font-family: 'IBM Plex Mono', monospace;
+        font-style: italic;
+        }
+
+        /* black style */
+        .trust_score .cell.black {
+        color: #ff9d00;
+        font-size: 10px;
+        font-style: italic;
+        font-weight: 900;
+        background: none;
+        }
+
+        /* grey style */
+        .trust_score .cell.grey {
+        color: #9F9F9F;
+        font-size: 9px;
+        font-style: italic;
+        font-weight: 900;
+        background: none;
+        }
+
+        /* trust_score_selector: sits right below the number that is open in the info header */
+        .trust_score .cell { position: relative; }
+        .trust_score_selector { position: absolute; left: 0; top: 0; display: none; pointer-events: none; }
+        .trust_score .cell.is-trust-selected .trust_score_selector { display: block; }
+        .persistence_score { left: 288px; top: 0; width: 28px; height: 28px; border-radius: 0px; }
+        .week_52_slope { left: 320px; top: 0; width: 28px; height: 28px; border-radius: 0px; }
+        .volume_assessment { left: 352px; top: 0; width: 28px; height: 28px; border-radius: 0px; }
+
+        /* Row 2 */
+        .ticker_arrow { left: 64px; top: 32px; width: 28px; height: 28px; border-radius: 0px; }
+        .ticker_price { left: 96px; top: 32px; width: 92px; height: 28px; 
+                      position: absolute;
+                      color: #ff9d00;
+                      font-family: 'Source Sans 3', sans-serif;
+                      font-size: 13px;
+                      font-style: italic;
+                      font-weight: 400;
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      border-radius: 0px;
+                    }
+        .week_52_stage { left: 192px; top: 32px; width: 92px; height: 28px; border-radius: 0px; }
+        .market_cap_score { left: 288px; top: 32px; width: 28px; height: 28px; border-radius: 0px; }
+        .momentum_confluence_score { left: 320px; top: 32px; width: 28px; height: 28px; border-radius: 0px; }
+        .drop-down_button { left: 352px; top: 32px; width: 28px; height: 28px; border-radius: 14px; }
+
+        /* Technical-Indicators */
+        .technical-label {
+                      position: absolute;
+                      color: #FFFFFF;
+                      font-family: 'Source Sans 3', sans-serif;
+                      font-size: 10px;
+                      font-weight: 200;
+                      font-style: italic;
+                      display: flex;
+                      align-items: center;  
+                      justify-content: center;
+                    }
+
+        .technical-label-number {
+                      position: absolute;
+                      color: #000000;
+                      font-family: 'IBM Plex Mono', monospace;
+                      font-size: 7px;
+                      font-weight: 400;
+                      font-style: italic;
+                      letter-spacing: -0.5px;
+                      display: flex;
+                      align-items: center;  
+                      justify-content: center;
+                    }
+
+        .candle_label { left: 0; top: 64px; width: 110px; height: 22px; border-radius: 0px; }
+        .macd_label { left: 114px; top: 64px; width: 50px; height: 22px; border-radius: 0px; }
+        .cci_label { left: 168px; top: 64px; width: 50px; height: 22px; border-radius: 0px; }
+        .atr_label { left: 222px; top: 64px; width: 50px; height: 22px; border-radius: 0px; }
+        .rsi_label { left: 276px; top: 64px; width: 50px; height: 22px; border-radius: 0px; }
+        .adx_label { left: 330px; top: 64px; width: 50px; height: 22px; border-radius: 0px; }
+
+        .cci_label_number { left: 173px; top: 70px; width: 10px; height: 10px; border-radius: 5px; }
+        .atr_label_number { left: 227px; top: 70px; width: 10px; height: 10px; border-radius: 5px; }
+        .rsi_label_number { left: 281px; top: 70px; width: 10px; height: 10px; border-radius: 5px; }
+        .adx_label_number { left: 335px; top: 70px; width: 10px; height: 10px; border-radius: 5px; }
+
+        .technical-value {
+                      position: absolute;
+                      color: #FFFFFF;
+                      font-family: 'Source Sans 3', sans-serif;
+                      font-size: 8px;
+                      font-weight: 600;
+                      font-style: italic;
+                      display: flex;
+                      align-items: center;  
+                      justify-content: center;
+                    }
+        .candle_value { left: 0; top: 86px; width: 110px; height: 22px; border-radius: 0px; 
+                    font-weight: 100;
+                    }
+        .macd_value { left: 114px; top: 86px; width: 50px; height: 22px; border-radius: 0px; }
+        .cci_value { left: 168px; top: 86px; width: 50px; height: 22px; border-radius: 0px; }
+        .atr_value { left: 222px; top: 86px; width: 50px; height: 22px; border-radius: 0px; }
+        .rsi_value { left: 276px; top: 86px; width: 50px; height: 22px; border-radius: 0px; }
+        .adx_value { left: 330px; top: 86px; width: 50px; height: 22px; border-radius: 0px; }
+
+        /* Fundamental-Data */
+        .fundamental-label {
+                      position: absolute;
+                      color: #FFFFFF;
+                      font-family: 'Source Sans 3', sans-serif;
+                      font-size: 10px;
+                      font-weight: 200;
+                      font-style: italic;
+                      display: flex;
+                      align-items: center;  
+                      justify-content: center;
+                    }
+
+        .fundamental-label-number {
+                      position: absolute;
+                      color: #000000;
+                      font-family: 'IBM Plex Mono', monospace;
+                      font-size: 7px;
+                      font-weight: 400;
+                      font-style: italic;
+                      letter-spacing: -0.5px;
+                      display: flex;
+                      align-items: center;  
+                      justify-content: center;
+                    }
+
+        .market_capital_label{ left: 0; top: 0; width: 110px; height: 22px; border-radius: 0px; }
+        .dps_label { left: 114px; top: 0; width: 50px; height: 22px; border-radius: 0px; }
+        .book_value_label { left: 168px; top: 0; width: 104px; height: 22px; border-radius: 0px; }
+        .eps_label { left: 276px; top: 0; width: 50px; height: 22px; border-radius: 0px; }
+        .roe_label{ left: 330px; top: 0; width: 50px; height: 22px; border-radius: 0px; }
+        .promoters_label { left: 384px; top: 0; width: 80px; height: 22px; border-radius: 0px; }
+        .pledge_label { left: 468px; top: 0; width: 80px; height: 22px; border-radius: 0px; }
+        .psrs_label { left: 552px; top: 0; width: 80px; height: 22px;  border-radius: 0px;}
+        .pe_ratio_label { left: 636px; top: 0; width: 80px; height: 22px; border-radius: 0px; }
+        .sector_pe_label { left: 720px; top: 0; width: 80px; height: 22px; border-radius: 0px; }
+        .enterprise_value_label { left: 804px; top: 0; width: 110px; height: 22px; border-radius: 0px; }
+        .week_52_high_label { left: 918px; top: 0; width: 104px; height: 22px; border-radius: 0px; }
+        .week_52_high_date_label { left: 1026px; top: 0; width: 104px; height: 22px; border-radius: 0px; }
+        .week_52_low_label { left: 1134px; top: 0; width: 104px; height: 22px; border-radius: 0px; }
+        .week_52_low_date_label { left: 1242px; top: 0; width: 104px; height: 22px; border-radius: 0px; }
+        .open_label { left: 1350px; top: 0; width: 50px; height: 22px; border-radius: 0px; }
+        .high_label { left: 1404px; top: 0; width: 50px; height: 22px; border-radius: 0px; }
+        .low_label { left: 1458px; top: 0; width: 50px; height: 22px; border-radius: 0px; }
+        .close_label { left: 1512px; top: 0; width: 50px; height: 22px; border-radius: 0px; }
+        .volume_label { left: 1566px; top: 0; width: 80px; height: 22px; border-radius: 0px; }
+
+        .roe_label_number { left: 335px; top: 5px; width: 10px; height: 10px; border-radius: 5px; }
+        .promoters_label_number { left: 389px; top: 5px; width: 10px; height: 10px; border-radius: 5px; }
+        .pledge_label_number { left: 473px; top: 5px; width: 10px; height: 10px; border-radius: 5px;}
+       
+        .fundamental-value {
+                      position: absolute;
+                      color: #FFFFFF;
+                      font-family: 'Source Sans 3', sans-serif;
+                      font-size: 10px;
+                      font-weight: 600;
+                      font-style: italic;
+                      display: flex;
+                      align-items: center;  
+                      justify-content: center;
+                    }
+ 
+        .market_capital_entry { left: 0; top: 0; width: 110px; height: 22px; border-radius: 0px; }
+        .dps_entry { left: 114px; top: 0; width: 50px; height: 22px; border-radius: 0px; }
+        .book_value_entry { left: 168px; top: 0; width: 104px; height: 22px; border-radius: 0px; }
+        .eps_entry { left: 276px; top: 0; width: 50px; height: 22px; border-radius: 0px; }
+        .roe_entry { left: 330px; top: 0; width: 50px; height: 22px; border-radius: 0px; }
+        .promoters_entry { left: 384px; top: 0; width: 80px; height: 22px; border-radius: 0px; }
+        .pledge_entry { left: 468px; top: 0; width: 80px; height: 22px; border-radius: 0px; }
+        .psrs_entry { left: 552px; top: 0; width: 80px; height: 22px; border-radius: 0px; }
+        .pe_ratio_entry { left: 636px; top: 0; width: 80px; height: 22px; border-radius: 0px; }
+        .sector_pe_entry { left: 720px; top: 0; width: 80px; height: 22px; border-radius: 0px; }
+        .enterprise_value_entry { left: 804px; top: 0; width: 110px; height: 22px; border-radius: 0px; }
+        .week_52_high_entry { left: 918px; top: 0; width: 104px; height: 22px; border-radius: 0px; }
+        .week_52_high_date_entry { left: 1026px; top: 0; width: 104px; height: 22px; border-radius: 0px; }
+        .week_52_low_entry { left: 1134px; top: 0; width: 104px; height: 22px; border-radius: 0px; }
+        .week_52_low_date_entry{ left: 1242px; top: 0; width: 104px; height: 22px; border-radius: 0px; }
+        .open_entry { left: 1350px; top: 0; width: 50px; height: 22px; border-radius: 0px; }
+        .high_entry { left: 1404px; top: 0; width: 50px; height: 22px; border-radius: 0px; }
+        .low_entry { left: 1458px; top: 0; width: 50px; height: 22px; border-radius: 0px; }
+        .close_entry { left: 1512px; top: 0; width: 50px; height: 22px; border-radius: 0px; }
+        .volume_entry { left: 1566px; top: 0; width: 80px; height: 22px; border-radius: 0px; }
+
+        /* ===== Info header: trust tabs + icon info + description ===== */
+        /* Hidden by default so the card looks exactly like the original design. */
+        .info-header {
+            position: relative; width: 380px; height: 0; overflow: hidden;
+            opacity: 0; pointer-events: none;
+            transition: height 180ms ease, opacity 180ms ease;
+            --info-c: #ffffff;
+        }
+        .card-viewport.info-open .info-header { height: 32px; opacity: 1; pointer-events: auto; }
+
+        /* Previous / next buttons (trust_score info only) */
+        .info-nav {
+            position: absolute; top: 0; width: 28px; height: 28px;
+            padding: 0; border: 0; border-radius: 14px; outline: none;
+            -webkit-appearance: none; appearance: none;
+            --info-nav-bg-opacity: 0.2;   /* 0 = transparent ... 1 = solid black */
+                background: rgba(0, 0, 0, var(--info-nav-bg-opacity));
+            display: flex; align-items: center; justify-content: center;
+            cursor: pointer; -webkit-tap-highlight-color: transparent;
+        }
+        .info-nav svg { width: 14px; height: 14px; display: block; }
+        .info-prev { left: 320px; }
+        .info-next { left: 352px; }
+
+        .info-circle {
+            position: absolute; left: 32px; top: 0; width: 28px; height: 28px;
+            border-radius: 14px; background: #000000;
+            display: flex; align-items: center; justify-content: center;
+        }
+        .info-circle svg { width: 14px; height: 14px; display: block; }
+
+        .info-desc {
+            position: absolute; left: 64px; top: 0; width: 252px; height: 28px;
+            background: #000000; color: var(--info-c);
+            display: flex; align-items: center;
+        }
+        .info-desc-view { flex: 1; min-width: 0; margin: 0 8px; overflow: hidden; text-align: center; white-space: nowrap; }
+        .caveat-bold { font-family: "Caveat", cursive; font-optical-sizing: auto; font-weight: 700; font-style: normal; }
+        .info-desc-text { display: inline-block; font-size: 12px; line-height: 12px; white-space: nowrap; }
+        /* Only when the text is wider than the box: pan across it, pause at both ends */
+        .info-desc-text.is-scrolling { animation: info-pan var(--dur, 6s) ease-in-out infinite; }
+        @keyframes info-pan {
+            0%, 20%  { transform: translateX(0); }
+            50%, 70% { transform: translateX(var(--pan, 0px)); }
+            100%     { transform: translateX(0); }
+        }
+
+        /* Previous / next only apply to the trust_score info */
+        .info-nav { transition: opacity 150ms ease, visibility 0s linear 150ms; }
+        .info-header:not([data-mode="trust"]) .info-nav { opacity: 0; visibility: hidden; }
+
+        /* Tappable elements. Selected = background at 40% opacity (no border/outline/shadow). */
+        [data-info] { cursor: pointer; outline: none; -webkit-tap-highlight-color: transparent; }
+        [data-info].is-info-selected { z-index: 0; }
+        [data-info].is-info-selected::before {
+            content: ""; position: absolute; inset: 0; z-index: -1;
+            background: var(--page-bg, #494949); opacity: 0.4;
+            border-radius: inherit; pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <div class="header-wrapper">
+        <header class="page-header">
+        <div class="title-container">
+            <div class="main-title">
+                Stock Digest
+                <span class="beta-tag">BETA</span>
+            </div>
+            <div class="subtitle">by Pellacia</div>
+        </div>
+        <div class="header-divider"></div>
+        <div class="timestamp">PELLACIA Stock Signals — 19 actionable — 2026-10-10 22:46:47</div>
+    </header>
+    </div>
+    
+    <!-- Stock Cards Content -->
+    <div class="content-wrapper">
+<div class="card-viewport">
+    <div class="box filter_score">      
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M4.96861 0.780582C5.29325 -0.260195 6.70675 -0.260193 7.03139 0.780584L7.70434 2.93806C7.84952 3.40351 8.26591 3.71864 8.73573 3.71864H10.9135C11.964 3.71864 12.4008 5.119 11.5509 5.76224L9.78907 7.09563C9.40898 7.3833 9.24993 7.89319 9.39511 8.35864L10.0681 10.5161C10.3927 11.5569 9.24916 12.4224 8.39925 11.7791L6.63743 10.4457C6.25734 10.1581 5.74266 10.1581 5.36257 10.4457L3.60075 11.7791C2.75084 12.4224 1.60729 11.5569 1.93193 10.5161L2.60489 8.35864C2.75007 7.89319 2.59102 7.3833 2.21093 7.09563L0.44911 5.76224C-0.400799 5.119 0.0359982 3.71864 1.08654 3.71864H3.26427C3.73409 3.71864 4.15048 3.40351 4.29566 2.93806L4.96861 0.780582Z" fill="#BE7600"/>
+<path d="M4.35741 8L4.46541 7.46C4.84141 7.156 5.17741 6.88 5.47341 6.632C5.77341 6.38 6.00941 6.144 6.18141 5.924C6.35741 5.704 6.44541 5.488 6.44541 5.276C6.44541 5.156 6.41141 5.06 6.34341 4.988C6.27541 4.916 6.17741 4.88 6.04941 4.88C5.94941 4.88 5.85541 4.906 5.76741 4.958C5.68341 5.01 5.58941 5.076 5.48541 5.156L5.02941 4.604C5.21741 4.448 5.40541 4.33 5.59341 4.25C5.78541 4.166 5.97741 4.124 6.16941 4.124C6.54141 4.124 6.83541 4.22 7.05141 4.412C7.27141 4.604 7.38141 4.86 7.38141 5.18C7.38141 5.428 7.31941 5.66 7.19541 5.876C7.07541 6.088 6.90941 6.3 6.69741 6.512C6.48941 6.724 6.25341 6.952 5.98941 7.196H7.14141L6.98541 8H4.35741Z" fill="black"/>
+</svg>
+    </div>
+    <div class="info-header" data-mode="">
+        <div class="info-circle" aria-hidden="true"></div>
+        <div class="info-desc" role="status" aria-live="polite"><div class="info-desc-view"><span class="info-desc-text caveat-bold"></span></div></div>
+        <button type="button" class="info-nav info-prev" aria-label="Previous"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="M14,14L0,14L0,0L14,0Z" opacity="0"/><path d="M11,4L3,7L11,10" fill="#ccc"/></svg></button>
+        <button type="button" class="info-nav info-next" aria-label="Next"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="M0,0L14,0L14,14L0,14Z" opacity="0"/><path d="M3,4L11,7L3,10" fill="#ccc"/></svg></button>
+    </div>
+    <div class="container collapsed">
+        <div class="box chart_region">      
+            
+        <svg width="60" height="60" viewBox="0 0 60 60" class="price-chart" preserveAspectRatio="none">
+            <defs>
+                <linearGradient id="gradient_-6172100444658378510" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" style="stop-color:#ff6347;stop-opacity:0.3" />
+                    <stop offset="100%" style="stop-color:#ff6347;stop-opacity:0" />
+                </linearGradient>
+            </defs>
+            <path d="M 2.0,7.43459915611817 L 16.0,2.0 L 30.0,19.91054852320672 L 44.0,58.0 L 58.0,32.95358649789023" stroke="#ff6347" stroke-width="1" fill="none" />
+            <path d="M 2.0,7.43459915611817 L 16.0,2.0 L 30.0,19.91054852320672 L 44.0,58.0 L 58.0,32.95358649789023 L 58,58 L 2,58 Z" fill="url(#gradient_-6172100444658378510)" />
+        </svg>
+        </div>
+        <div class="box rvol_region">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" class="rvol-chart"><g><path d="M0,56L12,56L12,60L0,60Z" style="fill:#0df74e"/><path d="M12,56L24,56L24,60L12,60Z" style="fill:#0df74e;opacity:.8"/><path d="M24,56L36,56L36,60L24,60Z" style="fill:#0df74e;opacity:.2"/><path d="M36,56L48,56L48,60L36,60Z" style="fill:#0df74e;opacity:.4"/><path d="M48,56L60,56L60,60L48,60Z" style="fill:#0df74e;opacity:.5"/></g></svg>
+        </div>
+        <div class="box dark-black ticker_name">SAIL</div>
+        <div class="box dark-black trust_score" data-info="trust">
+            <div class="grid">
+                    <div class="cell black" data-info-color="#ff9d00" data-info-desc="Criterion 1: placeholder description rendered from backend.">1<svg class="trust_score_selector" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6.01 14.49" width="6.01" height="14.49" aria-hidden="true"><g><path d="M4.01 11.49c0 .24-.08.45-.22.62a1 1 0 0 1-.78.38c-.55 0-1-.45-1-1s.45-1 1-1h.03c.54.01.97.45.97 1" style="fill:#ff9d00"/><text style="font-family:IBMPlexMono-BoldItalic,&quot;IBM Plex Mono&quot;;font-size:10px;font-style:italic;font-weight:700;fill:#ff9d00" transform="translate(0 8.49)"><tspan x="0" y="0">1</tspan></text></g></svg></div>
+                    <div class="cell black" data-info-color="#ff9d00" data-info-desc="Criterion 2: placeholder description rendered from backend.">2<svg class="trust_score_selector" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6.01 14.49" width="6.01" height="14.49" aria-hidden="true"><g><path d="M4.01 11.49c0 .24-.08.45-.22.62a1 1 0 0 1-.78.38c-.55 0-1-.45-1-1s.45-1 1-1h.03c.54.01.97.45.97 1" style="fill:#ff9d00"/><text style="font-family:IBMPlexMono-BoldItalic,&quot;IBM Plex Mono&quot;;font-size:10px;font-style:italic;font-weight:700;fill:#ff9d00" transform="translate(0 8.49)"><tspan x="0" y="0">2</tspan></text></g></svg></div>
+                    <div class="cell black" data-info-color="#ff9d00" data-info-desc="Return on Equity (ROE) &gt; 0.03 (3%) ~ 0.02 (2%)">3<svg class="trust_score_selector" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6.01 14.49" width="6.01" height="14.49" aria-hidden="true"><g><path d="M4.01 11.49c0 .24-.08.45-.22.62a1 1 0 0 1-.78.38c-.55 0-1-.45-1-1s.45-1 1-1h.03c.54.01.97.45.97 1" style="fill:#ff9d00"/><text style="font-family:IBMPlexMono-BoldItalic,&quot;IBM Plex Mono&quot;;font-size:10px;font-style:italic;font-weight:700;fill:#ff9d00" transform="translate(0 8.49)"><tspan x="0" y="0">3</tspan></text></g></svg></div>
+                    <div class="cell black" data-info-color="#ff9d00" data-info-desc="Criterion 4: placeholder description rendered from backend.">4<svg class="trust_score_selector" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6.01 14.49" width="6.01" height="14.49" aria-hidden="true"><g><path d="M4.01 11.49c0 .24-.08.45-.22.62a1 1 0 0 1-.78.38c-.55 0-1-.45-1-1s.45-1 1-1h.03c.54.01.97.45.97 1" style="fill:#ff9d00"/><text style="font-family:IBMPlexMono-BoldItalic,&quot;IBM Plex Mono&quot;;font-size:10px;font-style:italic;font-weight:700;fill:#ff9d00" transform="translate(0 8.49)"><tspan x="0" y="0">4</tspan></text></g></svg></div>
+                    <div class="cell black" data-info-color="#ff9d00" data-info-desc="Criterion 5: placeholder description rendered from backend.">5<svg class="trust_score_selector" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6.01 14.49" width="6.01" height="14.49" aria-hidden="true"><g><path d="M4.01 11.49c0 .24-.08.45-.22.62a1 1 0 0 1-.78.38c-.55 0-1-.45-1-1s.45-1 1-1h.03c.54.01.97.45.97 1" style="fill:#ff9d00"/><text style="font-family:IBMPlexMono-BoldItalic,&quot;IBM Plex Mono&quot;;font-size:10px;font-style:italic;font-weight:700;fill:#ff9d00" transform="translate(0 8.49)"><tspan x="0" y="0">5</tspan></text></g></svg></div>
+                    <div class="cell black" data-info-color="#ff9d00" data-info-desc="Criterion 6: placeholder description rendered from backend.">6<svg class="trust_score_selector" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6.01 14.49" width="6.01" height="14.49" aria-hidden="true"><g><path d="M4.01 11.49c0 .24-.08.45-.22.62a1 1 0 0 1-.78.38c-.55 0-1-.45-1-1s.45-1 1-1h.03c.54.01.97.45.97 1" style="fill:#ff9d00"/><text style="font-family:IBMPlexMono-BoldItalic,&quot;IBM Plex Mono&quot;;font-size:10px;font-style:italic;font-weight:700;fill:#ff9d00" transform="translate(0 8.49)"><tspan x="0" y="0">6</tspan></text></g></svg></div>
+                    <div class="cell black" data-info-color="#ff9d00" data-info-desc="Criterion 7: placeholder description rendered from backend.">7<svg class="trust_score_selector" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6.01 14.49" width="6.01" height="14.49" aria-hidden="true"><g><path d="M4.01 11.49c0 .24-.08.45-.22.62a1 1 0 0 1-.78.38c-.55 0-1-.45-1-1s.45-1 1-1h.03c.54.01.97.45.97 1" style="fill:#ff9d00"/><text style="font-family:IBMPlexMono-BoldItalic,&quot;IBM Plex Mono&quot;;font-size:10px;font-style:italic;font-weight:700;fill:#ff9d00" transform="translate(0 8.49)"><tspan x="0" y="0">7</tspan></text></g></svg></div>
+                    <div class="cell black" data-info-color="#ff9d00" data-info-desc="Criterion 8: placeholder description rendered from backend.">8<svg class="trust_score_selector" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6.01 14.49" width="6.01" height="14.49" aria-hidden="true"><g><path d="M4.01 11.49c0 .24-.08.45-.22.62a1 1 0 0 1-.78.38c-.55 0-1-.45-1-1s.45-1 1-1h.03c.54.01.97.45.97 1" style="fill:#ff9d00"/><text style="font-family:IBMPlexMono-BoldItalic,&quot;IBM Plex Mono&quot;;font-size:10px;font-style:italic;font-weight:700;fill:#ff9d00" transform="translate(0 8.49)"><tspan x="0" y="0">8</tspan></text></g></svg></div>
+                    <div class="cell black" data-info-color="#ff9d00" data-info-desc="Criterion 9: placeholder description rendered from backend.">9<svg class="trust_score_selector" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6.01 14.49" width="6.01" height="14.49" aria-hidden="true"><g><path d="M4.01 11.49c0 .24-.08.45-.22.62a1 1 0 0 1-.78.38c-.55 0-1-.45-1-1s.45-1 1-1h.03c.54.01.97.45.97 1" style="fill:#ff9d00"/><text style="font-family:IBMPlexMono-BoldItalic,&quot;IBM Plex Mono&quot;;font-size:10px;font-style:italic;font-weight:700;fill:#ff9d00" transform="translate(0 8.49)"><tspan x="0" y="0">9</tspan></text></g></svg></div>
+            </div>
+        </div>
+        <div class="box dark-black persistence_score" data-info="icon" data-info-key="persistence_score" data-info-color="#D9D9D9" data-info-desc="52-Week Trigger: placeholder description rendered from backend.">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M7 7h2.5v2.5H7z" fill="red" opacity="0.9"/>
+<path d="M4.5 4.5H7V7H4.5z" fill="red" opacity="0.7"/>
+<path d="M2 2h2.5v2.5H2z" fill="red" opacity="0.5"/>
+</svg>
+        </div>
+        <div class="box dark-black week_52_slope" data-info="icon" data-info-key="week_52_slope" data-info-color="#90ee90" data-info-desc="52-Week Slope: placeholder description rendered from backend.">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M2 2h10v10H2z" fill="#ff9d00"/>
+<path d="M8.21 6.8 12 2v10H2l3.45-6z" fill="#228b22"/>
+</svg>
+        </div>
+        <div class="box dark-black volume_assessment" data-info="icon" data-info-key="volume_assessment" data-info-color="#ff6347" data-info-desc="Volume Assessment: placeholder description rendered from backend.">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M7 2C4.24 2 2 4.24 2 7s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5" fill="#ff6347"/>
+</svg>
+        </div>
+        <div class="box dark-black ticker_arrow" data-info="icon" data-info-key="ticker_arrow" data-info-color="#90ee90" data-info-desc="Ticker Arrow: placeholder description rendered from backend.">
+            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5.47661 0.294601L9.94306 9.22873C10.1202 9.58308 9.86257 10 9.46645 10H0.533551C0.13743 10 -0.120208 9.58307 0.0569436 9.22872L4.52339 0.2946C4.71977 -0.0982008 5.28024 -0.0981997 5.47661 0.294601Z" fill="#228B22"/>
+</svg>
+        </div>
+        <div class="box dark-black ticker_price">₹171.55</div>
+        <div class="box dark-black week_52_stage" data-info="icon" data-info-key="week_52_stage" data-info-color="#ff9d00" data-info-desc="52-Week Stage: placeholder description rendered from backend."><template class="info-icon-tpl"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14" fill="none"><g transform="translate(0.5 -7.5)"><circle cx="6.5" cy="14.5" r="6.5" fill="#ff9d00"/>
+    <path d="M6.33245 12.9765H4.38601L4.07265 14.5208H4.12086C4.18112 14.4007 4.24339 14.2946 4.30767 14.2022C4.37195 14.1053 4.44225 14.0245 4.51858 13.9598C4.59893 13.8952 4.68932 13.8467 4.78976 13.8144C4.89019 13.7775 5.0067 13.759 5.13927 13.759C5.30399 13.759 5.45464 13.789 5.59123 13.849C5.73184 13.909 5.85236 13.9968 5.9528 14.1122C6.05725 14.2276 6.1376 14.3684 6.19384 14.5346C6.25411 14.7008 6.28424 14.8901 6.28424 15.1025C6.28424 15.3379 6.24607 15.5688 6.16974 15.795C6.09743 16.0212 5.98695 16.2244 5.8383 16.4044C5.68966 16.5845 5.50285 16.7299 5.27787 16.8407C5.05692 16.9469 4.7998 17 4.50653 17C4.27754 17 4.07868 16.9723 3.90994 16.9169C3.74523 16.8661 3.60261 16.7992 3.48209 16.7161C3.36558 16.6283 3.26716 16.5291 3.18681 16.4183C3.11048 16.3029 3.04821 16.1828 3 16.0582L3.70506 15.5388C3.76933 15.7142 3.86776 15.862 4.00034 15.982C4.13291 16.102 4.30767 16.162 4.52461 16.162C4.74958 16.162 4.92434 16.0951 5.04888 15.9612C5.17744 15.8273 5.25779 15.6565 5.28993 15.4488C5.30198 15.3657 5.308 15.2733 5.308 15.1717C5.308 14.9871 5.25779 14.844 5.15735 14.7424C5.05692 14.6408 4.91631 14.59 4.73552 14.59C4.56679 14.59 4.42417 14.6293 4.30767 14.7078C4.19116 14.7816 4.09675 14.8555 4.02444 14.9294L3.31336 14.8186L3.86776 12.0831H6.46502L6.33245 12.9765Z" fill="black"/>
+    <path d="M9.59022 16.9169H6.57716L6.70974 15.9751L8.23435 14.6801C8.36692 14.5693 8.47941 14.4654 8.57181 14.3684C8.66823 14.2715 8.74858 14.1791 8.81285 14.0914C8.87713 14.0037 8.92735 13.916 8.96351 13.8283C8.99966 13.7405 9.02377 13.6505 9.03582 13.5582C9.03984 13.5351 9.04185 13.5097 9.04185 13.482C9.04586 13.4497 9.04787 13.4151 9.04787 13.3781C9.04787 13.235 9.00368 13.1173 8.9153 13.0249C8.83093 12.9326 8.70639 12.8864 8.54168 12.8864C8.44124 12.8864 8.35085 12.9049 8.2705 12.9418C8.19417 12.9788 8.12387 13.0295 8.05959 13.0942C7.99933 13.1588 7.94509 13.2327 7.89688 13.3158C7.85269 13.3989 7.81453 13.4843 7.78239 13.572L7.01104 13.2258C7.08336 13.0549 7.16772 12.8957 7.26414 12.7479C7.36458 12.5956 7.48108 12.464 7.61366 12.3532C7.74623 12.2424 7.89487 12.157 8.05959 12.097C8.2243 12.0323 8.4091 12 8.61399 12C9.05189 12 9.39136 12.1247 9.63241 12.374C9.87747 12.6187 10 12.9441 10 13.3504C10 13.5582 9.96786 13.7452 9.90358 13.9114C9.84332 14.0776 9.75494 14.2368 9.63843 14.3892C9.52595 14.5369 9.38734 14.6847 9.22263 14.8324C9.05792 14.9801 8.87312 15.1394 8.66823 15.3102L7.76431 16.0582H9.71677L9.59022 16.9169Z" fill="black"/></g></svg></template>
+            <svg width="92" height="28" viewBox="0 0 92 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<!-- Background meter with vertical lines -->
+<path d="M90 28v-7 M87.85 28v-7 M85.71 28v-7 M83.56 28v-7 M81.41 28v-7 M79.27 28v-7 M77.12 28v-7 M74.98 28v-7 M72.83 28v-7 M70.68 28v-7 M68.54 28v-7 M66.39 28v-7 M64.24 28v-7 M62.1 28v-7 M59.95 28v-7 M57.8 28v-7 M55.66 28v-7 M53.51 28v-7 M51.37 28v-7 M49.22 28v-7 M47.07 28v-7 M44.93 28v-7 M42.78 28v-7 M40.63 28v-7 M38.49 28v-7 M36.34 28v-7 M34.2 28v-7 M32.05 28v-7 M29.9 28v-7 M27.76 28v-7 M25.61 28v-7 M23.46 28v-7 M21.32 28v-7 M19.17 28v-7 M17.02 28v-7 M14.88 28v-7 M12.73 28v-7 M10.59 28v-7 M8.44 28v-7 M6.29 28v-7 M4.15 28v-7 M2 28v-7"
+      fill="none" stroke="#ff9d00" stroke-width="0.75"/>
+
+<!-- Custom icon positioned based on 52-week stage -->
+<g transform="translate(43.45, 0)">
+    <rect x="6" width="1" height="28" fill="#ff9d00"/>
+    <circle cx="6.5" cy="14.5" r="6.5" fill="#ff9d00"/>
+    <path d="M6.33245 12.9765H4.38601L4.07265 14.5208H4.12086C4.18112 14.4007 4.24339 14.2946 4.30767 14.2022C4.37195 14.1053 4.44225 14.0245 4.51858 13.9598C4.59893 13.8952 4.68932 13.8467 4.78976 13.8144C4.89019 13.7775 5.0067 13.759 5.13927 13.759C5.30399 13.759 5.45464 13.789 5.59123 13.849C5.73184 13.909 5.85236 13.9968 5.9528 14.1122C6.05725 14.2276 6.1376 14.3684 6.19384 14.5346C6.25411 14.7008 6.28424 14.8901 6.28424 15.1025C6.28424 15.3379 6.24607 15.5688 6.16974 15.795C6.09743 16.0212 5.98695 16.2244 5.8383 16.4044C5.68966 16.5845 5.50285 16.7299 5.27787 16.8407C5.05692 16.9469 4.7998 17 4.50653 17C4.27754 17 4.07868 16.9723 3.90994 16.9169C3.74523 16.8661 3.60261 16.7992 3.48209 16.7161C3.36558 16.6283 3.26716 16.5291 3.18681 16.4183C3.11048 16.3029 3.04821 16.1828 3 16.0582L3.70506 15.5388C3.76933 15.7142 3.86776 15.862 4.00034 15.982C4.13291 16.102 4.30767 16.162 4.52461 16.162C4.74958 16.162 4.92434 16.0951 5.04888 15.9612C5.17744 15.8273 5.25779 15.6565 5.28993 15.4488C5.30198 15.3657 5.308 15.2733 5.308 15.1717C5.308 14.9871 5.25779 14.844 5.15735 14.7424C5.05692 14.6408 4.91631 14.59 4.73552 14.59C4.56679 14.59 4.42417 14.6293 4.30767 14.7078C4.19116 14.7816 4.09675 14.8555 4.02444 14.9294L3.31336 14.8186L3.86776 12.0831H6.46502L6.33245 12.9765Z" fill="black"/>
+    <path d="M9.59022 16.9169H6.57716L6.70974 15.9751L8.23435 14.6801C8.36692 14.5693 8.47941 14.4654 8.57181 14.3684C8.66823 14.2715 8.74858 14.1791 8.81285 14.0914C8.87713 14.0037 8.92735 13.916 8.96351 13.8283C8.99966 13.7405 9.02377 13.6505 9.03582 13.5582C9.03984 13.5351 9.04185 13.5097 9.04185 13.482C9.04586 13.4497 9.04787 13.4151 9.04787 13.3781C9.04787 13.235 9.00368 13.1173 8.9153 13.0249C8.83093 12.9326 8.70639 12.8864 8.54168 12.8864C8.44124 12.8864 8.35085 12.9049 8.2705 12.9418C8.19417 12.9788 8.12387 13.0295 8.05959 13.0942C7.99933 13.1588 7.94509 13.2327 7.89688 13.3158C7.85269 13.3989 7.81453 13.4843 7.78239 13.572L7.01104 13.2258C7.08336 13.0549 7.16772 12.8957 7.26414 12.7479C7.36458 12.5956 7.48108 12.464 7.61366 12.3532C7.74623 12.2424 7.89487 12.157 8.05959 12.097C8.2243 12.0323 8.4091 12 8.61399 12C9.05189 12 9.39136 12.1247 9.63241 12.374C9.87747 12.6187 10 12.9441 10 13.3504C10 13.5582 9.96786 13.7452 9.90358 13.9114C9.84332 14.0776 9.75494 14.2368 9.63843 14.3892C9.52595 14.5369 9.38734 14.6847 9.22263 14.8324C9.05792 14.9801 8.87312 15.1394 8.66823 15.3102L7.76431 16.0582H9.71677L9.59022 16.9169Z" fill="black"/>
+</g>
+</svg>
+        </div>
+        <div class="box dark-black market_cap_score" data-info="icon" data-info-key="market_cap_score" data-info-color="#D3D3D3" data-info-desc="Market Cap Score: placeholder description rendered from backend.">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M13 13H8.53723L10.1429 12L10.619 11H11.5715L13 13Z" fill="#2A2A2A" fill-opacity="0.9"/>
+<path d="M3 2.09082V9.72718L8.5411 12.9999V5.36355L3 2.09082Z" fill="#0b3ef9"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5.07791 1L3 2.09091L8.5411 5.36364L10.619 4.27273L5.07791 1Z" fill="#D3D3D3"/>
+<path d="M10.619 4.27273V11.9091L8.5411 13V5.36364L10.619 4.27273Z" fill="#696969"/>
+</svg>
+        </div>
+        <div class="box dark-black momentum_confluence_score" data-info="icon" data-info-key="momentum_confluence_score" data-info-color="#ffd700" data-info-desc="Momentum Confluence: placeholder description rendered from backend.">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M7 3H3V7H7V3Z" fill="#d3d3d3"/>
+<path d="M11 3H7V7H11V3Z" fill="#ffd700"/>
+<path opacity="0.5" d="M7 7H3V11H7V7Z" fill="#d3d3d3"/>
+<path opacity="0.5" d="M11 7H7V11H11V7Z" fill="#ffd700"/>
+</svg>
+        </div>
+        <div class="box dark-black drop-down_button" role="button" aria-expanded="false" tabindex="0">
+            <svg class="icon icon-collapsed" width="8" height="6" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 1H8" stroke="white"/>
+                <path d="M0 3H8" stroke="white"/>
+                <path d="M0 5H8" stroke="white"/>
+            </svg>
+            <svg class="icon icon-expanded" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 7L7 1" stroke="black"/>
+                <path d="M1 1L7.00104 6.99896" stroke="black"/>
+            </svg>
+        </div>
+        <div class="box technical-label light-grey candle_label">Candle</div>
+        <div class="box technical-label light-grey macd_label">MACD</div>
+        <div class="box technical-label light-grey cci_label">CCI</div>
+        <div class="box technical-label-number white cci_label_number">14</div>
+        <div class="box technical-label light-grey atr_label">ATR</div>
+        <div class="box technical-label-number white atr_label_number">14</div>
+        <div class="box technical-label light-grey rsi_label">RSI</div>
+        <div class="box technical-label-number white rsi_label_number">14</div>
+        <div class="box technical-label light-grey adx_label">ADX</div>
+        <div class="box technical-label-number white adx_label_number">14</div>
+        <div class="box technical-value dark-grey candle_value"><span style="color: #808080; font-weight: bold;">No Strong Pattern|0</span></div>
+        <div class="box technical-value dark-grey macd_value"><span style="color: #ff6347; font-weight: bold;">-2.36</span></div>
+        <div class="box technical-value dark-grey cci_value"><span style="color: #90ee90; font-weight: bold;">-106.64</span></div>
+        <div class="box technical-value dark-grey atr_value"><span style="color: #90ee90; font-weight: bold;">6.75</span></div>
+        <div class="box technical-value dark-grey rsi_value"><span style="color: #808080; font-weight: bold;">42.16</span></div>
+        <div class="box technical-value dark-grey adx_value"><span style="color: #d3d3d3; font-weight: bold;">18.51</span></div>
+        <div class="fund-viewport">
+            <div class="fund-inner">
+                <div class="box fundamental-label light-grey market_capital_label">Market Capital</div>
+                <div class="box fundamental-label light-grey dps_label">DPS</div>
+                <div class="box fundamental-label light-grey book_value_label">Book Value</div>
+                <div class="box fundamental-label light-grey eps_label">EPS</div>
+                <div class="box fundamental-label light-grey roe_label">ROE</div>
+                <div class="box fundamental-label-number white roe_label_number">%</div>
+                <div class="box fundamental-label light-grey promoters_label">Promoters</div>
+                <div class="box fundamental-label-number white promoters_label_number">%</div>
+                <div class="box fundamental-label light-grey pledge_label">Pledge</div>
+                <div class="box fundamental-label-number white pledge_label_number">%</div>
+                <div class="box fundamental-label light-grey psrs_label">PSRS</div>
+                <div class="box fundamental-label light-grey pe_ratio_label">PE</div>
+                <div class="box fundamental-label light-grey sector_pe_label">Sector PE</div>
+                <div class="box fundamental-label light-grey enterprise_value_label">Enterprise Value</div>
+                <div class="box fundamental-label light-grey week_52_high_label">52 Week High</div>
+                <div class="box fundamental-label light-grey week_52_high_date_label">52 Week High Date</div>
+                <div class="box fundamental-label light-grey week_52_low_label">52 Week Low</div>
+                <div class="box fundamental-label light-grey week_52_low_date_label">52 Week Low Date</div>
+                <div class="box fundamental-label light-grey open_label">Open</div>
+                <div class="box fundamental-label light-grey high_label">High</div>
+                <div class="box fundamental-label light-grey low_label">Low</div>
+                <div class="box fundamental-label light-grey close_label">Close</div>
+                <div class="box fundamental-label light-grey volume_label">Volume</div>
+              
+                <div class="box fundamental-value dark-grey market_capital_entry">₹70859.16 Cr</div>
+                <div class="box fundamental-value dark-grey dps_entry">2.35</div>
+                <div class="box fundamental-value dark-grey book_value_entry">₹60355.89 Cr</div>
+                <div class="box fundamental-value dark-grey eps_entry">8.17</div>
+                <div class="box fundamental-value dark-grey roe_entry">5.7%</div>
+                <div class="box fundamental-value dark-grey promoters_entry">65.0%</div>
+                <div class="box fundamental-value dark-grey pledge_entry">0.0%</div>
+                <div class="box fundamental-value dark-grey psrs_entry">0.63</div>
+                <div class="box fundamental-value dark-grey pe_ratio_entry">21.01</div>
+                <div class="box fundamental-value dark-grey sector_pe_entry">23.13</div>
+                <div class="box fundamental-value dark-grey enterprise_value_entry">₹102054.37 Cr</div>
+                <div class="box fundamental-value dark-grey week_52_high_entry">209.70</div>
+                <div class="box fundamental-value dark-grey week_52_high_date_entry">14/05/2026</div>
+                <div class="box fundamental-value dark-grey week_52_low_entry">124.00</div>
+                <div class="box fundamental-value dark-grey week_52_low_date_entry">19/12/2025</div>
+                <div class="box fundamental-value dark-grey open_entry">168.00</div>
+                <div class="box fundamental-value dark-grey high_entry">175.84</div>
+                <div class="box fundamental-value dark-grey low_entry">167.72</div>
+                <div class="box fundamental-value dark-grey close_entry">171.55</div>
+                <div class="box fundamental-value dark-grey volume_entry">42,339,535</div>
+            </div>
+        </div>
+    </div>
+</div></div>
+    
+    <!-- Footer Section -->
+    <div class="footer-wrapper">
+        <footer class="page-footer">
+        <div class="footer-divider"></div>
+        <div class="footer-content">
+            <div class="footer-main">
+                <div class="footer-left">
+                    <div class="generated-by">Stock Digest by Pellacia</div>
+                    <a href="mailto:contact@pellacia.com" class="contact">contact@pellacia.com</a>
+                </div>
+                <div class="update-frequency">Updated daily</div>
+            </div>
+            <div class="footer-bottom">
+                <a href="upi://pay?pa=pellacia@rbl&pn=Pellacia&cu=INR" target="_blank" class="power-button" aria-label="Power this project">
+                    <svg width="75" height="40" viewBox="0 0 75 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Footer SVG goes here! -->
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+    </div>
+    
+        <script>
+    // Device detection and UPI link handling
+    document.addEventListener('DOMContentLoaded', function() {
+        const powerButton = document.querySelector('.power-button');
+        const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+        
+        if (!isMobile) {
+            powerButton.removeAttribute('href');
+            powerButton.style.cursor = 'pointer';
+            
+            powerButton.addEventListener('click', function(e) {
+                e.preventDefault();
+                showQRModal();
+            });
+        }
+    });
+
+    function showQRModal() {
+        // Create modal overlay
+        const modal = document.createElement('div');
+        modal.className = 'qr-modal-overlay';
+        modal.innerHTML = `
+            <div class="qr-modal-content">
+                <button class="qr-close" aria-label="Close">&times;</button>
+                <svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="200" height="200" rx="0" fill="#FFFFFF"/>
+                <path d="M130.542 159L133.748 165.347L127 171.691L130.542 159Z" fill="#E9661C"/>
+                </svg>
+            </div>
+        `;
+        
+        document.body.appendChild(modal);
+        
+        // Close handlers
+        const closeBtn = modal.querySelector('.qr-close');
+        closeBtn.onclick = () => modal.remove();
+        modal.onclick = (e) => {
+            if (e.target === modal) modal.remove();
+        };
+        
+        // Animate in
+        requestAnimationFrame(() => modal.classList.add('active'));
+    }
+    </script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const cardViewports = document.querySelectorAll('.card-viewport');
+        cardViewports.forEach(function(viewport) {
+            const container = viewport.querySelector('.container');
+            const btn = viewport.querySelector('.drop-down_button');
+            const ticker = viewport.querySelector('.ticker_name')?.textContent?.trim() || 'default';
+            const key = `card_state_${ticker}`;
+            if (!container || !btn) return;
+            function setState(expanded) {
+                container.classList.toggle('expanded', expanded);
+                container.classList.toggle('collapsed', !expanded);
+                btn.setAttribute('aria-expanded', expanded ? 'true' : 'false');
+                try { localStorage.setItem(key, expanded ? 'expanded' : 'collapsed'); } catch (_) {}
+            }
+            try {
+                const saved = localStorage.getItem(key);
+                if (saved === 'expanded') setState(true); else setState(false);
+            } catch (_) { setState(false); }
+            function toggle() { setState(!container.classList.contains('expanded')); }
+            btn.addEventListener('click', toggle);
+            btn.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggle(); }
+            });
+        });
+    });
+    </script>
+    <script>
+        function scaleCards() {
+            const viewportWidth = window.innerWidth;
+            const designWidth = 380;
+
+            if (viewportWidth < designWidth) {
+                const scaleFactor = viewportWidth / designWidth;
+                document.querySelectorAll('.card-viewport').forEach(viewport => {
+                    viewport.style.transform = `scale(${scaleFactor})`;
+                    viewport.style.transformOrigin = '199px 9px';
+                });
+            } else {
+                document.querySelectorAll('.card-viewport').forEach(viewport => {
+                    viewport.style.transform = 'scale(1)';
+                });
+            }
+        }
+
+        window.addEventListener('resize', scaleCards);
+        scaleCards();
+    </script>
+
+    <script>
+    // Info header: per-card state, closes when the user taps outside that card.
+    (function () {
+        var states = new WeakMap();
+        var SVGNS = 'http://www.w3.org/2000/svg';
+
+        function track(name, props) {
+            try { if (window.plausible) window.plausible(name, { props: props || {} }); } catch (e) {}
+            try { if (window.gtag) window.gtag('event', name, props || {}); } catch (e) {}
+        }
+        function getState(vp) {
+            var s = states.get(vp);
+            if (!s) { s = { mode: null, tab: 1, key: null }; states.set(vp, s); }
+            return s;
+        }
+        function tickerOf(vp) {
+            var el = vp.querySelector('.ticker_name');
+            return el ? (el.textContent || '').trim() : '';
+        }
+        function reset(vp) { states.delete(vp); render(vp); }
+
+        // Every icon is shown inside the same 14x14 frame so it stays centred.
+        // (Legacy icons with another viewBox are re-centred into 14x14.)
+        function frame14(svg) {
+            var vb = (svg.getAttribute('viewBox') || '').trim().split(/[\s,]+/).map(Number);
+            svg.removeAttribute('width');
+            svg.removeAttribute('height');
+            if (vb.length === 4 && (vb[2] !== 14 || vb[3] !== 14)) {
+                var g = document.createElementNS(SVGNS, 'g');
+                g.setAttribute('transform', 'translate(' + ((14 - vb[2]) / 2 - vb[0]) + ' ' + ((14 - vb[3]) / 2 - vb[1]) + ')');
+                while (svg.firstChild) g.appendChild(svg.firstChild);
+                svg.appendChild(g);
+            }
+            svg.setAttribute('viewBox', '0 0 14 14');
+        }
+
+        // Number shown in the info circle: same font colour/size as the trust_score cell, inside a 14x14 frame.
+        function numberIcon(label, cs) {
+            var fs = parseFloat(cs.fontSize) || 10;
+            var svg = document.createElementNS(SVGNS, 'svg');
+            svg.setAttribute('viewBox', '0 0 14 14');
+            svg.setAttribute('fill', 'none');
+            var t = document.createElementNS(SVGNS, 'text');
+            t.setAttribute('x', '7');
+            t.setAttribute('y', String(7 + fs * 0.35));
+            t.setAttribute('text-anchor', 'middle');
+            t.setAttribute('font-family', cs.fontFamily);
+            t.setAttribute('font-style', cs.fontStyle);
+            t.setAttribute('font-weight', cs.fontWeight);
+            t.setAttribute('font-size', String(fs));
+            t.setAttribute('fill', cs.color);
+            t.textContent = label;
+            svg.appendChild(t);
+            return svg;
+        }
+
+        // The digit of a trust_score cell (ignores the trust_score_selector SVG that lives inside it).
+        function digitNode(cell) {
+            for (var i = 0; i < cell.childNodes.length; i++) {
+                var nd = cell.childNodes[i];
+                if (nd.nodeType === 3 && nd.nodeValue.trim()) return nd;
+            }
+            return null;
+        }
+        function digitOf(cell) {
+            var nd = digitNode(cell);
+            return nd ? nd.nodeValue.trim() : '';
+        }
+
+        // Place the trust_score_selector so its digit sits exactly on the cell's digit (text baselines aligned),
+        // which puts the dot right below the number. Measured from the font actually in use.
+        function placeSelector(cell) {
+            var sel = cell.querySelector('.trust_score_selector');
+            var node = digitNode(cell);
+            if (!sel || !node) return;
+            var vb = sel.viewBox.baseVal;
+            var txt = sel.querySelector('text');
+            var m = /translate\(\s*[-\d.]+[\s,]+([-\d.]+)\s*\)/.exec((txt && txt.getAttribute('transform')) || '');
+            var baseInFrame = m ? parseFloat(m[1]) : 0;                          // baseline y inside the SVG frame
+            var k = vb.height ? sel.height.baseVal.value / vb.height : 1;        // frame units -> px
+            var cs = getComputedStyle(cell);
+            var ctx = document.createElement('canvas').getContext('2d');
+            ctx.font = cs.fontStyle + ' ' + cs.fontWeight + ' ' + cs.fontSize + ' ' + cs.fontFamily;
+            var descent = ctx.measureText('0').fontBoundingBoxDescent;
+            if (!(descent > 0)) descent = 0.275 * parseFloat(cs.fontSize);
+            var range = document.createRange();
+            range.selectNodeContents(node);
+            var tr = range.getBoundingClientRect();
+            var cr = cell.getBoundingClientRect();
+            var scale = cell.offsetHeight ? cr.height / cell.offsetHeight : 1;   // card may be scaled on narrow screens
+            var baselineY = (tr.bottom - cr.top) / scale - descent;              // px from the cell top
+            sel.style.top = (baselineY - baseInFrame * k) + 'px';
+        }
+
+        // Single line; if wider than the box, pan left-to-right across it.
+        function fit(h) {
+            var view = h.querySelector('.info-desc-view');
+            var t = h.querySelector('.info-desc-text');
+            t.classList.remove('is-scrolling');
+            t.style.removeProperty('--pan');
+            var over = t.offsetWidth - view.clientWidth;
+            if (over > 0) {
+                t.style.setProperty('--pan', (-over) + 'px');
+                t.style.setProperty('--dur', Math.max(4, over / 20 + 3) + 's');
+                void t.offsetWidth;
+                t.classList.add('is-scrolling');
+            }
+        }
+
+        function render(vp) {
+            var s = getState(vp);
+            var h = vp.querySelector('.info-header');
+            if (!h) return;
+            vp.querySelectorAll('.is-info-selected').forEach(function (n) { n.classList.remove('is-info-selected'); });
+            vp.querySelectorAll('.cell.is-trust-selected').forEach(function (n) { n.classList.remove('is-trust-selected'); });
+
+            if (!s.mode) {
+                vp.classList.remove('info-open');
+                h.setAttribute('data-mode', '');
+                return;
+            }
+            vp.classList.add('info-open');
+            h.setAttribute('data-mode', s.mode);
+
+            var text = '', color = '#ffffff';
+            var circle = h.querySelector('.info-circle');
+
+            if (s.mode === 'trust') {
+                var numCell = vp.querySelector('.trust_score .cell:nth-child(' + s.tab + ')');
+                if (numCell) {
+                    var ncs = getComputedStyle(numCell);
+                    text = numCell.dataset.infoDesc || '';
+                    color = numCell.dataset.infoColor || ncs.color;
+                    circle.textContent = '';
+                    circle.appendChild(numberIcon(digitOf(numCell), ncs));
+                    numCell.classList.add('is-trust-selected');
+                    placeSelector(numCell);
+                }
+                var trust = vp.querySelector('.trust_score');
+                if (trust) trust.classList.add('is-info-selected');
+            } else {
+                var el = vp.querySelector('[data-info-key="' + s.key + '"]');
+                if (el) {
+                    text = el.dataset.infoDesc || '';
+                    color = el.dataset.infoColor || color;
+                    el.classList.add('is-info-selected');
+                    // Backend-supplied <template class="info-icon-tpl"> if present, else a copy of the tapped icon.
+                    var tpl = el.querySelector('template.info-icon-tpl');
+                    var svg = tpl ? tpl.content.firstElementChild : el.querySelector('svg');
+                    circle.textContent = '';
+                    if (svg) {
+                        var copy = svg.cloneNode(true);
+                        frame14(copy);
+                        circle.appendChild(copy);
+                    }
+                }
+            }
+            h.querySelector('.info-desc-text').textContent = text;
+            h.style.setProperty('--info-c', color);
+            fit(h);
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            document.querySelectorAll('[data-info]').forEach(function (n) {
+                n.setAttribute('role', 'button');
+                n.tabIndex = 0;
+            });
+        });
+        // Caveat / IBM Plex Mono may load after first render: re-measure open headers and selectors.
+        if (document.fonts && document.fonts.ready) {
+            document.fonts.ready.then(function () {
+                document.querySelectorAll('.card-viewport.info-open .info-header').forEach(fit);
+                document.querySelectorAll('.cell.is-trust-selected').forEach(placeSelector);
+            });
+        }
+
+        document.addEventListener('click', function (e) {
+            var vp = e.target.closest && e.target.closest('.card-viewport');
+
+            // Tap outside a card -> that card goes back to its default (original) state.
+            document.querySelectorAll('.card-viewport.info-open').forEach(function (v) {
+                if (v !== vp) reset(v);
+            });
+            if (!vp) return;
+
+            var s = getState(vp);
+            var nav = e.target.closest('.info-nav');
+            if (nav) {   // previous / next: loops 1..9
+                s.tab = nav.classList.contains('info-next') ? (s.tab % 9) + 1 : (s.tab === 1 ? 9 : s.tab - 1);
+                s.mode = 'trust';
+                render(vp);
+                track('info_tab', { ticker: tickerOf(vp), tab: s.tab });
+                return;
+            }
+            var trg = e.target.closest('[data-info]');
+            if (!trg || !vp.contains(trg)) return;   // dropdown etc. never touches info state
+
+            if (trg.dataset.info === 'trust') {
+                var cell = e.target.closest('.cell');
+                var n = cell ? parseInt(digitOf(cell), 10) : NaN;
+                var onNumber = n >= 1 && n <= 9;
+                if (!onNumber && s.mode === 'trust') {   // tap on trust_score outside the numbers closes it
+                    s.mode = null; render(vp); return;
+                }
+                if (onNumber) s.tab = n;                // tapped a number -> that tab; else last tab (default 1)
+                s.mode = 'trust';
+                track('info_tab', { ticker: tickerOf(vp), tab: s.tab });
+            } else {
+                if (s.mode === 'icon' && s.key === trg.dataset.infoKey) { s.mode = null; render(vp); return; }   // second tap on the same icon closes
+                s.mode = 'icon'; s.key = trg.dataset.infoKey;
+                track('info_icon', { ticker: tickerOf(vp), icon: s.key });
+            }
+            render(vp);
+        });
+
+        document.addEventListener('keydown', function (e) {
+            var t = e.target;
+            if (!t || !t.closest) return;
+            var trg = t.closest('[data-info]');
+            if (trg && (e.key === 'Enter' || e.key === ' ')) { e.preventDefault(); trg.click(); return; }
+            if (e.key === 'Escape') {
+                var vp = t.closest('.card-viewport');
+                if (vp) reset(vp);
+            }
+        });
+    })();
+    </script>
+</body>
+</html>
