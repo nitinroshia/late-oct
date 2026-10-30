@@ -1,0 +1,1250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pellacia Stocks</title>
+    <meta name="description" content="Beyond the noise. Our comprehensive fundamental and technical datasets help swing traders, long-term investors, and serious analysts understand what&#x27;s really driving stock performance.">
+    <!-- Consent defaults for Google (EEA, UK, Switzerland): must stay BEFORE the Google tag below -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){ dataLayer.push(arguments); }
+  gtag('consent', 'default', {
+    analytics_storage: 'denied', ad_storage: 'denied',
+    ad_user_data: 'denied', ad_personalization: 'denied',
+    region: ['AT','BE','BG','HR','CY','CZ','DK','EE','FI','FR','DE','GR','HU','IS','IE','IT','LV','LI','LT','LU','MT','NL','NO','PL','PT','RO','SK','SI','ES','SE','GB','CH']
+  });
+</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PW3T3JR0Z8"></script>
+    <!-- Google tag (gtag.js) -->
+<script>
+  gtag('js', new Date());
+
+  gtag('config', 'G-PW3T3JR0Z8');
+</script>
+    <script>
+(function(){
+  function trackEvent(name, props){
+    try{ if(window.gtag){ window.gtag('event', name, props||{}); } }catch(e){}
+  }
+  document.addEventListener('click', function(e){
+    var btn = e.target.closest && e.target.closest('.drop-down_button');
+    if(!btn) return;
+    var viewport = btn.closest && btn.closest('.card-viewport');
+    var tickerEl = viewport && viewport.querySelector('.ticker_name');
+    var ticker = tickerEl ? (tickerEl.textContent||'').trim() : '';
+    var expanded = btn.getAttribute('aria-expanded') === 'true';
+    trackEvent('toggle_card', {ticker: ticker, expanded: !expanded});
+  });
+})();
+</script>
+    
+    <!--Google Font imports -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Allan:wght@400;700&family=Cedarville+Cursive&display=swap" rel="stylesheet">        
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            padding: 0;
+            margin: 0;
+            background: #272727;
+            color: #ffffff;
+            font-family: Source Sans 3, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0;
+        }
+
+        .header-wrapper,
+        .footer-wrapper {
+            width: 100%;
+            max-width: 420px;
+        }
+        
+        .content-wrapper {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 6px;
+            padding: 0px 0;
+            background: #272727;
+        }
+
+        .card-viewport {
+            width: 380px;
+            overflow-x: hidden;
+            overflow-y: hidden;
+            background: transparent;
+            margin-bottom: 0px;
+            padding-bottom: 8px;
+        }
+        
+        /* Fading border line */
+        .card-viewport::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 1px;
+        background: linear-gradient(
+            to right,
+            transparent,
+            rgba(255, 255, 255, 0.3),
+            transparent
+        );
+        }
+
+        .container {
+            width: 1646px;
+            height: 176px;
+            position: relative;
+        }
+
+        .box {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Color classes */
+        .gray { background: #D9D9D9; }
+        .dark-black { background: #000000; }
+        .light-green { background: #D9EAD3; }
+        .pale-yellow { background: #FFF2CC; }
+        .light-grey { background: #8D8D8D; }
+        .dark-grey { background: #1A1A1A; }
+        .white { background: white; }
+        .black { background: black; }
+
+        /* Collapse/expand sections */
+        .container.collapsed .technical-label,
+        .container.collapsed .technical-label-number,
+        .container.collapsed .technical-value,
+        .container.collapsed .fundamental-label,
+        .container.collapsed .fundamental-label-number,
+        .container.collapsed .fundamental-value { display: none; }
+
+        /* Dropdown button visuals */
+        .drop-down_button { cursor: pointer; transition: background 180ms ease; }
+        .drop-down_button .icon { position: absolute; transition: opacity 180ms ease, transform 180ms ease; }
+        .drop-down_button .icon-expanded { opacity: 0; }
+        .container.expanded .drop-down_button .icon-collapsed { opacity: 0; transform: rotate(90deg); }
+        .container.expanded .drop-down_button .icon-expanded { opacity: 1; }
+        .container.expanded .drop-down_button {background: #8D8D8D}
+
+        /* Dynamic heights for collapse/expand */
+        .container.collapsed { height: 60px; }
+        .container.expanded { height: 155px; }
+
+        /* Fundamental horizontal scroller */
+        .fund-viewport { position: absolute; left: 0; top: 112px; width: 380px; height: 56px; overflow-x: auto; overflow-y: hidden; padding-bottom: 12px; -webkit-overflow-scrolling: touch; overscroll-behavior-x: contain; touch-action: pan-x; padding-right: 0; padding-left: 0;  }
+        .fund-inner .fundamental-value { top: 22px !important; }
+
+        .fund-viewport {
+            scrollbar-color: rgba(166, 166, 166, 0.3) transparent;
+            scrollbar-width: thin;
+        }
+
+        /* Page Header Styling */
+        .page-header {
+            padding: 20px 16px 16px 16px;
+        }
+        
+        .title-container {
+            margin-bottom: 12px;
+        }
+
+        .main-title {
+            font-family: Roboto Condensed, sans-serif;
+            font-size: 24px;
+            font-weight: 600;
+            color: #ffffff;
+            margin-bottom: 2px;
+            line-height: 1.2;
+        }
+
+        .subtitle {
+            font-family: 'IBM Plex Mono', monospace;
+            font-weight: 100;
+            font-style: normal;
+            font-size: 10px;
+            color: #ffffff;
+            text-align: right;
+            margin-right: 2px;
+        }
+
+        .beta-tag {
+            font-family: 'IBM Plex Mono', monospace;
+            display: inline-block;
+            font-size: 6px;
+            font-weight: 900;
+            color: #000000;
+            padding: 2px 6px;
+            background-color: #cacaca;
+            border-radius: 0px;
+            position: relative;
+            top: -12px;
+        }
+
+        .header-divider {
+            width: 100%;
+            height: 1px;
+            background-color: #333333;
+            margin-bottom: 12px;
+        }
+        
+        .timestamp {
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 10px;
+            font-weight: 300;
+            color: #e0e0e0;
+            text-align: left;
+        }
+
+        /* Page Footer Styling */
+        .page-footer {
+            padding: 16px 16px 20px 16px;
+        }
+
+        .footer-divider {
+            width: 100%;
+            height: 1px;
+            background-color: #333333;
+            margin-bottom: 16px;
+        }
+        
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .footer-main {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 11px;
+            color: #999999;
+        }
+
+        .footer-left {
+            font-family: 'IBM Plex Mono', monospace;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .generated-by {
+            font-weight: 400;
+            color: #cccccc;
+        }
+
+        .contact {
+            color: #888888;
+            text-decoration: none;
+            font-size: 10px;
+        }
+
+        .contact:hover {
+            color: #aaaaaa;
+        }
+
+        .update-frequency {
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 10px;
+            color: #777777;
+        }
+
+        .footer-bottom {
+            display: flex;
+            justify-content: center;
+            padding-top: 0px;
+        }
+
+        .power-button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        background-color: transparent;
+        border: none;
+        text-decoration: none;
+        transition: transform 0.25s ease;
+        cursor: pointer;
+        }
+
+        /* Zoom on hover (no fade/move) */
+        .power-button:hover {
+        transform: scale(1.05);
+        }
+
+        /* SVG sizing */
+        .power-button svg {
+        height: 60px;
+        width: auto;
+        }
+
+        /* Animate the yellow (#FFDD00) part with a flowing current effect */
+        .power-button svg [fill="#FFDD00"] {
+        animation: electricFlow 2s linear infinite;
+        }
+
+        /* Current-like glowing flow */
+        @keyframes electricFlow {
+        0% {
+            filter: drop-shadow(0 0 0px #ffffff);
+            opacity: 0.7;
+        }
+        25% {
+            filter: drop-shadow(0 0 5px #ffffff);
+            opacity: 1;
+        }
+        50% {
+            filter: drop-shadow(0 0 10px #ffffff);
+            opacity: 0.7;
+        }
+        75% {
+            filter: drop-shadow(0 0 5px #ffffff);
+            opacity: 1;
+        }
+        100% {
+            filter: drop-shadow(0 0 0px #ffffff);
+            opacity: 0.7;
+        }
+        }
+
+        /* QR Modal Styles */
+        .qr-modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0);
+            backdrop-filter: blur(0px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+            opacity: 0;
+            transition: opacity 0.3s ease, backdrop-filter 0.3s ease;
+        }
+
+        .qr-modal-overlay.active {
+            opacity: 1;
+            backdrop-filter: blur(8px);
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .qr-modal-content {
+            background: transparent;
+            padding: 2rem;
+            border-radius: 16px;
+            text-align: center;
+            position: relative;
+            transform: scale(0.9);
+            transition: transform 0.3s ease;
+        }
+
+        .qr-modal-overlay.active .qr-modal-content {
+            transform: scale(1);
+        }
+
+        .qr-close {
+            position: absolute;
+            top: 0.5rem;
+            right: 0.5rem;
+            background: none;
+            border: none;
+            font-size: 2rem;
+            cursor: pointer;
+            color: #666;
+            transition: color 0.2s;
+        }
+
+        .qr-close:hover {
+            color: #000;
+        }
+
+        .qr-image {
+            width: 250px;
+            height: 250px;
+            display: block;
+            margin: 0 auto 1rem;
+        }
+
+        .qr-modal-content p {
+            margin: 0;
+            color: #666;
+            font-size: 0.95rem;
+        }
+
+        /* Stock-Information */
+        .filter_score { left: 0; top: 0; width: 12px; height: 12px; 
+                        position: absolute;
+                        z-index: 10; 
+                    }
+        .chart_region { left: 0; top: 0; width: 60px; height: 60px; border-radius: 0px; background-color: #000000; }
+        .chart_region svg.price-chart { width: 100%; height: 100%; display: block; }
+        /* rvol_region: rendered over chart_region (not part of it), transparent so the chart shows through */
+        .rvol_region { left: 0; top: 0; width: 60px; height: 60px; border-radius: 0px; background-color: transparent; }
+        .rvol_region svg.rvol-chart { width: 100%; height: 100%; display: block; }
+        .ticker_name { left: 64px; top: 0; width: 124px; height: 28px; 
+                      position: absolute;
+                      color: #ff9d00;
+                      font-family: 'Source Sans 3', sans-serif;
+                      font-size: 14px;
+                      font-weight: 900;
+                      font-style: italic;
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      border-radius: 0px;
+                    }
+                    
+        .trust_score {
+        left: 192px;
+        top: 0;
+        width: 92px;
+        height: 28px;
+        border-radius: 0px;
+        }
+
+        .trust_score .grid {
+        display: flex;
+        gap: 0;
+        }
+
+        .trust_score .cell {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        font-family: 'IBM Plex Mono', monospace;
+        font-style: italic;
+        }
+
+        /* black style */
+        .trust_score .cell.black {
+        color: #ff9d00;
+        font-size: 10px;
+        font-style: italic;
+        font-weight: 900;
+        background: none;
+        }
+
+        /* grey style */
+        .trust_score .cell.grey {
+        color: #9F9F9F;
+        font-size: 9px;
+        font-style: italic;
+        font-weight: 900;
+        background: none;
+        }
+        /* trust_score_selector: sits right below the number that is open in the info header */
+        .trust_score .cell { position: relative; }
+        .trust_score_selector { position: absolute; left: 0; top: 0; display: none; pointer-events: none; }
+        .trust_score .cell.is-trust-selected .trust_score_selector { display: block; }
+        .trust_score_selector text { display: none; }
+        .persistence_score { left: 288px; top: 0; width: 28px; height: 28px; border-radius: 0px; }
+        .week_52_slope { left: 320px; top: 0; width: 28px; height: 28px; border-radius: 0px; }
+        .volume_assessment { left: 352px; top: 0; width: 28px; height: 28px; border-radius: 0px; }
+
+        /* Row 2 */
+        .ticker_arrow { left: 64px; top: 32px; width: 28px; height: 28px; border-radius: 0px; }
+        .ticker_price { left: 96px; top: 32px; width: 92px; height: 28px; 
+                      position: absolute;
+                      color: #ff9d00;
+                      font-family: 'Source Sans 3', sans-serif;
+                      font-size: 13px;
+                      font-style: italic;
+                      font-weight: 400;
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      border-radius: 0px;
+                    }
+        .week_52_stage { left: 192px; top: 32px; width: 92px; height: 28px; border-radius: 0px; }
+        .market_cap_score { left: 288px; top: 32px; width: 28px; height: 28px; border-radius: 0px; }
+        .momentum_confluence_score { left: 320px; top: 32px; width: 28px; height: 28px; border-radius: 0px; }
+        .drop-down_button { left: 352px; top: 32px; width: 28px; height: 28px; border-radius: 14px; }
+
+        /* Technical-Indicators */
+        .technical-label {
+                      position: absolute;
+                      color: #FFFFFF;
+                      font-family: 'Source Sans 3', sans-serif;
+                      font-size: 10px;
+                      font-weight: 200;
+                      font-style: italic;
+                      display: flex;
+                      align-items: center;  
+                      justify-content: center;
+                    }
+
+        .technical-label-number {
+                      position: absolute;
+                      color: #000000;
+                      font-family: 'IBM Plex Mono', monospace;
+                      font-size: 7px;
+                      font-weight: 400;
+                      font-style: italic;
+                      letter-spacing: -0.5px;
+                      display: flex;
+                      align-items: center;  
+                      justify-content: center;
+                    }
+
+        .candle_label { left: 0; top: 64px; width: 110px; height: 22px; border-radius: 0px; }
+        .macd_label { left: 114px; top: 64px; width: 50px; height: 22px; border-radius: 0px; }
+        .cci_label { left: 168px; top: 64px; width: 50px; height: 22px; border-radius: 0px; }
+        .atr_label { left: 222px; top: 64px; width: 50px; height: 22px; border-radius: 0px; }
+        .rsi_label { left: 276px; top: 64px; width: 50px; height: 22px; border-radius: 0px; }
+        .adx_label { left: 330px; top: 64px; width: 50px; height: 22px; border-radius: 0px; }
+
+        .cci_label_number { left: 173px; top: 70px; width: 10px; height: 10px; border-radius: 5px; }
+        .atr_label_number { left: 227px; top: 70px; width: 10px; height: 10px; border-radius: 5px; }
+        .rsi_label_number { left: 281px; top: 70px; width: 10px; height: 10px; border-radius: 5px; }
+        .adx_label_number { left: 335px; top: 70px; width: 10px; height: 10px; border-radius: 5px; }
+
+        .technical-value {
+                      position: absolute;
+                      color: #FFFFFF;
+                      font-family: 'Source Sans 3', sans-serif;
+                      font-size: 8px;
+                      font-weight: 600;
+                      font-style: italic;
+                      display: flex;
+                      align-items: center;  
+                      justify-content: center;
+                    }
+        .candle_value { left: 0; top: 86px; width: 110px; height: 22px; border-radius: 0px; 
+                    font-weight: 100;
+                    }
+        .macd_value { left: 114px; top: 86px; width: 50px; height: 22px; border-radius: 0px; }
+        .cci_value { left: 168px; top: 86px; width: 50px; height: 22px; border-radius: 0px; }
+        .atr_value { left: 222px; top: 86px; width: 50px; height: 22px; border-radius: 0px; }
+        .rsi_value { left: 276px; top: 86px; width: 50px; height: 22px; border-radius: 0px; }
+        .adx_value { left: 330px; top: 86px; width: 50px; height: 22px; border-radius: 0px; }
+
+        /* Fundamental-Data */
+        .fundamental-label {
+                      position: absolute;
+                      color: #FFFFFF;
+                      font-family: 'Source Sans 3', sans-serif;
+                      font-size: 10px;
+                      font-weight: 200;
+                      font-style: italic;
+                      display: flex;
+                      align-items: center;  
+                      justify-content: center;
+                    }
+
+        .fundamental-label-number {
+                      position: absolute;
+                      color: #000000;
+                      font-family: 'IBM Plex Mono', monospace;
+                      font-size: 7px;
+                      font-weight: 400;
+                      font-style: italic;
+                      letter-spacing: -0.5px;
+                      display: flex;
+                      align-items: center;  
+                      justify-content: center;
+                    }
+
+        .market_capital_label{ left: 0; top: 0; width: 110px; height: 22px; border-radius: 0px; }
+        .dps_label { left: 114px; top: 0; width: 50px; height: 22px; border-radius: 0px; }
+        .book_value_label { left: 168px; top: 0; width: 104px; height: 22px; border-radius: 0px; }
+        .eps_label { left: 276px; top: 0; width: 50px; height: 22px; border-radius: 0px; }
+        .roe_label{ left: 330px; top: 0; width: 50px; height: 22px; border-radius: 0px; }
+        .promoters_label { left: 384px; top: 0; width: 80px; height: 22px; border-radius: 0px; }
+        .pledge_label { left: 468px; top: 0; width: 80px; height: 22px; border-radius: 0px; }
+        .psrs_label { left: 552px; top: 0; width: 80px; height: 22px;  border-radius: 0px;}
+        .pe_ratio_label { left: 636px; top: 0; width: 80px; height: 22px; border-radius: 0px; }
+        .sector_pe_label { left: 720px; top: 0; width: 80px; height: 22px; border-radius: 0px; }
+        .enterprise_value_label { left: 804px; top: 0; width: 110px; height: 22px; border-radius: 0px; }
+        .week_52_high_label { left: 918px; top: 0; width: 104px; height: 22px; border-radius: 0px; }
+        .week_52_high_date_label { left: 1026px; top: 0; width: 104px; height: 22px; border-radius: 0px; }
+        .week_52_low_label { left: 1134px; top: 0; width: 104px; height: 22px; border-radius: 0px; }
+        .week_52_low_date_label { left: 1242px; top: 0; width: 104px; height: 22px; border-radius: 0px; }
+        .open_label { left: 1350px; top: 0; width: 50px; height: 22px; border-radius: 0px; }
+        .high_label { left: 1404px; top: 0; width: 50px; height: 22px; border-radius: 0px; }
+        .low_label { left: 1458px; top: 0; width: 50px; height: 22px; border-radius: 0px; }
+        .close_label { left: 1512px; top: 0; width: 50px; height: 22px; border-radius: 0px; }
+        .volume_label { left: 1566px; top: 0; width: 80px; height: 22px; border-radius: 0px; }
+
+        .roe_label_number { left: 335px; top: 5px; width: 10px; height: 10px; border-radius: 5px; }
+        .promoters_label_number { left: 389px; top: 5px; width: 10px; height: 10px; border-radius: 5px; }
+        .pledge_label_number { left: 473px; top: 5px; width: 10px; height: 10px; border-radius: 5px;}
+       
+        .fundamental-value {
+                      position: absolute;
+                      color: #FFFFFF;
+                      font-family: 'Source Sans 3', sans-serif;
+                      font-size: 10px;
+                      font-weight: 600;
+                      font-style: italic;
+                      display: flex;
+                      align-items: center;  
+                      justify-content: center;
+                    }
+ 
+        .market_capital_entry { left: 0; top: 0; width: 110px; height: 22px; border-radius: 0px; }
+        .dps_entry { left: 114px; top: 0; width: 50px; height: 22px; border-radius: 0px; }
+        .book_value_entry { left: 168px; top: 0; width: 104px; height: 22px; border-radius: 0px; }
+        .eps_entry { left: 276px; top: 0; width: 50px; height: 22px; border-radius: 0px; }
+        .roe_entry { left: 330px; top: 0; width: 50px; height: 22px; border-radius: 0px; }
+        .promoters_entry { left: 384px; top: 0; width: 80px; height: 22px; border-radius: 0px; }
+        .pledge_entry { left: 468px; top: 0; width: 80px; height: 22px; border-radius: 0px; }
+        .psrs_entry { left: 552px; top: 0; width: 80px; height: 22px; border-radius: 0px; }
+        .pe_ratio_entry { left: 636px; top: 0; width: 80px; height: 22px; border-radius: 0px; }
+        .sector_pe_entry { left: 720px; top: 0; width: 80px; height: 22px; border-radius: 0px; }
+        .enterprise_value_entry { left: 804px; top: 0; width: 110px; height: 22px; border-radius: 0px; }
+        .week_52_high_entry { left: 918px; top: 0; width: 104px; height: 22px; border-radius: 0px; }
+        .week_52_high_date_entry { left: 1026px; top: 0; width: 104px; height: 22px; border-radius: 0px; }
+        .week_52_low_entry { left: 1134px; top: 0; width: 104px; height: 22px; border-radius: 0px; }
+        .week_52_low_date_entry{ left: 1242px; top: 0; width: 104px; height: 22px; border-radius: 0px; }
+        .open_entry { left: 1350px; top: 0; width: 50px; height: 22px; border-radius: 0px; }
+        .high_entry { left: 1404px; top: 0; width: 50px; height: 22px; border-radius: 0px; }
+        .low_entry { left: 1458px; top: 0; width: 50px; height: 22px; border-radius: 0px; }
+        .close_entry { left: 1512px; top: 0; width: 50px; height: 22px; border-radius: 0px; }
+        .volume_entry { left: 1566px; top: 0; width: 80px; height: 22px; border-radius: 0px; }
+
+        /* ===== Info header: trust tabs + icon info + description ===== */
+        /* Hidden by default so the card looks exactly like the original design. */
+        .info-header {
+            position: relative; width: 380px; height: 0; overflow: hidden;
+            opacity: 0; pointer-events: none;
+            transition: height 180ms ease, opacity 180ms ease;
+            --info-c: #ffffff;
+        }
+        .card-viewport.info-open .info-header { height: 32px; opacity: 1; pointer-events: auto; }
+
+        /* Previous / next buttons (trust_score info only) */
+        .info-nav {
+            position: absolute; top: 0; width: 28px; height: 28px;
+            padding: 0; border: 0; border-radius: 14px; outline: none;
+            -webkit-appearance: none; appearance: none;
+            --info-nav-bg-opacity: 0.2;   /* 0 = transparent ... 1 = solid black */
+                background: rgba(0, 0, 0, var(--info-nav-bg-opacity));
+            display: flex; align-items: center; justify-content: center;
+            cursor: pointer; -webkit-tap-highlight-color: transparent;
+        }
+        .info-nav svg { width: 14px; height: 14px; display: block; }
+        .info-prev { left: 320px; }
+        .info-next { left: 352px; }
+
+        .info-circle {
+            position: absolute; left: 32px; top: 0; width: 28px; height: 28px;
+            border-radius: 14px; background: #000000;
+            display: flex; align-items: center; justify-content: center;
+        }
+        .info-circle svg { width: 14px; height: 14px; display: block; }
+
+        .info-desc {
+            position: absolute; left: 64px; top: 0; width: 252px; height: 28px;
+            background: #000000; color: var(--info-c);
+            display: flex; align-items: center;
+        }
+        .info-desc-view { flex: 1; min-width: 0; margin: 0 8px; overflow: hidden; text-align: center; white-space: nowrap; }
+        .info-desc-font { font-family: "Allan", serif; font-weight: 400; font-style: normal;}
+        .info-desc-text { display: inline-block; font-size: 12px; line-height: 12px; white-space: nowrap; }
+        /* Only when the text is wider than the box: pan across it, pause at both ends */
+        .info-desc-text.is-scrolling { animation: info-pan var(--dur, 6s) ease-in-out infinite; }
+        @keyframes info-pan {
+            0%, 20%  { transform: translateX(0); }
+            50%, 70% { transform: translateX(var(--pan, 0px)); }
+            100%     { transform: translateX(0); }
+        }
+
+        /* Previous / next only apply to the trust_score info */
+        .info-nav { transition: opacity 150ms ease, visibility 0s linear 150ms; }
+        .info-header:not([data-mode="trust"]) .info-nav { opacity: 0; visibility: hidden; }
+
+        /* Tappable elements. Selected = background at 40% opacity (no border/outline/shadow). */
+        [data-info] { cursor: pointer; outline: none; -webkit-tap-highlight-color: transparent; }
+        [data-info].is-info-selected { z-index: 0; }
+        [data-info].is-info-selected::before {
+            content: ""; position: absolute; inset: 0; z-index: -1;
+            background: var(--page-bg, #494949); opacity: 0.4;
+            border-radius: inherit; pointer-events: none;
+        }
+
+        /* SITE SHELL: owner may restyle */
+        /* Page title link (T-S3): "Stock Digest" links to the home page, no visual change.
+           Remove this rule and the <a> in the header to undo it. */
+        .main-title a { color: inherit; text-decoration: none; }
+
+        /* Navigation bar (nav_layout: 388 x 28) */
+        .nav-bar {
+            position: relative;
+            width: 100%;
+            max-width: 388px;
+            aspect-ratio: 388 / 28;
+            background: transparent;
+            margin-bottom: 12px;
+        }
+        .nav-info, .nav-tab { position: absolute; top: 0; height: 100%; }
+        .nav-info svg, .nav-tab svg { width: 100%; height: 100%; display: block; }
+
+        .nav-info { left: 1.0309%; width: 25.7732%; pointer-events: none; }
+        .nav-info-text {
+            fill: #ffffff;
+            font-family: 'Roboto Condensed', sans-serif;
+            font-size: 12px;
+            font-style: italic;
+            font-weight: 400;
+        }
+
+        .nav-full  { left: 61.8247%; width: 14.433%; }
+        .nav-daily { left: 76.2577%; width: 14.433%; }
+
+        .nav-tab { background: transparent; border-radius: 0px; -webkit-tap-highlight-color: transparent; outline: none; }
+        .nav-tab[aria-current="page"] { background: #494949; }
+
+        /* Home page */
+        .welcome {
+            width: 100%;
+            max-width: 420px;
+            font-family: 'Source Sans 3', sans-serif;
+            font-size: 20px;
+            line-height: 1.4;
+            color: #FFFFFF;
+            padding: 32px 16px;
+        }
+
+        /* Legal pages (Disclosures, Terms, Privacy) */
+        .legal-page {
+            width: 100%;
+            max-width: 420px;
+            padding: 16px;
+            font-family: 'Source Sans 3', sans-serif;
+            font-size: 14px;
+            line-height: 1.2;
+            color: #FFFFFF;
+        }
+        .legal-page h1, .legal-page h2 {
+            font-family: 'Source Sans 3', sans-serif;
+            font-weight: 600;
+            color: #FFFFFF;
+        }
+        .legal-page h1 { font-size: 18px; line-height: 1.2; margin-bottom: 12px; }
+        .legal-page h2 { font-size: 16px; line-height: 1.3; margin-top: 24px; margin-bottom: 8px; }
+        .legal-page p { margin-bottom: 12px; }
+        .legal-page ul { margin: 0 0 12px 20px; padding: 0; }
+        .legal-page li { margin-bottom: 6px; }
+        .legal-page a { color: #FF9D00; }
+        /* Data categories (replaces the table) */
+        .legal-page .data-list { margin-bottom: 12px; }
+        .legal-page .data-item { margin-bottom: 16px; }
+        .legal-page .data-item h3 {
+            font-family: 'Source Sans 3', sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1.3;
+            color: #FFFFFF;
+            margin-bottom: 4px;
+        }
+        .legal-page .data-item dt {
+            display: list-item;
+            list-style: disc outside;
+            margin-left: 18px;
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 10px;
+            line-height: 1.4;
+            color: #8D8D8D;
+            margin-top: 8px;
+        }
+        .legal-page .data-item dd {
+            margin: 0 0 0 18px;
+            font-size: 13px;
+            line-height: 1.5;
+            color: #FFFFFF;
+        }
+        
+        /* Methodology cards (388 wide; backgrounds stay transparent) */
+        .legal-page .method-card { width: 100%; max-width: 388px; margin: 0 0 24px; }
+
+        /* #272727 container: title + viewbox + description. Grows with the description. */
+        .legal-page .method-box { padding: 20px 30px 26px; }
+        .legal-page .method-title {
+            font-family: 'Source Sans 3', sans-serif;
+            font-size: 12px;
+            font-weight: 700;
+            line-height: 14px;
+            color: #FFFFFF;
+            margin-bottom: 11px;
+        }
+
+        /* #c16500 fixed viewbox for the indicator SVG */
+        .legal-page .method-view { width: 100%; height: 43px; overflow: hidden; margin-bottom: 16px; }
+        .legal-page .method-view svg { width: 100%; height: 100%; display: block; }
+
+        /* #bf0000 description: fixed width, height follows the text */
+        .legal-page .method-desc p { font-size: 10px; line-height: 1.5; margin: 0 0 8px; text-align: justify; text-align-last: left;}
+        .legal-page .method-desc p:last-child { margin-bottom: 0; }
+
+        /* #808080 padding around the code block, #494949 fixed code area */
+        .legal-page .method-code-wrap { margin: 0 20px; padding: 10px; }
+        .legal-page .method-code {
+            width: 100%;
+            height: 180px;
+            overflow: auto;
+            scrollbar-color: rgba(166, 166, 166, 0.3) transparent;
+            scrollbar-width: thin;
+        }
+        .legal-page .method-code pre {
+            margin: 0;
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 8px;
+            line-height: 1.4;
+            color: #FFFFFF;
+            white-space: pre;
+        } 
+
+        /* Legal footer notice (owner's block, verbatim) */
+        .footer-legal { display: flex; flex-direction: column; gap: 8px; font-family: 'IBM Plex Mono', monospace; }
+        .legal-notice { font-size: 9px; line-height: 1; color: #8f8f8f; text-align: justify; text-align-last: left}
+        .legal-links { display: flex; flex-wrap: wrap; gap: 6px; font-size: 10px; color: #8f8f8f; justify-content: center;}
+        .legal-links a { color: #9a9a9a; text-decoration: none; }
+        .legal-links a:hover { color: #bbbbbb; }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <div class="header-wrapper">
+        <header class="page-header">
+        <div class="title-container">
+            <div class="main-title">
+                <a href="/">Stock Digest</a>
+                <span class="beta-tag">BETA</span>
+            </div>
+            <div class="subtitle">by Pellacia</div>
+        </div>
+        <nav class="nav-bar" aria-label="Pellacia">
+            <div class="nav-info" id="nav_info" aria-live="polite">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 28"><text class="nav-info-text" text-anchor="middle" transform="translate(50 16.92)"><tspan x="0" y="0">Home</tspan></text></svg>
+            </div>
+
+            <a class="nav-tab nav-full" id="full_tab" href="/all-tickers/" data-label="All Tickers">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 28"><g><path d="M15.5 17.13h30v2.5h-30z" fill="#5e5e5e"/><path d="M15.5 14.63h30v2.5h-30z"/><path d="M15.5 12.13h30v2.5h-30z" fill="#5e5e5e"/><path d="M15.5 9.63h30v2.5h-30z"/><path d="M10.5 17.13H13v2.5h-2.5z" fill="#5e5e5e"/><path d="M10.5 14.63H13v2.5h-2.5z"/><path d="M10.5 12.13H13v2.5h-2.5z" fill="#5e5e5e"/><path d="M10.5 9.63H13v2.5h-2.5z"/><text style="fill:#fff;font-family:Allan-Regular,Allan;font-size:10.91px" transform="matrix(1.1 0 0 1 36.75 17.04)"><tspan x="0" y="0">All</tspan></text></g></svg>
+            </a>
+
+            <a class="nav-tab nav-daily" id="daily_tab" href="/daily-picks/" data-label="Daily Picks">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 28"><g><path d="M15.5 17.13h30v2.5h-30z" fill="#5e5e5e"/><path d="M15.5 14.63h30v2.5h-30z"/><path d="M15.5 12.13h30v2.5h-30z" fill="#5e5e5e"/><path d="M15.5 9.63h30v2.5h-30z"/><path d="M10.5 17.13H13v2.5h-2.5z" fill="#5e5e5e"/><path d="M10.5 14.63H13v2.5h-2.5z"/><path d="M10.5 12.13H13v2.5h-2.5z" fill="#5e5e5e"/><path d="M10.5 9.63H13v2.5h-2.5z"/><path d="M43.98 8.01c.16-.5.87-.5 1.03 0l.34 1.03c.07.22.28.37.52.37h1.09c.52 0 .74.67.32.98l-.88.64a.55.55 0 0 0-.2.61l.34 1.03c.16.5-.41.91-.83.6l-.88-.64a.54.54 0 0 0-.64 0l-.88.64c-.43.31-1-.1-.83-.6l.34-1.03c.07-.23 0-.47-.2-.61l-.88-.64c-.42-.31-.21-.98.32-.98h1.09c.24 0 .44-.15.52-.37l.34-1.03Z" fill="#ffae00"/><path d="M37.98 8.01c.16-.5.87-.5 1.03 0l.34 1.03c.07.22.28.37.52.37h1.09c.52 0 .74.67.32.98l-.88.64a.55.55 0 0 0-.2.61l.34 1.03c.16.5-.41.91-.83.6l-.88-.64a.54.54 0 0 0-.64 0l-.88.64c-.43.31-1-.1-.83-.6l.34-1.03c.07-.23 0-.47-.2-.61l-.88-.64c-.42-.31-.21-.98.32-.98h1.09c.24 0 .44-.15.52-.37l.34-1.03Z" fill="#ffae00"/></g></svg>
+            </a>
+        </nav>
+        <div class="header-divider"></div>
+        <div class="timestamp">Pellacia Stocks</div>
+    </header>
+    </div>
+    
+    <!-- Stock Cards Content -->
+    <div class="content-wrapper">
+<p class="welcome">Beyond the noise. Our comprehensive fundamental and technical datasets help swing traders, long-term investors, and serious analysts understand what&#39;s really driving stock performance.</p>
+    </div>
+    
+    <!-- Footer Section -->
+    <div class="footer-wrapper">
+        <footer class="page-footer">
+        <div class="footer-divider"></div>
+        <div class="footer-content">
+            <div class="footer-main">
+                <div class="footer-left">
+                    <div class="generated-by">Stock Digest by Pellacia</div>
+                    <a href="mailto:contact@pellacia.com" class="contact">contact@pellacia.com</a>
+                </div>
+                <div class="update-frequency">Updated daily</div>
+            </div>
+            <div class="footer-legal">
+              <p class="legal-notice">Pellacia is not a SEBI-registered research analyst or investment adviser. Content is general information only, not investment advice or a recommendation to buy, sell or hold any security. Investments in securities are subject to market risks. Do your own research and consult a SEBI-registered adviser.</p>
+              <nav class="legal-links" aria-label="Legal">
+                <a href="/disclosures/">Disclosures</a><span>·</span>
+                <a href="/terms/">Terms</a><span>·</span>
+                <a href="/privacy/">Privacy</a>
+              </nav>
+            </div>
+            <div class="footer-bottom">
+                <a href="upi://pay?pa=pellacia@rbl&pn=Pellacia&cu=INR" target="_blank" class="power-button" aria-label="Power this project">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        width="100"
+                        height="36.09"
+                        viewBox="0 0 100 36.09">
+                        <g>
+                            <path d="M39 0h22v22H39z" fill="#fff"/>
+                            <path d="m51.29 4.66 3.21 6.35-6.75 6.34z" fill="#27803b"/>
+                            <path d="m49.04 4.66 3.21 6.35-6.75 6.34z" fill="#e9661c"/>
+                            <path d="m82.3 17.85-4.96 6.98h3.07l-1.17 5.02 5.11-6.98h-3.07l1.03-5.02Z" fill="#FFDD00"/>
+                            <text fill="#fff"
+                                font-family="Cedarville-Cursive, &quot;Cedarville Cursive&quot;"
+                                font-size="7px"
+                                transform="translate(22.66 31.5)">
+                                <tspan x="0" y="0">Power this project</tspan>
+                            </text>
+                        </g>
+                    </svg>  
+                </a>
+            </div>
+        </div>
+    </footer>
+    </div>
+    
+        <script>
+    // Device detection and UPI link handling
+    document.addEventListener('DOMContentLoaded', function() {
+        const powerButton = document.querySelector('.power-button');
+        const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+        
+        if (!isMobile) {
+            powerButton.removeAttribute('href');
+            powerButton.style.cursor = 'pointer';
+            
+            powerButton.addEventListener('click', function(e) {
+                e.preventDefault();
+                showQRModal();
+            });
+        }
+    });
+
+    function showQRModal() {
+        // Create modal overlay
+        const modal = document.createElement('div');
+        modal.className = 'qr-modal-overlay';
+        modal.innerHTML = `
+            <div class="qr-modal-content">
+                <button class="qr-close" aria-label="Close">&times;</button>
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="200"
+                height="200"
+                viewBox="0 0 200 200">
+                    <g>
+                        <path d="M0 0h200v200H0z" style="fill:#ffffff"/>
+                        <path d="m129.79 143.13.03 2.85 2.82.03.02 2.83 5.66.01-.01 2.83-5.69-.01-.03-2.82h-8.43l-.03 2.82-2.88-.01.02-5.66 5.7-.02-.02-2.83zM118.44 55.21l-2.82.02-.02-5.7-2.82-.02-.03-2.81 8.52-.02.04 2.83h5.66v-2.82h2.82v2.82l-2.81.01-.02 2.85h-5.69l-.03-2.85-2.79.02zM70.21 77.91l.03 5.65 8.47-.01.04 2.84-8.49.05-.06 2.84h-5.7l.01-2.88 2.84-.03-.01-2.78-2.84-.03.01-2.81 2.81-.02.08-2.79zM84.38 77.92l.03 2.82h5.67l.03 5.62 2.81.04v2.87l-5.71.01-.02-5.7-5.63-.01.01-5.69zM138.3 77.91v-2.85l2.84-.03.01 2.88zM126.99 75.06l-.03 8.5 2.84.02v5.7l-2.83.02-.03 5.63h-2.82l-.04-5.63h-5.63l-.02 2.79-2.82.02-.02-5.66-2.8-.06-.03-2.81 5.64-.03.03-2.81h5.64l.06-5.7 2.85.02Zm-2.88 11.32v-2.79h-2.79v2.8h2.79ZM61.7 89.26l-2.84.01-.01-5.68-2.86-.05.05-2.78 5.64-.02zM112.77 83.57l-2.85.01-.04-2.82-2.77.01-.03 2.8h-2.81v-5.68l2.79-.02.02-2.84 2.86.02.03 2.81 2.84.06zM104.27 83.57l-.02 2.84-5.7-.02-.02-2.8-2.79-.01v-2.84h5.69l.03 2.81zM67.4 75.03c.03 1.05.03 1.99 0 2.91l-2.89-.02v-2.87zM95.74 83.58l-.02 2.82h-2.8l-.01-2.84zM56.05 77.93v-2.89h5.64l-.02 2.89z"/>
+                        <path d="M118.44 72.23v8.5l-2.82.02-.02-5.66-2.84-.03.01-2.83zM104.26 72.22l.01 2.85h-2.86l.01-2.84zM95.74 72.23l.02 2.78 2.84.05-.02 2.86-2.83.03-.01 2.79h-5.66l-.04-2.8-5.66-.02v-2.87l8.51-.03.01-2.79zM138.34 143.15l-.03 2.88-2.86-.02.04-2.88zM129.8 83.57l-.02-2.81 2.82-.06v-5.67h2.9l.01 2.84 2.79.04.02 2.82 2.82.02.01 2.8 2.79.01.04-2.81 2.83-.03v-2.77l-2.85-.04-.01-5.68-2.82-.02V69.4l2.85-.01.04 2.82 2.79-.01.02-2.81h2.84l-.01 2.82-2.81.02v5.65h2.81l.02-2.85 2.81.01v2.88l-2.81.01-.02 5.64-5.65.01-.01 5.68-2.86.02-.03-5.71h-2.79v-2.81h-2.81l-.03 2.81zM81.55 94.93l-2.8.02v14.14l-2.83.07-.05 5.62-5.66.03.01-2.84 2.8-.04.01-5.66 2.82-.03-.01-8.45-2.82-.03v-8.51l2.86-.01.03 2.84h2.77l.07-5.69 5.63-.01.01 2.88-2.8.04z"/>
+                        <path d="m138.3 75.06-2.8-.03-.05-5.63 2.87-.01zM98.55 86.39v2.89l-2.82-.01-.01-2.87zM132.6 75.03l-5.61.03-.03-2.83h-2.79l-.03 2.81-2.88.03-.02-2.84h-2.8v-2.84h14.2zM112.77 72.23l-2.85-.01v-2.83l2.87.01zM146.82 94.92l-2.79.02-.05 2.83-2.83.01-.05-2.85h-8.48l-.03-2.82-2.81-.02.01-2.82 2.8-.05.03-2.83 5.69-.01v2.89l-2.82.02.05 2.8h11.29zM109.9 143.13l.07 2.85 5.63.02.02 2.85h2.82l-.01 2.83-5.67-.02-.02-2.81h-5.63l-.03 2.83-2.82-.02-.01-8.51zM64.5 89.28l.02 2.81h-2.83l.01-2.83zM95.73 89.27l.01 2.81-2.84.01.02-2.82zM84.38 75.05l-2.82.01-.01-2.83 2.82-.02v-2.82h2.87v2.83l-2.84.01zM101.43 92.1l-2.87.01-.01-2.83 2.88-.05zM56.05 75.04l-2.84.08-.05 2.81-2.81.01v2.79l2.82.02.02 2.81-2.85.02.01 2.79 5.69.02v2.87l-2.83.03-.03 2.8-5.67.02V75.09l2.82-.09-.01-2.77-2.81-.02-.01-2.81 14.17-.01.02 2.83-5.62.01zM92.9 66.56v5.67l-2.85-.01.05-5.63z"/>
+                        <path d="m56.05 97.74-2.83.06-.06 2.84-5.66-.02.02-2.87 2.8-.03.02-2.8 2.8-.05.04-2.78 2.87.01zM58.863 94.917l.005-2.83 2.82.005-.005 2.83zM90.1 63.68v2.91l-2.89-.02V63.7z"/>
+                        <path d="M73.03 106.27h-2.81l-.02-2.8-2.85-.02v-2.81h-2.81l.01 2.78 2.87.02-.04 2.83-5.68.01-.02 2.81-2.79.05-.01 5.65 8.51.01v2.82l-5.68.01-.03 2.84h-2.81l-.03-2.84-5.64-.01-.01 2.8 2.83.02.03 2.88h-2.89l-.02-2.83h-2.79l-.02 8.47h-2.82V117.6h5.64v-2.8h-5.64v-2.84l2.8-.03.02-2.84 5.65-.02.05-2.8 2.81-.03.03-2.79 2.8-.02.01-2.79-5.68-.02.05-2.88 5.62-.01.01-2.81 2.87-.02-.01 2.82 2.81.01-.01-2.8h-2.85l.03-2.84h5.71v8.49l2.82.03zM78.75 63.68l.01 2.84 2.8.04-.01 5.67H78.7v-2.81h-2.8v2.77l2.86.01-.01 8.54-2.88.02-.03-5.67h-2.79l-.03 2.85-2.81-.03-.02-2.81-2.79-.07-.06-2.78-2.82-.04.02-2.82h8.47l.04-2.83 2.79-.03.01-2.85zM98.56 92.11v2.8l-2.84.02.02-2.85z"/>
+                        <path d="m81.56 66.56-.02-2.82-2.79-.06-.04-2.82h5.68v5.72zM124.13 94.91l.03 2.82h2.81l-.02-2.81 5.67.01.05 5.61 2.82.08.02 2.81 5.63.02-.01 2.81-5.62.02-.01 2.79 2.8.03.04 2.84 5.65.01-.02 2.83-2.81.06-.04 2.79-11.32-.01-.02-2.81 2.82-.03v-5.64l-2.79.01-.04 2.83-11.34-.01-.03-2.84-5.59.01-.01 2.84-2.84.02-.03 2.8-2.84.02.04 2.77 8.49.03v2.86h-14.19v-2.86l2.81-.03.03-5.63 2.79-.03.01-2.79-5.65-.02-.01-2.86 2.85-.02.01-2.79 2.82-.01.03 2.81 5.63-.01.01-2.81 2.86.02v2.8h5.68v2.82l5.66.02.01-2.84h2.8v-5.61l-2.8-.01v2.83h-2.81l-.03 2.8-2.88.02v-8.5h-8.45v5.68h-5.74l.02-5.71 2.81-.03.03-2.81 8.49-.01.03-2.82 2.84.01.03 2.8zM104.25 58.04v2.84l-2.85-.04.03-2.78zM95.73 58.05l.02 2.8 2.84.01-.04 2.82-2.79.07-.04 2.83-2.82-.02v-2.81l-2.8-.07-.02-2.8 2.82-.03.02-2.81zM90.08 60.88l-2.86-.01v-2.83h2.88zM149.65 97.76l-2.84.02.01-2.86 2.85-.02zM146.82 103.44l-.01-2.83 2.84-.03v-2.82l2.84-.02.01 5.72zM118.43 58.05l.01-2.84 2.85-.02v2.87zM84.38 100.62l.02 2.8 2.84.05.02 2.77 2.83.03.02 2.81 5.63.01v5.69l-8.53.03-.02-5.67-2.8-.04-.03-2.81-2.81-.03.02-5.67z"/>
+                        <path d="m118.43 58.05.02 2.8 8.52.01v-2.8h-2.85v-2.87h2.85v2.84l2.82.02v2.82l-2.82.01v2.79l2.82.03v2.87l-2.81.01-.02-2.86-2.8.02-.03 2.83h-2.86l-.04-2.85-2.78.02-.01 5.65-2.83.01v-8.52h-2.8l-.02 5.68-2.9.05.01-2.88-2.8.01.01 2.79h2.85l-.04 2.86-2.81.03-.03 2.8h-2.82l-.01-2.8-2.79-.01-.04 2.82h-5.68l-.02-2.83 2.82-.03.01-5.69 2.88.02.04 2.83h2.78v-5.65l2.81-.02.04-2.82 2.79-.03.01-2.78 2.89-.04.03 2.84zM104.27 103.45l-2.86.01.04-2.83 2.83-.03zM56.03 106.27h-5.68l-.02-2.83 5.72.01zM146.82 103.44l.02 5.64-5.69.07-.02-2.89 2.81-.01.02-2.79zM50.35 106.27l-.02 2.82-2.8.05-.03-2.89z"/>
+                        <path d="m107.07 55.22.03 2.82h-2.85l.02-2.82zM75.85 63.68l-2.8.07v2.81l-2.84.02v-5.72h2.82v-2.8h-2.82l.01-2.87 8.5-.01.04 2.84-2.85.07zM70.22 106.27v5.7h-8.54v-2.88l5.65-.02.05-2.8zM109.92 83.58l.04 2.79 2.84.01-.01 2.88-2.83.05-.03 2.79-2.83.02-.02 2.79-2.79.02-.02 2.83-2.81.04-.01 2.83-5.69.01-.02 2.79 2.85.02-.01 2.82h-5.66l-.02-2.8-2.83-.02-.03-2.8-5.66-.03-.03-2.83-2.79-.03-.01-2.83 2.82-.03.01-2.8 8.52-.01.02 2.83-5.67.02v2.79h11.28l.03-2.82 2.84-.02.03-2.79 2.83-.02-.01-5.67 2.81-.05.02-2.79zM109.9 52.34v2.89l-2.83-.01.01-2.87zM104.27 52.35v2.87l-2.8.03-.04 2.81-5.7-.01.01-2.84 2.8-.04.01-2.84zM84.39 109.1v2.86l-2.81.03-.03 5.63-2.79.02-.02 2.82-2.89.02.02-5.7 2.82-.01.06-5.68zM87.2 55.24l.02 2.8-5.66.03v-5.72l2.79-.02.08 2.83z"/>
+                        <path d="m98.55 52.33-2.8.07-.01 2.81-8.54.03v-5.7l-5.63-.03v-2.82h8.51l.03 2.82h8.48zM104.27 140.32l-.02 2.83-5.61.05-.06 2.78 2.86.04.01 2.82h-2.89l-.02-2.8-2.82-.02.01-5.73zM149.68 117.64l-.02-5.65-2.84-.02.02-2.89 5.65.01.01 8.52zM112.78 49.51v2.87l-2.88-.04.01-2.83zM118.43 111.97v5.64l-2.81.01-.01-2.8-2.85-.02.04-2.82zM101.43 117.62l-2.82.03-.03 2.82-2.81.02-.05 2.82-2.79.03-.02 5.65-5.69-.02-.03-2.83 2.85.01.01-2.82-2.8.02v2.8l-2.85.01-.02 2.81h-2.82v-5.65l2.82-.05-.02-2.78-2.8-.03-.01-2.84 5.69-.02.01 2.83h5.64l.03-2.83h2.8l.02-2.82 5.69.02zM126.95 117.62h-5.68l-.02-2.82 5.72-.01zM121.25 140.32l.05 2.85-2.83.03-.05 2.82-2.82-.02-.01-2.79-5.69-.08.01-2.82 5.69-.02v-2.77l2.83-.02.02 2.78zM149.68 117.64v2.78l2.82.04v8.51l-2.82.03-.02 2.78 2.83.03v5.69h-2.83v-2.81l-2.84-.04-.03-2.8-2.81-.03-.05-2.84h-2.78v8.52h8.52v2.79l2.83.03v11.36h-11.35v-2.83h8.53v-2.81l-5.7-.02-.02-5.68h-2.78l-.03 2.85-2.8-.03-.04-2.82h-2.79l-.02 2.8c-1.99-.02-3.85-.01-5.7 0l-.03-2.8h-2.78l-.03 2.82-2.82.03-.04-2.83-2.84-.03v-2.81l5.71-.02v-5.65h-2.8l-.04 2.85-2.88-.02v-11.36l2.83-.03.05-2.83 2.84-.02-.02-2.8h2.85v2.8h8.5l.01 5.73h8.48l.01-2.8-2.86-.05.02-8.52 2.87.02.02 2.79 2.82.05Zm-19.9 8.51v-2.81h-2.81v2.82h2.81Zm8.54 11.34v-8.51h-8.51v8.53l8.51-.01ZM107.09 49.53l-.01 2.82h-2.81l-.01-2.82-2.84-.02v-2.82h2.85v2.82z"/>
+                        <path d="m121.27 117.62.03 2.86-2.89-.01.02-2.86zM90.07 137.52l2.84-.04.01 2.84-2.81.02-.01 2.78 2.82.02v2.89l-5.66.01-.01 2.81h8.49l-.01 2.83h-8.49l-.06-2.83h-2.76l-.05 2.82h-2.81v-5.66l2.8-.03.01-2.77-2.81-.05v-2.81l-2.8-.03-.02 2.85-5.68.03-.02 2.77 2.84.04.02 2.81-2.85.05-.02 2.81-2.82-.03V137.5h5.67l.03 2.78 2.79.02v-5.6l-8.49-.04v-8.51h-2.79l-.06 2.83-5.68-.01v-2.82h5.67v-2.8l-2.82-.02-.03-2.89h2.88l.04 2.84 2.81.03v2.84h2.8l.02 2.78 2.83.03.02 2.82 8.47.01.02 2.87-2.81.03v5.61h8.45zM115.6 131.8l-5.62.05-.02 2.78 5.64.02v2.87l-8.49-.02-.03 2.83-2.81-.01-.02-2.81-2.84-.02.04-2.81 2.8-.06v-2.82l2.81-.04.02-2.81 5.66-.01.01-2.79H101.4l.03-2.86h11.36l.02 2.86h5.63v2.81l-2.82.04zM92.91 137.48l.01-2.82 2.82-.01v2.85zM109.91 49.51l-2.82.02-.02-2.84h2.88z"/>
+                        <path d="m104.25 131.8-2.78.04-.02 2.84-2.88-.01-.03-2.83-5.6-.01-.02 2.83-2.83.01-.03-2.87 2.84-.03.01-2.78 11.35-.05zM90.09 134.67l-.02 2.85-2.87-.03.02-2.86zM115.6 134.65v-2.85l2.84-.01-.01 2.89zM56.05 77.93l-.01 2.83-2.87-.01-.01-2.82zM67.4 66.58H47.51l-.01-19.89h19.89zm-2.9-2.9V49.53l-14.16-.01v14.17H64.5ZM67.4 151.67H47.51v-19.89H67.4zm-2.9-2.83v-14.16H50.34v14.17H64.5ZM152.5 66.57l-19.89.02V46.7h19.89v19.88Zm-2.83-2.89V49.52H135.5v14.16zM78.76 52.34l-2.9.04-.01-5.68 2.89-.01zM56.05 128.98l-2.89-.01-.01-2.81 2.88-.01zM152.5 89.27l-2.83.01v-2.9l2.82.01zM73.04 52.37h-2.81l-.03-2.86h2.84zM135.51 134.68l-2.91-.01.03-2.89 2.86.01z"/>
+                        <path d="m61.69 60.86-8.53.01.01-8.54h8.52zM61.69 146.02l-8.52.02-.03-8.54h8.55zM138.31 52.354l8.53-.016.017 8.53-8.53.016z"/>
+                        <path d="m131.81 163.73 3.21 6.35-6.75 6.34z" style="fill:#27803b"/>
+                        <path d="m129.56 163.73 3.21 6.35-6.75 6.34z" style="fill:#e9661c"/><text style="font-family:IBMPlexMono-SemiBold,&quot;IBM Plex Mono&quot;;font-size:8px;font-weight:600" transform="translate(64.98 172.07)"><tspan x="0" y="0">pellacia@rbl</tspan></text><text style="font-family:IBMPlexMono-Regular,&quot;IBM Plex Mono&quot;;font-size:6px" transform="translate(62.2 26.3)"><tspan x="0" y="0">Pellacia Stock Digest</tspan></text></g>
+            </svg>
+            </div>
+        `;
+        
+        document.body.appendChild(modal);
+        
+        // Close handlers
+        const closeBtn = modal.querySelector('.qr-close');
+        closeBtn.onclick = () => modal.remove();
+        modal.onclick = (e) => {
+            if (e.target === modal) modal.remove();
+        };
+        
+        // Animate in
+        requestAnimationFrame(() => modal.classList.add('active'));
+    }
+    </script>
+    <script>
+    // Per-card setup (expand/collapse). Runs for the cards in the page at load and, on the all-tickers
+    // page, for every chunk of cards appended later (pellaciaInitCards(root)).
+    function pellaciaInitCards(root) {
+        const scope = root || document;
+        scope.querySelectorAll('.card-viewport').forEach(function(viewport) {
+            const container = viewport.querySelector('.container');
+            const btn = viewport.querySelector('.drop-down_button');
+            const ticker = viewport.querySelector('.ticker_name')?.textContent?.trim() || 'default';
+            const key = `card_state_${ticker}`;
+            if (!container || !btn) return;
+            function setState(expanded) {
+                container.classList.toggle('expanded', expanded);
+                container.classList.toggle('collapsed', !expanded);
+                btn.setAttribute('aria-expanded', expanded ? 'true' : 'false');
+                try { localStorage.setItem(key, expanded ? 'expanded' : 'collapsed'); } catch (_) {}
+            }
+            try {
+                const saved = localStorage.getItem(key);
+                if (saved === 'expanded') setState(true); else setState(false);
+            } catch (_) { setState(false); }
+            function toggle() { setState(!container.classList.contains('expanded')); }
+            btn.addEventListener('click', toggle);
+            btn.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggle(); }
+            });
+        });
+        // Cards appended after load: give their tappable elements the same role/tabindex the info
+        // header script sets for the cards present at load (that script itself is unchanged).
+        if (root && root !== document) {
+            root.querySelectorAll('[data-info]').forEach(function (n) {
+                n.setAttribute('role', 'button');
+                n.tabIndex = 0;
+            });
+        }
+    }
+    document.addEventListener('DOMContentLoaded', function () { pellaciaInitCards(document); });
+    </script>
+    <script>
+        function scaleCards() {
+            const viewportWidth = window.innerWidth;
+            const designWidth = 380;
+
+            if (viewportWidth < designWidth) {
+                const scaleFactor = viewportWidth / designWidth;
+                document.querySelectorAll('.card-viewport').forEach(viewport => {
+                    viewport.style.transform = `scale(${scaleFactor})`;
+                    viewport.style.transformOrigin = 'top center';
+                });
+            } else {
+                document.querySelectorAll('.card-viewport').forEach(viewport => {
+                    viewport.style.transform = 'scale(1)';
+                });
+            }
+        }
+
+        window.addEventListener('resize', scaleCards);
+        scaleCards();
+    </script>
+    <script>
+    // Info header: per-card state, closes when the user taps outside that card.
+    (function () {
+        var states = new WeakMap();
+        var SVGNS = 'http://www.w3.org/2000/svg';
+
+        function track(name, props) {
+            try { if (window.gtag) window.gtag('event', name, props || {}); } catch (e) {}
+        }
+        function getState(vp) {
+            var s = states.get(vp);
+            if (!s) { s = { mode: null, tab: 1, key: null }; states.set(vp, s); }
+            return s;
+        }
+        function tickerOf(vp) {
+            var el = vp.querySelector('.ticker_name');
+            return el ? (el.textContent || '').trim() : '';
+        }
+        function reset(vp) { states.delete(vp); render(vp); }
+
+        // Every icon is shown inside the same 14x14 frame so it stays centred.
+        // (Legacy icons with another viewBox are re-centred into 14x14.)
+        function frame14(svg) {
+            var vb = (svg.getAttribute('viewBox') || '').trim().split(/[\s,]+/).map(Number);
+            svg.removeAttribute('width');
+            svg.removeAttribute('height');
+            if (vb.length === 4 && (vb[2] !== 14 || vb[3] !== 14)) {
+                var g = document.createElementNS(SVGNS, 'g');
+                g.setAttribute('transform', 'translate(' + ((14 - vb[2]) / 2 - vb[0]) + ' ' + ((14 - vb[3]) / 2 - vb[1]) + ')');
+                while (svg.firstChild) g.appendChild(svg.firstChild);
+                svg.appendChild(g);
+            }
+            svg.setAttribute('viewBox', '0 0 14 14');
+        }
+
+        // Number shown in the info circle: same font colour/size as the trust_score cell, inside a 14x14 frame.
+        function numberIcon(label, cs) {
+            var fs = parseFloat(cs.fontSize) || 10;
+            var svg = document.createElementNS(SVGNS, 'svg');
+            svg.setAttribute('viewBox', '0 0 14 14');
+            svg.setAttribute('fill', 'none');
+            var t = document.createElementNS(SVGNS, 'text');
+            t.setAttribute('x', '7');
+            t.setAttribute('y', String(7 + fs * 0.35));
+            t.setAttribute('text-anchor', 'middle');
+            t.setAttribute('font-family', cs.fontFamily);
+            t.setAttribute('font-style', cs.fontStyle);
+            t.setAttribute('font-weight', cs.fontWeight);
+            t.setAttribute('font-size', String(fs));
+            t.setAttribute('fill', cs.color);
+            t.textContent = label;
+            svg.appendChild(t);
+            return svg;
+        }
+
+        // The digit of a trust_score cell (ignores the trust_score_selector SVG that lives inside it).
+        function digitNode(cell) {
+            for (var i = 0; i < cell.childNodes.length; i++) {
+                var nd = cell.childNodes[i];
+                if (nd.nodeType === 3 && nd.nodeValue.trim()) return nd;
+            }
+            return null;
+        }
+        function digitOf(cell) {
+            var nd = digitNode(cell);
+            return nd ? nd.nodeValue.trim() : '';
+        }
+
+        // Place the trust_score_selector so its digit sits exactly on the cell's digit (text baselines aligned),
+        // which puts the dot right below the number. Measured from the font actually in use.
+        function placeSelector(cell) {
+            var sel = cell.querySelector('.trust_score_selector');
+            var node = digitNode(cell);
+            if (!sel || !node) return;
+            var vb = sel.viewBox.baseVal;
+            var txt = sel.querySelector('text');
+            var m = /translate\(\s*[-\d.]+[\s,]+([-\d.]+)\s*\)/.exec((txt && txt.getAttribute('transform')) || '');
+            var baseInFrame = m ? parseFloat(m[1]) : 0;                          // baseline y inside the SVG frame
+            var k = vb.height ? sel.height.baseVal.value / vb.height : 1;        // frame units -> px
+            var cs = getComputedStyle(cell);
+            var ctx = document.createElement('canvas').getContext('2d');
+            ctx.font = cs.fontStyle + ' ' + cs.fontWeight + ' ' + cs.fontSize + ' ' + cs.fontFamily;
+            var descent = ctx.measureText('0').fontBoundingBoxDescent;
+            if (!(descent > 0)) descent = 0.275 * parseFloat(cs.fontSize);
+            var range = document.createRange();
+            range.selectNodeContents(node);
+            var tr = range.getBoundingClientRect();
+            var cr = cell.getBoundingClientRect();
+            var scale = cell.offsetHeight ? cr.height / cell.offsetHeight : 1;   // card may be scaled on narrow screens
+            var baselineY = (tr.bottom - cr.top) / scale - descent;              // px from the cell top
+            sel.style.top = (baselineY - baseInFrame * k) + 'px';
+        }
+
+        // Single line; if wider than the box, pan left-to-right across it.
+        function fit(h) {
+            var view = h.querySelector('.info-desc-view');
+            var t = h.querySelector('.info-desc-text');
+            t.classList.remove('is-scrolling');
+            t.style.removeProperty('--pan');
+            var over = t.offsetWidth - view.clientWidth;
+            if (over > 0) {
+                t.style.setProperty('--pan', (-over) + 'px');
+                t.style.setProperty('--dur', Math.max(4, over / 20 + 3) + 's');
+                void t.offsetWidth;
+                t.classList.add('is-scrolling');
+            }
+        }
+
+        function render(vp) {
+            var s = getState(vp);
+            var h = vp.querySelector('.info-header');
+            if (!h) return;
+            vp.querySelectorAll('.is-info-selected').forEach(function (n) { n.classList.remove('is-info-selected'); });
+            vp.querySelectorAll('.cell.is-trust-selected').forEach(function (n) { n.classList.remove('is-trust-selected'); });
+
+            if (!s.mode) {
+                vp.classList.remove('info-open');
+                h.setAttribute('data-mode', '');
+                return;
+            }
+            vp.classList.add('info-open');
+            h.setAttribute('data-mode', s.mode);
+
+            var text = '', color = '#ffffff';
+            var circle = h.querySelector('.info-circle');
+
+            if (s.mode === 'trust') {
+                var numCell = vp.querySelector('.trust_score .cell:nth-child(' + s.tab + ')');
+                if (numCell) {
+                    var ncs = getComputedStyle(numCell);
+                    text = numCell.dataset.infoDesc || '';
+                    color = numCell.dataset.infoColor || ncs.color;
+                    circle.textContent = '';
+                    circle.appendChild(numberIcon(digitOf(numCell), ncs));
+                    numCell.classList.add('is-trust-selected');
+                    placeSelector(numCell);
+                }
+                var trust = vp.querySelector('.trust_score');
+                if (trust) trust.classList.add('is-info-selected');
+            } else {
+                var el = vp.querySelector('[data-info-key="' + s.key + '"]');
+                if (el) {
+                    text = el.dataset.infoDesc || '';
+                    color = el.dataset.infoColor || color;
+                    el.classList.add('is-info-selected');
+                    // Backend-supplied <template class="info-icon-tpl"> if present, else a copy of the tapped icon.
+                    var tpl = el.querySelector('template.info-icon-tpl');
+                    var svg = tpl ? tpl.content.firstElementChild : el.querySelector('svg');
+                    circle.textContent = '';
+                    if (svg) {
+                        var copy = svg.cloneNode(true);
+                        frame14(copy);
+                        circle.appendChild(copy);
+                    }
+                }
+            }
+            h.querySelector('.info-desc-text').textContent = text;
+            h.style.setProperty('--info-c', color);
+            fit(h);
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            document.querySelectorAll('[data-info]').forEach(function (n) {
+                n.setAttribute('role', 'button');
+                n.tabIndex = 0;
+            });
+        });
+        // Caveat / IBM Plex Mono may load after first render: re-measure open headers and selectors.
+        if (document.fonts && document.fonts.ready) {
+            document.fonts.ready.then(function () {
+                document.querySelectorAll('.card-viewport.info-open .info-header').forEach(fit);
+                document.querySelectorAll('.cell.is-trust-selected').forEach(placeSelector);
+            });
+        }
+
+        document.addEventListener('click', function (e) {
+            var vp = e.target.closest && e.target.closest('.card-viewport');
+
+            // Tap outside a card -> that card goes back to its default (original) state.
+            document.querySelectorAll('.card-viewport.info-open').forEach(function (v) {
+                if (v !== vp) reset(v);
+            });
+            if (!vp) return;
+
+            var s = getState(vp);
+            var nav = e.target.closest('.info-nav');
+            if (nav) {   // previous / next: loops 1..9
+                s.tab = nav.classList.contains('info-next') ? (s.tab % 9) + 1 : (s.tab === 1 ? 9 : s.tab - 1);
+                s.mode = 'trust';
+                render(vp);
+                track('info_tab', { ticker: tickerOf(vp), tab: s.tab });
+                return;
+            }
+            var trg = e.target.closest('[data-info]');
+            if (!trg || !vp.contains(trg)) return;   // dropdown etc. never touches info state
+
+            if (trg.dataset.info === 'trust') {
+                var cell = e.target.closest('.cell');
+                var n = cell ? parseInt(digitOf(cell), 10) : NaN;
+                var onNumber = n >= 1 && n <= 9;
+                if (!onNumber && s.mode === 'trust') {   // tap on trust_score outside the numbers closes it
+                    s.mode = null; render(vp); return;
+                }
+                if (onNumber) s.tab = n;                // tapped a number -> that tab; else last tab (default 1)
+                s.mode = 'trust';
+                track('info_tab', { ticker: tickerOf(vp), tab: s.tab });
+            } else {
+                if (s.mode === 'icon' && s.key === trg.dataset.infoKey) { s.mode = null; render(vp); return; }   // second tap on the same icon closes
+                s.mode = 'icon'; s.key = trg.dataset.infoKey;
+                track('info_icon', { ticker: tickerOf(vp), icon: s.key });
+            }
+            render(vp);
+        });
+
+        document.addEventListener('keydown', function (e) {
+            var t = e.target;
+            if (!t || !t.closest) return;
+            var trg = t.closest('[data-info]');
+            if (trg && (e.key === 'Enter' || e.key === ' ')) { e.preventDefault(); trg.click(); return; }
+            if (e.key === 'Escape') {
+                var vp = t.closest('.card-viewport');
+                if (vp) reset(vp);
+            }
+        });
+    })();
+    </script>
+</body>
+</html>
