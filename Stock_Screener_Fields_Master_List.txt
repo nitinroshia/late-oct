@@ -1,0 +1,303 @@
+
+1. **ETF Metrics**
+
+- Name
+- Ticker
+- Sub-Sector
+- Market Capital
+- Expense Ratio
+- Tracking Error
+
+2. **Cash Flow & Equity Metrics**
+
+- Total Equity
+- Common Shares Outstanding
+- Change in Working Capital
+- Operating Cash Flow
+- Capital Expenditure
+- Investing Cash Flow
+- Total Cash Dividend Paid
+- Financing Cash Flow
+- Net Change in Cash
+- Non Current Assets
+- Non Current Liabilties
+- Free Cash Flow
+- Deferred Tax Assets (Net)
+- Book Value
+- Other Current Assets
+- Other Assets
+- Other Current Liabilities
+- Other Liabilities
+
+3. **Balance Sheet Metrics**
+
+- Cash and Equivalent
+- Total Receivables
+- Total Inventory
+- Total Current Assets
+- Loans & Advances
+- Net Property,Plant & Equipment
+- Goodwill & Intangibles
+- Long Term Investments
+- Total Assets
+- Accounts Payable
+- Total Deposits – Banks
+- Total Current Liabilities
+- Long Term Debt
+- Total Debt
+- Deferred Tax Liabilities (Net)
+- Minority Interest
+- Total Liabilities
+- Share Capital
+- Additional Paid–in Capital
+- Reserves & Surplus
+
+4. **Income Statement & Earnings Metrics**
+
+- Total Revenue
+- EBITDA
+- Depreciation & Amortization
+- PBIT
+- Interest & Other Items
+- PBT
+- Taxes & Other Items
+- Net Income
+- Earnings Per Share
+- Dividend Per Share
+- Payout Ratio
+- Raw Materials
+- Power & Fuel Cost
+- Employee Cost
+- Selling & Administrative Expenses
+- Operating & Other expenses
+- Total revenue (Q)
+- Net Income (Q)
+- EBITDA (Q)
+- EPS (Q)
+- Operating and Other Expenses (Q)
+- PBIT (Q)
+- PBT (Q)
+
+5. **Technical Indicators**
+
+- Stochastic %K
+- Stochastic %D
+- 1W Change in On Balance Volume
+- 1W Change in AD Line
+- Super Trend
+- 10D EMA
+- 10D SMA
+- 50D EMA
+- 50D SMA
+- 100D EMA
+- 200D EMA
+- 100D SMA
+- 200D SMA
+- 1Y Max Loss
+
+6. **Price, Momentum & Risk Metrics**
+
+- VWAP
+- % Price above 1M SMA
+- % Price above 1Y SMA
+- % Price above 1M EMA
+- Beta
+- Sharpe Ratio
+- Alpha
+- Relative Volume
+- Volatility
+- Volatility vs Nifty
+- RSI – 14D
+- RSI Exponential – 14D
+- ADX Rating – Trend Strength
+- MACD Line 1 – Trend Indicator
+- MACD Line 2 – Signal Line Comp
+- % From Upper Bollinger Band
+- % From Lower Bollinger Band
+- % From Parabolic SAR
+- William %R
+
+7. **Options & Open Interest Metrics**
+
+- 1D Change in Call OI
+- 1D Change in Put OI
+- 1W Change in Call OI
+- 1W Change in Put OI
+- Highest Call OI Strike
+- Highest Put OI Strike
+- Highest 1D OI Change CE Strike
+- Highest 1D OI Change PE Strike
+- Highest 1W OI Change CE Strike
+- Highest 1W OI Change PE Strike
+- Put Call Ratio
+
+8. **Futures & Derivatives Metrics**
+
+- Fair Value
+- Future Close Price
+- Lot Size
+- Future Open Interest
+- 1D Change in Future OI
+- 1W Change in Future OI
+- Future Volume
+- 1D Change in Future Volume
+- 1W Change in Future Volume
+- Basis
+- Fair Value Spread
+- Cash & Carry Profit
+- Rollover Cost
+- Percentage Rollover
+- Calendar Spread
+- Call Open Interest
+- Put Open Interest
+
+9. **Valuation & Fundamental Scores**
+
+- PE Ratio
+- Value Momentum Rank
+- Price Momentum Rank
+- Earnings Quality Rank
+- Price to Intrinsic Value Rank
+- Fundamental Score
+
+10. **Insider Trading & Shareholder Activity**
+
+- Insider Trades - 1M Cumulative
+- Insider Trades - 3M Cumulative
+- Insider Trades - 6M Cumulative
+- Bulk Deals - 1M Cumulative
+- Bulk Deals - 3M Cumulative
+- Bulk Deals - 6M Cumulative
+- No. of Shareholders
+
+11. **Institutional & Ownership Metrics**
+
+- Mutual Fund Holding
+- MF Holding Change – 3M
+- MF Holding Change – 6M
+- Promoter Holding
+- Promoter Holding Change – 3M
+- Promoter Holding Change – 6M
+- Pledged Promoter Holdings
+- Domestic Institutional Holding
+- DII Holding Change – 3M
+- DII Holding Change – 6M
+- Foreign Institutional Holding
+- FII Holding Change – 3M
+- FII Holding Change – 6M
+- Insurance Firms Holding
+- Retail Investor Holding
+
+12. **Analyst Recommendations**
+
+- Percentage Buy Reco’s
+- Percentage Upside
+- No. of analysts with buy reco
+- Percentage Hold Reco's
+- Percentage Sell Reco's
+- Total no. of analysts
+
+13. **Sub-Sector Valuation Comparison**
+
+- PE Premium vs Sub-sector
+- PB Premium vs Sub-sector
+- PS Premium vs Sub-sector
+- Dividend Yield vs Sub-sector
+- Sector PE
+- Sector PB
+- Sector Dividend Yield
+- TTM PE Ratio
+
+14. **Valuation Ratios**
+
+- PE Ratio
+- Forward PE Ratio
+- PE Premium vs Sector
+- PB Ratio
+- PB Premium vs Sector
+- Dividend Yield
+- Dividend Yield vs Sector
+- PS Ratio
+- Forward PS Ratio
+- PS Premium vs Sector
+- EV/EBITDA Ratio
+- Enterprise Value
+- EV / EBIT Ratio
+- EV / Revenue Ratio
+- EV / Invested Capital
+- EV / Free Cash Flow
+- Price / Free Cash Flow
+- Price / CFO
+- Price / Sales
+
+15. **Growth Metrics**
+
+- 1Y Forward Revenue Growth
+- 1Y Historical Revenue Growth
+- 5Y Historical Revenue Growth
+- 1Y Forward EBITDA Growth
+- 1Y Historical EBITDA Growth
+- 5Y Historical EBITDA Growth
+- 1Y Forward EPS Growth
+- 1Y Historical EPS Growth
+- 5Y Historical EPS Growth
+- 1Y Fwd Op. Cash Flow Growth
+- 1Y Hist Op. Cash Flow Growth
+- 5Y Hist Op. Cash Flow Growth
+- 3Y Historical Dividend Growth
+
+16. **Financial Health & Efficiency Ratios**
+
+- Long Term Debt to Equity
+- Debt to Equity
+- Quick Ratio
+- Current Ratio
+- Cash Conversion Cycle
+- Interest Coverage Ratio
+- Inventory Turnover Ratio
+- Asset Turnover Ratio
+- Days of Inventory Outstanding
+- Days of Sales Outstanding
+- Days Payable Outstanding
+- Working Capital Turnover Ratio
+- Net Income / Liabilities
+- Earning Power
+
+17. **Profitability, Returns & Performance Metrics**
+
+- Return on Equity
+- 5Y Avg Return on Equity
+- Return on Assets
+- 5Y Avg Return on Assets
+- Net Profit Margin
+- 5Y Avg Net Profit Margin
+- Return on Investment
+- 5Y Avg Return on Investment
+- EBITDA Margin
+- 5Y Avg EBITDA Margin
+- Cost of Goods Sold
+- Cash Flow Margin
+- 5Y Avg Cash Flow Margin
+- ROCE
+
+18. **Price & Return Performance**
+
+- Close Price
+- 1D Return
+- 1W Return
+- 1M Return
+- 6M Return
+- 1Y Return
+- 1W Return vs Nifty
+- 1M Return vs Nifty
+- 6M Return vs Nifty
+- 1Y Return vs Nifty
+- % Away From 52W High
+- % Away From 52W Low
+- Daily Volume
+- 1D Change in Volume
+- 1W Change in Volume
+- 1M Average Volume
+- 3M Average Volume
+- Face value
+- 5Y CAGR
