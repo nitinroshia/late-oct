@@ -1,0 +1,558 @@
+TOTAL FIELD ENTRIES: 556
+
+1. {"path": ".none[0]", "label": "mrktCapf", "display": "Market Cap", "field": null, "name": null, "type": "prebuilt", "premium": false}
+2. {"path": ".none[1]", "label": "sector", "display": "Sector", "field": null, "name": null, "type": "prebuilt", "premium": false}
+3. {"path": ".none[1].ui[0].elem[0]", "label": "CD", "display": null, "field": null, "name": "Consumer Discretionary", "type": null, "premium": null}
+4. {"path": ".none[1].ui[0].elem[0].subindustries[0]", "label": "AUP", "display": null, "field": null, "name": "Auto Parts", "type": null, "premium": null}
+5. {"path": ".none[1].ui[0].elem[0].subindustries[1]", "label": "T_R", "display": null, "field": null, "name": "Tires & Rubber", "type": null, "premium": null}
+6. {"path": ".none[1].ui[0].elem[0].subindustries[2]", "label": "FOW", "display": null, "field": null, "name": "Four Wheelers", "type": null, "premium": null}
+7. {"path": ".none[1].ui[0].elem[0].subindustries[3]", "label": "THW", "display": null, "field": null, "name": "Three Wheelers", "type": null, "premium": null}
+8. {"path": ".none[1].ui[0].elem[0].subindustries[4]", "label": "TWW", "display": null, "field": null, "name": "Two Wheelers", "type": null, "premium": null}
+9. {"path": ".none[1].ui[0].elem[0].subindustries[5]", "label": "CYC", "display": null, "field": null, "name": "Cycles", "type": null, "premium": null}
+10. {"path": ".none[1].ui[0].elem[0].subindustries[6]", "label": "EDS", "display": null, "field": null, "name": "Education Services", "type": null, "premium": null}
+11. {"path": ".none[1].ui[0].elem[0].subindustries[7]", "label": "WES", "display": null, "field": null, "name": "Wellness Services", "type": null, "premium": null}
+12. {"path": ".none[1].ui[0].elem[0].subindustries[8]", "label": "HRC", "display": null, "field": null, "name": "Hotels, Resorts & Cruise Lines", "type": null, "premium": null}
+13. {"path": ".none[1].ui[0].elem[0].subindustries[9]", "label": "R_C", "display": null, "field": null, "name": "Restaurants & Cafes", "type": null, "premium": null}
+14. {"path": ".none[1].ui[0].elem[0].subindustries[10]", "label": "T_G", "display": null, "field": null, "name": "Theme Parks & Gaming", "type": null, "premium": null}
+15. {"path": ".none[1].ui[0].elem[0].subindustries[11]", "label": "T_T", "display": null, "field": null, "name": "Tour & Travel Services", "type": null, "premium": null}
+16. {"path": ".none[1].ui[0].elem[0].subindustries[12]", "label": "HEA", "display": null, "field": null, "name": "Home Electronics & Appliances", "type": null, "premium": null}
+17. {"path": ".none[1].ui[0].elem[0].subindustries[13]", "label": "HFU", "display": null, "field": null, "name": "Home Furnishing", "type": null, "premium": null}
+18. {"path": ".none[1].ui[0].elem[0].subindustries[14]", "label": "HOU", "display": null, "field": null, "name": "Housewares", "type": null, "premium": null}
+19. {"path": ".none[1].ui[0].elem[0].subindustries[15]", "label": "R_A", "display": null, "field": null, "name": "Retail - Apparel", "type": null, "premium": null}
+20. {"path": ".none[1].ui[0].elem[0].subindustries[16]", "label": "R_D", "display": null, "field": null, "name": "Retail - Department Stores", "type": null, "premium": null}
+21. {"path": ".none[1].ui[0].elem[0].subindustries[17]", "label": "R_O", "display": null, "field": null, "name": "Retail - Online", "type": null, "premium": null}
+22. {"path": ".none[1].ui[0].elem[0].subindustries[18]", "label": "R_S", "display": null, "field": null, "name": "Retail - Speciality", "type": null, "premium": null}
+23. {"path": ".none[1].ui[0].elem[0].subindustries[19]", "label": "A_A", "display": null, "field": null, "name": "Apparel & Accessories", "type": null, "premium": null}
+24. {"path": ".none[1].ui[0].elem[0].subindustries[20]", "label": "FOO", "display": null, "field": null, "name": "Footwear", "type": null, "premium": null}
+25. {"path": ".none[1].ui[0].elem[0].subindustries[21]", "label": "PJW", "display": null, "field": null, "name": "Precious Metals, Jewellery & Watches", "type": null, "premium": null}
+26. {"path": ".none[1].ui[0].elem[0].subindustries[22]", "label": "TEX", "display": null, "field": null, "name": "Textiles", "type": null, "premium": null}
+27. {"path": ".none[1].ui[0].elem[0].subindustries[23]", "label": "ANI", "display": null, "field": null, "name": "Animation", "type": null, "premium": null}
+28. {"path": ".none[1].ui[0].elem[1]", "label": "TS", "display": null, "field": null, "name": "Communication Services", "type": null, "premium": null}
+29. {"path": ".none[1].ui[0].elem[1].subindustries[0]", "label": "ADV", "display": null, "field": null, "name": "Advertising", "type": null, "premium": null}
+30. {"path": ".none[1].ui[0].elem[1].subindustries[1]", "label": "C_D", "display": null, "field": null, "name": "Cable & D2H", "type": null, "premium": null}
+31. {"path": ".none[1].ui[0].elem[1].subindustries[2]", "label": "M_T", "display": null, "field": null, "name": "Movies & TV Serials", "type": null, "premium": null}
+32. {"path": ".none[1].ui[0].elem[1].subindustries[3]", "label": "PBL", "display": null, "field": null, "name": "Publishing", "type": null, "premium": null}
+33. {"path": ".none[1].ui[0].elem[1].subindustries[4]", "label": "RAD", "display": null, "field": null, "name": "Radio", "type": null, "premium": null}
+34. {"path": ".none[1].ui[0].elem[1].subindustries[5]", "label": "THE", "display": null, "field": null, "name": "Theatres", "type": null, "premium": null}
+35. {"path": ".none[1].ui[0].elem[1].subindustries[6]", "label": "TVB", "display": null, "field": null, "name": "TV Channels & Broadcasters", "type": null, "premium": null}
+36. {"path": ".none[1].ui[0].elem[1].subindustries[7]", "label": "ONL", "display": null, "field": null, "name": "Online Services", "type": null, "premium": null}
+37. {"path": ".none[1].ui[0].elem[1].subindustries[8]", "label": "T_E", "display": null, "field": null, "name": "Telecom Equipments", "type": null, "premium": null}
+38. {"path": ".none[1].ui[0].elem[1].subindustries[9]", "label": "T_I", "display": null, "field": null, "name": "Telecom Infrastructure", "type": null, "premium": null}
+39. {"path": ".none[1].ui[0].elem[1].subindustries[10]", "label": "T_S", "display": null, "field": null, "name": "Telecom Services", "type": null, "premium": null}
+40. {"path": ".none[1].ui[0].elem[2]", "label": "CS", "display": null, "field": null, "name": "Consumer Staples", "type": null, "premium": null}
+41. {"path": ".none[1].ui[0].elem[2].subindustries[0]", "label": "ALC", "display": null, "field": null, "name": "Alcoholic Beverages", "type": null, "premium": null}
+42. {"path": ".none[1].ui[0].elem[2].subindustries[1]", "label": "SOF", "display": null, "field": null, "name": "Soft Drinks", "type": null, "premium": null}
+43. {"path": ".none[1].ui[0].elem[2].subindustries[2]", "label": "T_C", "display": null, "field": null, "name": "Tea & Coffee", "type": null, "premium": null}
+44. {"path": ".none[1].ui[0].elem[2].subindustries[3]", "label": "AGR", "display": null, "field": null, "name": "Agro Products", "type": null, "premium": null}
+45. {"path": ".none[1].ui[0].elem[2].subindustries[4]", "label": "F_F", "display": null, "field": null, "name": "FMCG - Foods", "type": null, "premium": null}
+46. {"path": ".none[1].ui[0].elem[2].subindustries[5]", "label": "P_M", "display": null, "field": null, "name": "Packaged Foods & Meats", "type": null, "premium": null}
+47. {"path": ".none[1].ui[0].elem[2].subindustries[6]", "label": "SEE", "display": null, "field": null, "name": "Seeds", "type": null, "premium": null}
+48. {"path": ".none[1].ui[0].elem[2].subindustries[7]", "label": "SUG", "display": null, "field": null, "name": "Sugar", "type": null, "premium": null}
+49. {"path": ".none[1].ui[0].elem[2].subindustries[8]", "label": "F_H", "display": null, "field": null, "name": "FMCG - Household Products", "type": null, "premium": null}
+50. {"path": ".none[1].ui[0].elem[2].subindustries[9]", "label": "F_P", "display": null, "field": null, "name": "FMCG - Personal Products", "type": null, "premium": null}
+51. {"path": ".none[1].ui[0].elem[2].subindustries[10]", "label": "F_T", "display": null, "field": null, "name": "FMCG - Tobacco", "type": null, "premium": null}
+52. {"path": ".none[1].ui[0].elem[2].subindustries[11]", "label": "F_D", "display": null, "field": null, "name": "Food Distributors", "type": null, "premium": null}
+53. {"path": ".none[1].ui[0].elem[3]", "label": "EN", "display": null, "field": null, "name": "Energy", "type": null, "premium": null}
+54. {"path": ".none[1].ui[0].elem[3].subindustries[0]", "label": "OES", "display": null, "field": null, "name": "Oil & Gas - Equipment & Services", "type": null, "premium": null}
+55. {"path": ".none[1].ui[0].elem[3].subindustries[1]", "label": "OEP", "display": null, "field": null, "name": "Oil & Gas - Exploration & Production", "type": null, "premium": null}
+56. {"path": ".none[1].ui[0].elem[3].subindustries[2]", "label": "ORM", "display": null, "field": null, "name": "Oil & Gas - Refining & Marketing", "type": null, "premium": null}
+57. {"path": ".none[1].ui[0].elem[3].subindustries[3]", "label": "OST", "display": null, "field": null, "name": "Oil & Gas - Storage & Transportation", "type": null, "premium": null}
+58. {"path": ".none[1].ui[0].elem[4]", "label": "FN", "display": null, "field": null, "name": "Financials", "type": null, "premium": null}
+59. {"path": ".none[1].ui[0].elem[4].subindustries[0]", "label": "PRI", "display": null, "field": null, "name": "Private Banks", "type": null, "premium": null}
+60. {"path": ".none[1].ui[0].elem[4].subindustries[1]", "label": "PUB", "display": null, "field": null, "name": "Public Banks", "type": null, "premium": null}
+61. {"path": ".none[1].ui[0].elem[4].subindustries[2]", "label": "ASS", "display": null, "field": null, "name": "Asset Management", "type": null, "premium": null}
+62. {"path": ".none[1].ui[0].elem[4].subindustries[3]", "label": "I_B", "display": null, "field": null, "name": "Investment Banking & Brokerage", "type": null, "premium": null}
+63. {"path": ".none[1].ui[0].elem[4].subindustries[4]", "label": "S_R", "display": null, "field": null, "name": "Stock Exchanges & Ratings", "type": null, "premium": null}
+64. {"path": ".none[1].ui[0].elem[4].subindustries[5]", "label": "CUS", "display": null, "field": null, "name": "Consumer Finance", "type": null, "premium": null}
+65. {"path": ".none[1].ui[0].elem[4].subindustries[6]", "label": "DIV", "display": null, "field": null, "name": "Diversified Financials", "type": null, "premium": null}
+66. {"path": ".none[1].ui[0].elem[4].subindustries[7]", "label": "SPE", "display": null, "field": null, "name": "Specialized Finance", "type": null, "premium": null}
+67. {"path": ".none[1].ui[0].elem[4].subindustries[8]", "label": "INS", "display": null, "field": null, "name": "Insurance", "type": null, "premium": null}
+68. {"path": ".none[1].ui[0].elem[4].subindustries[9]", "label": "H_F", "display": null, "field": null, "name": "Home Financing", "type": null, "premium": null}
+69. {"path": ".none[1].ui[0].elem[4].subindustries[10]", "label": "PMT", "display": null, "field": null, "name": "Payment Infrastructure", "type": null, "premium": null}
+70. {"path": ".none[1].ui[0].elem[4].subindustries[11]", "label": "AM_CS", "display": null, "field": null, "name": "Asset Management & Custody Banks", "type": null, "premium": null}
+71. {"path": ".none[1].ui[0].elem[5]", "label": "HC", "display": null, "field": null, "name": "Health Care", "type": null, "premium": null}
+72. {"path": ".none[1].ui[0].elem[5].subindustries[0]", "label": "BIO", "display": null, "field": null, "name": "Biotechnology", "type": null, "premium": null}
+73. {"path": ".none[1].ui[0].elem[5].subindustries[1]", "label": "H_E", "display": null, "field": null, "name": "Health Care Equipment & Supplies", "type": null, "premium": null}
+74. {"path": ".none[1].ui[0].elem[5].subindustries[2]", "label": "H_D", "display": null, "field": null, "name": "Hospitals & Diagnostic Centres", "type": null, "premium": null}
+75. {"path": ".none[1].ui[0].elem[5].subindustries[3]", "label": "LLS", "display": null, "field": null, "name": "Labs & Life Sciences Services", "type": null, "premium": null}
+76. {"path": ".none[1].ui[0].elem[5].subindustries[4]", "label": "PHA", "display": null, "field": null, "name": "Pharmaceuticals", "type": null, "premium": null}
+77. {"path": ".none[1].ui[0].elem[6]", "label": "IN", "display": null, "field": null, "name": "Industrials", "type": null, "premium": null}
+78. {"path": ".none[1].ui[0].elem[6].subindustries[0]", "label": "ARL", "display": null, "field": null, "name": "Airlines", "type": null, "premium": null}
+79. {"path": ".none[1].ui[0].elem[6].subindustries[1]", "label": "BPC", "display": null, "field": null, "name": "Building Products - Ceramics", "type": null, "premium": null}
+80. {"path": ".none[1].ui[0].elem[6].subindustries[2]", "label": "B_G", "display": null, "field": null, "name": "Building Products - Glass", "type": null, "premium": null}
+81. {"path": ".none[1].ui[0].elem[6].subindustries[3]", "label": "BPG", "display": null, "field": null, "name": "Building Products - Granite", "type": null, "premium": null}
+82. {"path": ".none[1].ui[0].elem[6].subindustries[4]", "label": "BPL", "display": null, "field": null, "name": "Building Products - Laminates", "type": null, "premium": null}
+83. {"path": ".none[1].ui[0].elem[6].subindustries[5]", "label": "B_P", "display": null, "field": null, "name": "Building Products - Pipes", "type": null, "premium": null}
+84. {"path": ".none[1].ui[0].elem[6].subindustries[6]", "label": "BSS", "display": null, "field": null, "name": "Business Support Services", "type": null, "premium": null}
+85. {"path": ".none[1].ui[0].elem[6].subindustries[7]", "label": "STA", "display": null, "field": null, "name": "Stationery", "type": null, "premium": null}
+86. {"path": ".none[1].ui[0].elem[6].subindustries[8]", "label": "C_E", "display": null, "field": null, "name": "Construction & Engineering", "type": null, "premium": null}
+87. {"path": ".none[1].ui[0].elem[6].subindustries[9]", "label": "BAT", "display": null, "field": null, "name": "Batteries", "type": null, "premium": null}
+88. {"path": ".none[1].ui[0].elem[6].subindustries[10]", "label": "CAB", "display": null, "field": null, "name": "Cables", "type": null, "premium": null}
+89. {"path": ".none[1].ui[0].elem[6].subindustries[11]", "label": "ECE", "display": null, "field": null, "name": "Electrical Components & Equipments", "type": null, "premium": null}
+90. {"path": ".none[1].ui[0].elem[6].subindustries[12]", "label": "HEE", "display": null, "field": null, "name": "Heavy Electrical Equipments", "type": null, "premium": null}
+91. {"path": ".none[1].ui[0].elem[6].subindustries[13]", "label": "CON", "display": null, "field": null, "name": "Conglomerates", "type": null, "premium": null}
+92. {"path": ".none[1].ui[0].elem[6].subindustries[14]", "label": "A_F", "display": null, "field": null, "name": "Agricultural & Farm Machinery", "type": null, "premium": null}
+93. {"path": ".none[1].ui[0].elem[6].subindustries[15]", "label": "H_M", "display": null, "field": null, "name": "Heavy Machinery", "type": null, "premium": null}
+94. {"path": ".none[1].ui[0].elem[6].subindustries[16]", "label": "I_M", "display": null, "field": null, "name": "Industrial Machinery", "type": null, "premium": null}
+95. {"path": ".none[1].ui[0].elem[6].subindustries[17]", "label": "RAI", "display": null, "field": null, "name": "Rail", "type": null, "premium": null}
+96. {"path": ".none[1].ui[0].elem[6].subindustries[18]", "label": "SHI", "display": null, "field": null, "name": "Shipbuilding", "type": null, "premium": null}
+97. {"path": ".none[1].ui[0].elem[6].subindustries[19]", "label": "TRA", "display": null, "field": null, "name": "Tractors", "type": null, "premium": null}
+98. {"path": ".none[1].ui[0].elem[6].subindustries[20]", "label": "T_B", "display": null, "field": null, "name": "Trucks & Buses", "type": null, "premium": null}
+99. {"path": ".none[1].ui[0].elem[6].subindustries[21]", "label": "EMP", "display": null, "field": null, "name": "Employment Services", "type": null, "premium": null}
+100. {"path": ".none[1].ui[0].elem[6].subindustries[22]", "label": "AIR", "display": null, "field": null, "name": "Airports", "type": null, "premium": null}
+101. {"path": ".none[1].ui[0].elem[6].subindustries[23]", "label": "DRE", "display": null, "field": null, "name": "Dredging", "type": null, "premium": null}
+102. {"path": ".none[1].ui[0].elem[6].subindustries[24]", "label": "LOG", "display": null, "field": null, "name": "Logistics", "type": null, "premium": null}
+103. {"path": ".none[1].ui[0].elem[6].subindustries[25]", "label": "POR", "display": null, "field": null, "name": "Ports", "type": null, "premium": null}
+104. {"path": ".none[1].ui[0].elem[6].subindustries[26]", "label": "ROA", "display": null, "field": null, "name": "Roads", "type": null, "premium": null}
+105. {"path": ".none[1].ui[0].elem[6].subindustries[27]", "label": "RES", "display": null, "field": null, "name": "Renewable Energy Equipment & Services", "type": null, "premium": null}
+106. {"path": ".none[1].ui[0].elem[6].subindustries[28]", "label": "BPP", "display": null, "field": null, "name": "Building Products - Prefab Structures", "type": null, "premium": null}
+107. {"path": ".none[1].ui[0].elem[6].subindustries[29]", "label": "C_T", "display": null, "field": null, "name": "Commodities Trading", "type": null, "premium": null}
+108. {"path": ".none[1].ui[0].elem[6].subindustries[30]", "label": "ADE", "display": null, "field": null, "name": "Aerospace & Defense Equipments", "type": null, "premium": null}
+109. {"path": ".none[1].ui[0].elem[6].subindustries[31]", "label": "B_G", "display": null, "field": null, "name": "Building Products - Glass", "type": null, "premium": null}
+110. {"path": ".none[1].ui[0].elem[6].subindustries[32]", "label": "DSS", "display": null, "field": null, "name": "Diversified Support Services", "type": null, "premium": null}
+111. {"path": ".none[1].ui[0].elem[6].subindustries[33]", "label": "CM_HE", "display": null, "field": null, "name": "Construction Machinery & Heavy Transportation Equipment", "type": null, "premium": null}
+112. {"path": ".none[1].ui[0].elem[6].subindustries[34]", "label": "DP_OS", "display": null, "field": null, "name": "Data Processing & Outsourced Services", "type": null, "premium": null}
+113. {"path": ".none[1].ui[0].elem[6].subindustries[35]", "label": "TC_D", "display": null, "field": null, "name": "Trading Companies & Distributors", "type": null, "premium": null}
+114. {"path": ".none[1].ui[0].elem[6].subindustries[36]", "label": "IM_SC", "display": null, "field": null, "name": "Industrial Machinery & Supplies & Components", "type": null, "premium": null}
+115. {"path": ".none[1].ui[0].elem[7]", "label": "IT", "display": null, "field": null, "name": "Information Technology", "type": null, "premium": null}
+116. {"path": ".none[1].ui[0].elem[7].subindustries[0]", "label": "C_N", "display": null, "field": null, "name": "Communication & Networking", "type": null, "premium": null}
+117. {"path": ".none[1].ui[0].elem[7].subindustries[1]", "label": "E_E", "display": null, "field": null, "name": "Electronic Equipments", "type": null, "premium": null}
+118. {"path": ".none[1].ui[0].elem[7].subindustries[2]", "label": "T_H", "display": null, "field": null, "name": "Technology Hardware", "type": null, "premium": null}
+119. {"path": ".none[1].ui[0].elem[7].subindustries[3]", "label": "ISC", "display": null, "field": null, "name": "IT Services & Consulting", "type": null, "premium": null}
+120. {"path": ".none[1].ui[0].elem[7].subindustries[4]", "label": "O_S", "display": null, "field": null, "name": "Outsourced services", "type": null, "premium": null}
+121. {"path": ".none[1].ui[0].elem[7].subindustries[5]", "label": "S_S", "display": null, "field": null, "name": "Software Services", "type": null, "premium": null}
+122. {"path": ".none[1].ui[0].elem[7].subindustries[6]", "label": "AS", "display": null, "field": null, "name": "Application Software", "type": null, "premium": null}
+123. {"path": ".none[1].ui[0].elem[8]", "label": "MT", "display": null, "field": null, "name": "Materials", "type": null, "premium": null}
+124. {"path": ".none[1].ui[0].elem[8].subindustries[0]", "label": "C_C", "display": null, "field": null, "name": "Commodity Chemicals", "type": null, "premium": null}
+125. {"path": ".none[1].ui[0].elem[8].subindustries[1]", "label": "D_C", "display": null, "field": null, "name": "Diversified Chemicals", "type": null, "premium": null}
+126. {"path": ".none[1].ui[0].elem[8].subindustries[2]", "label": "F_A", "display": null, "field": null, "name": "Fertilizers & Agro Chemicals", "type": null, "premium": null}
+127. {"path": ".none[1].ui[0].elem[8].subindustries[3]", "label": "PAI", "display": null, "field": null, "name": "Paints", "type": null, "premium": null}
+128. {"path": ".none[1].ui[0].elem[8].subindustries[4]", "label": "PLA", "display": null, "field": null, "name": "Plastic Products", "type": null, "premium": null}
+129. {"path": ".none[1].ui[0].elem[8].subindustries[5]", "label": "SPC", "display": null, "field": null, "name": "Specialty Chemicals", "type": null, "premium": null}
+130. {"path": ".none[1].ui[0].elem[8].subindustries[6]", "label": "CEM", "display": null, "field": null, "name": "Cement", "type": null, "premium": null}
+131. {"path": ".none[1].ui[0].elem[8].subindustries[7]", "label": "PAC", "display": null, "field": null, "name": "Packaging", "type": null, "premium": null}
+132. {"path": ".none[1].ui[0].elem[8].subindustries[8]", "label": "I_S", "display": null, "field": null, "name": "Iron & Steel", "type": null, "premium": null}
+133. {"path": ".none[1].ui[0].elem[8].subindustries[9]", "label": "MEA", "display": null, "field": null, "name": "Metals - Aluminium", "type": null, "premium": null}
+134. {"path": ".none[1].ui[0].elem[8].subindustries[10]", "label": "MEC", "display": null, "field": null, "name": "Metals - Coke", "type": null, "premium": null}
+135. {"path": ".none[1].ui[0].elem[8].subindustries[11]", "label": "MEO", "display": null, "field": null, "name": "Metals - Copper", "type": null, "premium": null}
+136. {"path": ".none[1].ui[0].elem[8].subindustries[12]", "label": "MEI", "display": null, "field": null, "name": "Metals - Diversified", "type": null, "premium": null}
+137. {"path": ".none[1].ui[0].elem[8].subindustries[13]", "label": "MEL", "display": null, "field": null, "name": "Metals - Lead", "type": null, "premium": null}
+138. {"path": ".none[1].ui[0].elem[8].subindustries[14]", "label": "MIC", "display": null, "field": null, "name": "Mining - Coal", "type": null, "premium": null}
+139. {"path": ".none[1].ui[0].elem[8].subindustries[15]", "label": "MIO", "display": null, "field": null, "name": "Mining - Copper", "type": null, "premium": null}
+140. {"path": ".none[1].ui[0].elem[8].subindustries[16]", "label": "MID", "display": null, "field": null, "name": "Mining - Diversified", "type": null, "premium": null}
+141. {"path": ".none[1].ui[0].elem[8].subindustries[17]", "label": "MII", "display": null, "field": null, "name": "Mining - Iron Ore", "type": null, "premium": null}
+142. {"path": ".none[1].ui[0].elem[8].subindustries[18]", "label": "MIM", "display": null, "field": null, "name": "Mining - Manganese", "type": null, "premium": null}
+143. {"path": ".none[1].ui[0].elem[8].subindustries[19]", "label": "P_P", "display": null, "field": null, "name": "Paper Products", "type": null, "premium": null}
+144. {"path": ".none[1].ui[0].elem[8].subindustries[20]", "label": "W_P", "display": null, "field": null, "name": "Wood Products", "type": null, "premium": null}
+145. {"path": ".none[1].ui[0].elem[8].subindustries[21]", "label": "CM", "display": null, "field": null, "name": "Construction Materials", "type": null, "premium": null}
+146. {"path": ".none[1].ui[0].elem[8].subindustries[22]", "label": "STL", "display": null, "field": null, "name": "Steel", "type": null, "premium": null}
+147. {"path": ".none[1].ui[0].elem[8].subindustries[23]", "label": "M_IR", "display": null, "field": null, "name": "Metals - Iron", "type": null, "premium": null}
+148. {"path": ".none[1].ui[0].elem[9]", "label": "RE", "display": null, "field": null, "name": "Real Estate", "type": null, "premium": null}
+149. {"path": ".none[1].ui[0].elem[9].subindustries[0]", "label": "REE", "display": null, "field": null, "name": "Real Estate", "type": null, "premium": null}
+150. {"path": ".none[1].ui[0].elem[9].subindustries[1]", "label": "RE_D", "display": null, "field": null, "name": "Real Estate Development", "type": null, "premium": null}
+151. {"path": ".none[1].ui[0].elem[10]", "label": "UT", "display": null, "field": null, "name": "Utilities", "type": null, "premium": null}
+152. {"path": ".none[1].ui[0].elem[10].subindustries[0]", "label": "P_I", "display": null, "field": null, "name": "Power Infrastructure", "type": null, "premium": null}
+153. {"path": ".none[1].ui[0].elem[10].subindustries[1]", "label": "PTD", "display": null, "field": null, "name": "Power Transmission & Distribution", "type": null, "premium": null}
+154. {"path": ".none[1].ui[0].elem[10].subindustries[2]", "label": "G_D", "display": null, "field": null, "name": "Gas Distribution", "type": null, "premium": null}
+155. {"path": ".none[1].ui[0].elem[10].subindustries[3]", "label": "PTC", "display": null, "field": null, "name": "Power Trading & Consultancy", "type": null, "premium": null}
+156. {"path": ".none[1].ui[0].elem[10].subindustries[4]", "label": "P_G", "display": null, "field": null, "name": "Power Generation", "type": null, "premium": null}
+157. {"path": ".none[1].ui[0].elem[10].subindustries[5]", "label": "R_E", "display": null, "field": null, "name": "Renewable Energy", "type": null, "premium": null}
+158. {"path": ".none[1].ui[0].elem[10].subindustries[6]", "label": "ETM", "display": null, "field": null, "name": "Water Management", "type": null, "premium": null}
+159. {"path": ".none[1].ui[0].elem[11]", "label": "ET", "display": null, "field": null, "name": "ETF", "type": null, "premium": null}
+160. {"path": ".none[1].ui[0].elem[11].subindustries[0]", "label": "E_G", "display": null, "field": null, "name": "Gold", "type": null, "premium": null}
+161. {"path": ".none[1].ui[0].elem[11].subindustries[1]", "label": "E_Q", "display": null, "field": null, "name": "Equity", "type": null, "premium": null}
+162. {"path": ".none[1].ui[0].elem[11].subindustries[2]", "label": "E_D", "display": null, "field": null, "name": "Debt", "type": null, "premium": null}
+163. {"path": ".none[1].ui[0].elem[11].subindustries[3]", "label": "E_S", "display": null, "field": null, "name": "Silver", "type": null, "premium": null}
+164. {"path": ".none[2]", "label": "subindustry", "display": "Sub-Sector", "field": null, "name": null, "type": "prebuilt", "premium": false}
+165. {"path": ".none[2].ui[0].elem[0]", "label": "AUP", "display": null, "field": null, "name": "Auto Parts", "type": null, "premium": null}
+166. {"path": ".none[2].ui[0].elem[1]", "label": "T_R", "display": null, "field": null, "name": "Tires & Rubber", "type": null, "premium": null}
+167. {"path": ".none[2].ui[0].elem[2]", "label": "FOW", "display": null, "field": null, "name": "Four Wheelers", "type": null, "premium": null}
+168. {"path": ".none[2].ui[0].elem[3]", "label": "THW", "display": null, "field": null, "name": "Three Wheelers", "type": null, "premium": null}
+169. {"path": ".none[2].ui[0].elem[4]", "label": "TWW", "display": null, "field": null, "name": "Two Wheelers", "type": null, "premium": null}
+170. {"path": ".none[2].ui[0].elem[5]", "label": "CYC", "display": null, "field": null, "name": "Cycles", "type": null, "premium": null}
+171. {"path": ".none[2].ui[0].elem[6]", "label": "EDS", "display": null, "field": null, "name": "Education Services", "type": null, "premium": null}
+172. {"path": ".none[2].ui[0].elem[7]", "label": "WES", "display": null, "field": null, "name": "Wellness Services", "type": null, "premium": null}
+173. {"path": ".none[2].ui[0].elem[8]", "label": "HRC", "display": null, "field": null, "name": "Hotels, Resorts & Cruise Lines", "type": null, "premium": null}
+174. {"path": ".none[2].ui[0].elem[9]", "label": "R_C", "display": null, "field": null, "name": "Restaurants & Cafes", "type": null, "premium": null}
+175. {"path": ".none[2].ui[0].elem[10]", "label": "T_G", "display": null, "field": null, "name": "Theme Parks & Gaming", "type": null, "premium": null}
+176. {"path": ".none[2].ui[0].elem[11]", "label": "T_T", "display": null, "field": null, "name": "Tour & Travel Services", "type": null, "premium": null}
+177. {"path": ".none[2].ui[0].elem[12]", "label": "HEA", "display": null, "field": null, "name": "Home Electronics & Appliances", "type": null, "premium": null}
+178. {"path": ".none[2].ui[0].elem[13]", "label": "HFU", "display": null, "field": null, "name": "Home Furnishing", "type": null, "premium": null}
+179. {"path": ".none[2].ui[0].elem[14]", "label": "HOU", "display": null, "field": null, "name": "Housewares", "type": null, "premium": null}
+180. {"path": ".none[2].ui[0].elem[15]", "label": "ADV", "display": null, "field": null, "name": "Advertising", "type": null, "premium": null}
+181. {"path": ".none[2].ui[0].elem[16]", "label": "C_D", "display": null, "field": null, "name": "Cable & D2H", "type": null, "premium": null}
+182. {"path": ".none[2].ui[0].elem[17]", "label": "M_T", "display": null, "field": null, "name": "Movies & TV Serials", "type": null, "premium": null}
+183. {"path": ".none[2].ui[0].elem[18]", "label": "PBL", "display": null, "field": null, "name": "Publishing", "type": null, "premium": null}
+184. {"path": ".none[2].ui[0].elem[19]", "label": "RAD", "display": null, "field": null, "name": "Radio", "type": null, "premium": null}
+185. {"path": ".none[2].ui[0].elem[20]", "label": "THE", "display": null, "field": null, "name": "Theatres", "type": null, "premium": null}
+186. {"path": ".none[2].ui[0].elem[21]", "label": "TVB", "display": null, "field": null, "name": "TV Channels & Broadcasters", "type": null, "premium": null}
+187. {"path": ".none[2].ui[0].elem[22]", "label": "R_A", "display": null, "field": null, "name": "Retail - Apparel", "type": null, "premium": null}
+188. {"path": ".none[2].ui[0].elem[23]", "label": "R_D", "display": null, "field": null, "name": "Retail - Department Stores", "type": null, "premium": null}
+189. {"path": ".none[2].ui[0].elem[24]", "label": "R_O", "display": null, "field": null, "name": "Retail - Online", "type": null, "premium": null}
+190. {"path": ".none[2].ui[0].elem[25]", "label": "R_S", "display": null, "field": null, "name": "Retail - Speciality", "type": null, "premium": null}
+191. {"path": ".none[2].ui[0].elem[26]", "label": "A_A", "display": null, "field": null, "name": "Apparel & Accessories", "type": null, "premium": null}
+192. {"path": ".none[2].ui[0].elem[27]", "label": "FOO", "display": null, "field": null, "name": "Footwear", "type": null, "premium": null}
+193. {"path": ".none[2].ui[0].elem[28]", "label": "PJW", "display": null, "field": null, "name": "Precious Metals, Jewellery & Watches", "type": null, "premium": null}
+194. {"path": ".none[2].ui[0].elem[29]", "label": "TEX", "display": null, "field": null, "name": "Textiles", "type": null, "premium": null}
+195. {"path": ".none[2].ui[0].elem[30]", "label": "ALC", "display": null, "field": null, "name": "Alcoholic Beverages", "type": null, "premium": null}
+196. {"path": ".none[2].ui[0].elem[31]", "label": "SOF", "display": null, "field": null, "name": "Soft Drinks", "type": null, "premium": null}
+197. {"path": ".none[2].ui[0].elem[32]", "label": "T_C", "display": null, "field": null, "name": "Tea & Coffee", "type": null, "premium": null}
+198. {"path": ".none[2].ui[0].elem[33]", "label": "AGR", "display": null, "field": null, "name": "Agro Products", "type": null, "premium": null}
+199. {"path": ".none[2].ui[0].elem[34]", "label": "F_F", "display": null, "field": null, "name": "FMCG - Foods", "type": null, "premium": null}
+200. {"path": ".none[2].ui[0].elem[35]", "label": "P_M", "display": null, "field": null, "name": "Packaged Foods & Meats", "type": null, "premium": null}
+201. {"path": ".none[2].ui[0].elem[36]", "label": "SEE", "display": null, "field": null, "name": "Seeds", "type": null, "premium": null}
+202. {"path": ".none[2].ui[0].elem[37]", "label": "SUG", "display": null, "field": null, "name": "Sugar", "type": null, "premium": null}
+203. {"path": ".none[2].ui[0].elem[38]", "label": "F_H", "display": null, "field": null, "name": "FMCG - Household Products", "type": null, "premium": null}
+204. {"path": ".none[2].ui[0].elem[39]", "label": "F_P", "display": null, "field": null, "name": "FMCG - Personal Products", "type": null, "premium": null}
+205. {"path": ".none[2].ui[0].elem[40]", "label": "F_T", "display": null, "field": null, "name": "FMCG - Tobacco", "type": null, "premium": null}
+206. {"path": ".none[2].ui[0].elem[41]", "label": "OES", "display": null, "field": null, "name": "Oil & Gas - Equipment & Services", "type": null, "premium": null}
+207. {"path": ".none[2].ui[0].elem[42]", "label": "OEP", "display": null, "field": null, "name": "Oil & Gas - Exploration & Production", "type": null, "premium": null}
+208. {"path": ".none[2].ui[0].elem[43]", "label": "ORM", "display": null, "field": null, "name": "Oil & Gas - Refining & Marketing", "type": null, "premium": null}
+209. {"path": ".none[2].ui[0].elem[44]", "label": "OST", "display": null, "field": null, "name": "Oil & Gas - Storage & Transportation", "type": null, "premium": null}
+210. {"path": ".none[2].ui[0].elem[45]", "label": "PRI", "display": null, "field": null, "name": "Private Banks", "type": null, "premium": null}
+211. {"path": ".none[2].ui[0].elem[46]", "label": "PUB", "display": null, "field": null, "name": "Public Banks", "type": null, "premium": null}
+212. {"path": ".none[2].ui[0].elem[47]", "label": "ASS", "display": null, "field": null, "name": "Asset Management", "type": null, "premium": null}
+213. {"path": ".none[2].ui[0].elem[48]", "label": "I_B", "display": null, "field": null, "name": "Investment Banking & Brokerage", "type": null, "premium": null}
+214. {"path": ".none[2].ui[0].elem[49]", "label": "S_R", "display": null, "field": null, "name": "Stock Exchanges & Ratings", "type": null, "premium": null}
+215. {"path": ".none[2].ui[0].elem[50]", "label": "CUS", "display": null, "field": null, "name": "Consumer Finance", "type": null, "premium": null}
+216. {"path": ".none[2].ui[0].elem[51]", "label": "DIV", "display": null, "field": null, "name": "Diversified Financials", "type": null, "premium": null}
+217. {"path": ".none[2].ui[0].elem[52]", "label": "SPE", "display": null, "field": null, "name": "Specialized Finance", "type": null, "premium": null}
+218. {"path": ".none[2].ui[0].elem[53]", "label": "INS", "display": null, "field": null, "name": "Insurance", "type": null, "premium": null}
+219. {"path": ".none[2].ui[0].elem[54]", "label": "H_F", "display": null, "field": null, "name": "Home Financing", "type": null, "premium": null}
+220. {"path": ".none[2].ui[0].elem[55]", "label": "BIO", "display": null, "field": null, "name": "Biotechnology", "type": null, "premium": null}
+221. {"path": ".none[2].ui[0].elem[56]", "label": "H_E", "display": null, "field": null, "name": "Health Care Equipment & Supplies", "type": null, "premium": null}
+222. {"path": ".none[2].ui[0].elem[57]", "label": "H_D", "display": null, "field": null, "name": "Hospitals & Diagnostic Centres", "type": null, "premium": null}
+223. {"path": ".none[2].ui[0].elem[58]", "label": "LLS", "display": null, "field": null, "name": "Labs & Life Sciences Services", "type": null, "premium": null}
+224. {"path": ".none[2].ui[0].elem[59]", "label": "PHA", "display": null, "field": null, "name": "Pharmaceuticals", "type": null, "premium": null}
+225. {"path": ".none[2].ui[0].elem[60]", "label": "ARL", "display": null, "field": null, "name": "Airlines", "type": null, "premium": null}
+226. {"path": ".none[2].ui[0].elem[61]", "label": "BPC", "display": null, "field": null, "name": "Building Products - Ceramics", "type": null, "premium": null}
+227. {"path": ".none[2].ui[0].elem[62]", "label": "B_G", "display": null, "field": null, "name": "Building Products - Glass", "type": null, "premium": null}
+228. {"path": ".none[2].ui[0].elem[63]", "label": "BPG", "display": null, "field": null, "name": "Building Products - Granite", "type": null, "premium": null}
+229. {"path": ".none[2].ui[0].elem[64]", "label": "BPL", "display": null, "field": null, "name": "Building Products - Laminates", "type": null, "premium": null}
+230. {"path": ".none[2].ui[0].elem[65]", "label": "B_P", "display": null, "field": null, "name": "Building Products - Pipes", "type": null, "premium": null}
+231. {"path": ".none[2].ui[0].elem[66]", "label": "BSS", "display": null, "field": null, "name": "Business Support Services", "type": null, "premium": null}
+232. {"path": ".none[2].ui[0].elem[67]", "label": "STA", "display": null, "field": null, "name": "Stationery", "type": null, "premium": null}
+233. {"path": ".none[2].ui[0].elem[68]", "label": "C_E", "display": null, "field": null, "name": "Construction & Engineering", "type": null, "premium": null}
+234. {"path": ".none[2].ui[0].elem[69]", "label": "BAT", "display": null, "field": null, "name": "Batteries", "type": null, "premium": null}
+235. {"path": ".none[2].ui[0].elem[70]", "label": "CAB", "display": null, "field": null, "name": "Cables", "type": null, "premium": null}
+236. {"path": ".none[2].ui[0].elem[71]", "label": "ECE", "display": null, "field": null, "name": "Electrical Components & Equipments", "type": null, "premium": null}
+237. {"path": ".none[2].ui[0].elem[72]", "label": "HEE", "display": null, "field": null, "name": "Heavy Electrical Equipments", "type": null, "premium": null}
+238. {"path": ".none[2].ui[0].elem[73]", "label": "CON", "display": null, "field": null, "name": "Conglomerates", "type": null, "premium": null}
+239. {"path": ".none[2].ui[0].elem[74]", "label": "A_F", "display": null, "field": null, "name": "Agricultural & Farm Machinery", "type": null, "premium": null}
+240. {"path": ".none[2].ui[0].elem[75]", "label": "H_M", "display": null, "field": null, "name": "Heavy Machinery", "type": null, "premium": null}
+241. {"path": ".none[2].ui[0].elem[76]", "label": "I_M", "display": null, "field": null, "name": "Industrial Machinery", "type": null, "premium": null}
+242. {"path": ".none[2].ui[0].elem[77]", "label": "RAI", "display": null, "field": null, "name": "Rail", "type": null, "premium": null}
+243. {"path": ".none[2].ui[0].elem[78]", "label": "SHI", "display": null, "field": null, "name": "Shipbuilding", "type": null, "premium": null}
+244. {"path": ".none[2].ui[0].elem[79]", "label": "TRA", "display": null, "field": null, "name": "Tractors", "type": null, "premium": null}
+245. {"path": ".none[2].ui[0].elem[80]", "label": "T_B", "display": null, "field": null, "name": "Trucks & Buses", "type": null, "premium": null}
+246. {"path": ".none[2].ui[0].elem[81]", "label": "EMP", "display": null, "field": null, "name": "Employment Services", "type": null, "premium": null}
+247. {"path": ".none[2].ui[0].elem[82]", "label": "AIR", "display": null, "field": null, "name": "Airports", "type": null, "premium": null}
+248. {"path": ".none[2].ui[0].elem[83]", "label": "DRE", "display": null, "field": null, "name": "Dredging", "type": null, "premium": null}
+249. {"path": ".none[2].ui[0].elem[84]", "label": "LOG", "display": null, "field": null, "name": "Logistics", "type": null, "premium": null}
+250. {"path": ".none[2].ui[0].elem[85]", "label": "POR", "display": null, "field": null, "name": "Ports", "type": null, "premium": null}
+251. {"path": ".none[2].ui[0].elem[86]", "label": "ROA", "display": null, "field": null, "name": "Roads", "type": null, "premium": null}
+252. {"path": ".none[2].ui[0].elem[87]", "label": "C_N", "display": null, "field": null, "name": "Communication & Networking", "type": null, "premium": null}
+253. {"path": ".none[2].ui[0].elem[88]", "label": "E_E", "display": null, "field": null, "name": "Electronic Equipments", "type": null, "premium": null}
+254. {"path": ".none[2].ui[0].elem[89]", "label": "T_H", "display": null, "field": null, "name": "Technology Hardware", "type": null, "premium": null}
+255. {"path": ".none[2].ui[0].elem[90]", "label": "ONL", "display": null, "field": null, "name": "Online Services", "type": null, "premium": null}
+256. {"path": ".none[2].ui[0].elem[91]", "label": "RES", "display": null, "field": null, "name": "Renewable Energy Equipment & Services", "type": null, "premium": null}
+257. {"path": ".none[2].ui[0].elem[92]", "label": "ISC", "display": null, "field": null, "name": "IT Services & Consulting", "type": null, "premium": null}
+258. {"path": ".none[2].ui[0].elem[93]", "label": "O_S", "display": null, "field": null, "name": "Outsourced services", "type": null, "premium": null}
+259. {"path": ".none[2].ui[0].elem[94]", "label": "S_S", "display": null, "field": null, "name": "Software Services", "type": null, "premium": null}
+260. {"path": ".none[2].ui[0].elem[95]", "label": "C_C", "display": null, "field": null, "name": "Commodity Chemicals", "type": null, "premium": null}
+261. {"path": ".none[2].ui[0].elem[96]", "label": "D_C", "display": null, "field": null, "name": "Diversified Chemicals", "type": null, "premium": null}
+262. {"path": ".none[2].ui[0].elem[97]", "label": "F_A", "display": null, "field": null, "name": "Fertilizers & Agro Chemicals", "type": null, "premium": null}
+263. {"path": ".none[2].ui[0].elem[98]", "label": "PAI", "display": null, "field": null, "name": "Paints", "type": null, "premium": null}
+264. {"path": ".none[2].ui[0].elem[99]", "label": "PLA", "display": null, "field": null, "name": "Plastic Products", "type": null, "premium": null}
+265. {"path": ".none[2].ui[0].elem[100]", "label": "SPC", "display": null, "field": null, "name": "Specialty Chemicals", "type": null, "premium": null}
+266. {"path": ".none[2].ui[0].elem[101]", "label": "CEM", "display": null, "field": null, "name": "Cement", "type": null, "premium": null}
+267. {"path": ".none[2].ui[0].elem[102]", "label": "PAC", "display": null, "field": null, "name": "Packaging", "type": null, "premium": null}
+268. {"path": ".none[2].ui[0].elem[103]", "label": "I_S", "display": null, "field": null, "name": "Iron & Steel", "type": null, "premium": null}
+269. {"path": ".none[2].ui[0].elem[104]", "label": "MEA", "display": null, "field": null, "name": "Metals - Aluminium", "type": null, "premium": null}
+270. {"path": ".none[2].ui[0].elem[105]", "label": "MEC", "display": null, "field": null, "name": "Metals - Coke", "type": null, "premium": null}
+271. {"path": ".none[2].ui[0].elem[106]", "label": "MEO", "display": null, "field": null, "name": "Metals - Copper", "type": null, "premium": null}
+272. {"path": ".none[2].ui[0].elem[107]", "label": "MEI", "display": null, "field": null, "name": "Metals - Diversified", "type": null, "premium": null}
+273. {"path": ".none[2].ui[0].elem[108]", "label": "MEL", "display": null, "field": null, "name": "Metals - Lead", "type": null, "premium": null}
+274. {"path": ".none[2].ui[0].elem[109]", "label": "MIC", "display": null, "field": null, "name": "Mining - Coal", "type": null, "premium": null}
+275. {"path": ".none[2].ui[0].elem[110]", "label": "MIO", "display": null, "field": null, "name": "Mining - Copper", "type": null, "premium": null}
+276. {"path": ".none[2].ui[0].elem[111]", "label": "MID", "display": null, "field": null, "name": "Mining - Diversified", "type": null, "premium": null}
+277. {"path": ".none[2].ui[0].elem[112]", "label": "MII", "display": null, "field": null, "name": "Mining - Iron Ore", "type": null, "premium": null}
+278. {"path": ".none[2].ui[0].elem[113]", "label": "MIM", "display": null, "field": null, "name": "Mining - Manganese", "type": null, "premium": null}
+279. {"path": ".none[2].ui[0].elem[114]", "label": "P_P", "display": null, "field": null, "name": "Paper Products", "type": null, "premium": null}
+280. {"path": ".none[2].ui[0].elem[115]", "label": "W_P", "display": null, "field": null, "name": "Wood Products", "type": null, "premium": null}
+281. {"path": ".none[2].ui[0].elem[116]", "label": "REE", "display": null, "field": null, "name": "Real Estate", "type": null, "premium": null}
+282. {"path": ".none[2].ui[0].elem[117]", "label": "T_E", "display": null, "field": null, "name": "Telecom Equipments", "type": null, "premium": null}
+283. {"path": ".none[2].ui[0].elem[118]", "label": "T_I", "display": null, "field": null, "name": "Telecom Infrastructure", "type": null, "premium": null}
+284. {"path": ".none[2].ui[0].elem[119]", "label": "T_S", "display": null, "field": null, "name": "Telecom Services", "type": null, "premium": null}
+285. {"path": ".none[2].ui[0].elem[120]", "label": "P_I", "display": null, "field": null, "name": "Power Infrastructure", "type": null, "premium": null}
+286. {"path": ".none[2].ui[0].elem[121]", "label": "PTD", "display": null, "field": null, "name": "Power Transmission & Distribution", "type": null, "premium": null}
+287. {"path": ".none[2].ui[0].elem[122]", "label": "G_D", "display": null, "field": null, "name": "Gas Distribution", "type": null, "premium": null}
+288. {"path": ".none[2].ui[0].elem[123]", "label": "PTC", "display": null, "field": null, "name": "Power Trading & Consultancy", "type": null, "premium": null}
+289. {"path": ".none[2].ui[0].elem[124]", "label": "P_G", "display": null, "field": null, "name": "Power Generation", "type": null, "premium": null}
+290. {"path": ".none[2].ui[0].elem[125]", "label": "R_E", "display": null, "field": null, "name": "Renewable Energy", "type": null, "premium": null}
+291. {"path": ".none[2].ui[0].elem[126]", "label": "ETM", "display": null, "field": null, "name": "Water Management", "type": null, "premium": null}
+292. {"path": ".none[2].ui[0].elem[127]", "label": "ANI", "display": null, "field": null, "name": "Animation", "type": null, "premium": null}
+293. {"path": ".none[2].ui[0].elem[128]", "label": "BPP", "display": null, "field": null, "name": "Building Products - Prefab Structures", "type": null, "premium": null}
+294. {"path": ".none[2].ui[0].elem[129]", "label": "C_T", "display": null, "field": null, "name": "Commodities Trading", "type": null, "premium": null}
+295. {"path": ".none[2].ui[0].elem[130]", "label": "E_G", "display": null, "field": null, "name": "Gold", "type": null, "premium": null}
+296. {"path": ".none[2].ui[0].elem[131]", "label": "E_Q", "display": null, "field": null, "name": "Equity", "type": null, "premium": null}
+297. {"path": ".none[2].ui[0].elem[132]", "label": "E_D", "display": null, "field": null, "name": "Debt", "type": null, "premium": null}
+298. {"path": ".none[2].ui[0].elem[133]", "label": "E_S", "display": null, "field": null, "name": "Silver", "type": null, "premium": null}
+299. {"path": ".none[2].ui[0].elem[134]", "label": "ADE", "display": null, "field": null, "name": "Aerospace & Defense Equipments", "type": null, "premium": null}
+300. {"path": ".none[2].ui[0].elem[135]", "label": "PMT", "display": null, "field": null, "name": "Payment Infrastructure", "type": null, "premium": null}
+301. {"path": ".none[2].ui[0].elem[136]", "label": "F_D", "display": null, "field": null, "name": "Food Distributors", "type": null, "premium": null}
+302. {"path": ".none[2].ui[0].elem[137]", "label": "AM_CS", "display": null, "field": null, "name": "Asset Management & Custody Banks", "type": null, "premium": null}
+303. {"path": ".none[2].ui[0].elem[138]", "label": "DSS", "display": null, "field": null, "name": "Diversified Support Services", "type": null, "premium": null}
+304. {"path": ".none[2].ui[0].elem[139]", "label": "CM_HE", "display": null, "field": null, "name": "Construction Machinery & Heavy Transportation Equipment", "type": null, "premium": null}
+305. {"path": ".none[2].ui[0].elem[140]", "label": "DP_OS", "display": null, "field": null, "name": "Data Processing & Outsourced Services", "type": null, "premium": null}
+306. {"path": ".none[2].ui[0].elem[141]", "label": "TC_D", "display": null, "field": null, "name": "Trading Companies & Distributors", "type": null, "premium": null}
+307. {"path": ".none[2].ui[0].elem[142]", "label": "IM_SC", "display": null, "field": null, "name": "Industrial Machinery & Supplies & Components", "type": null, "premium": null}
+308. {"path": ".none[2].ui[0].elem[143]", "label": "AS", "display": null, "field": null, "name": "Application Software", "type": null, "premium": null}
+309. {"path": ".none[2].ui[0].elem[144]", "label": "CM", "display": null, "field": null, "name": "Construction Materials", "type": null, "premium": null}
+310. {"path": ".none[2].ui[0].elem[145]", "label": "STL", "display": null, "field": null, "name": "Steel", "type": null, "premium": null}
+311. {"path": ".none[2].ui[0].elem[146]", "label": "M_IR", "display": null, "field": null, "name": "Metals - Iron", "type": null, "premium": null}
+312. {"path": ".none[2].ui[0].elem[147]", "label": "RE_D", "display": null, "field": null, "name": "Real Estate Development", "type": null, "premium": null}
+313. {"path": ".Profitability[0]", "label": "opmg", "display": "5Y Avg EBITDA Margin", "field": null, "name": null, "type": "prebuilt", "premium": false}
+314. {"path": ".Profitability[1]", "label": "roe", "display": "Return on Equity", "field": null, "name": null, "type": "prebuilt", "premium": false}
+315. {"path": ".Profitability[2]", "label": "aopm", "display": "EBITDA Margin", "field": null, "name": null, "type": "prebuilt", "premium": false}
+316. {"path": ".Profitability[3]", "label": "5YpftMrg", "display": "5Y Avg Net Profit Margin", "field": null, "name": null, "type": "prebuilt", "premium": false}
+317. {"path": ".Profitability[4]", "label": "aroi", "display": "Return on Investment", "field": null, "name": null, "type": "prebuilt", "premium": false}
+318. {"path": ".Profitability[5]", "label": "5Yroe", "display": "5Y Avg Return on Equity", "field": null, "name": null, "type": "prebuilt", "premium": false}
+319. {"path": ".Profitability[6]", "label": "rtnAsts", "display": "Return on Assets", "field": null, "name": null, "type": "prebuilt", "premium": false}
+320. {"path": ".Profitability[7]", "label": "5YrtnAsts", "display": "5Y Avg Return on Assets", "field": null, "name": null, "type": "prebuilt", "premium": false}
+321. {"path": ".Profitability[8]", "label": "pftMrg", "display": "Net Profit Margin", "field": null, "name": null, "type": "prebuilt", "premium": false}
+322. {"path": ".Profitability[9]", "label": "5Yaroi", "display": "5Y Avg Return on Investment", "field": null, "name": null, "type": "prebuilt", "premium": false}
+323. {"path": ".Profitability[10]", "label": "5YcafCfoaMgn", "display": "5Y Avg Cash Flow Margin", "field": null, "name": null, "type": "prebuilt", "premium": false}
+324. {"path": ".Profitability[11]", "label": "balCogs", "display": "Cost of Goods Sold", "field": null, "name": null, "type": "prebuilt", "premium": false}
+325. {"path": ".Profitability[12]", "label": "cafCfoaMgn", "display": "Cash Flow Margin", "field": null, "name": null, "type": "prebuilt", "premium": false}
+326. {"path": ".Profitability[13]", "label": "roce", "display": "ROCE", "field": null, "name": null, "type": "prebuilt", "premium": false}
+327. {"path": ".Growth[0]", "label": "estrvng", "display": "1Y Forward Revenue Growth", "field": null, "name": null, "type": "prebuilt", "premium": true}
+328. {"path": ".Growth[1]", "label": "cfog", "display": "1Y Hist Op. Cash Flow Growth", "field": null, "name": null, "type": "prebuilt", "premium": false}
+329. {"path": ".Growth[2]", "label": "estAvg", "display": "1Y Forward EBITDA Growth", "field": null, "name": null, "type": "prebuilt", "premium": true}
+330. {"path": ".Growth[3]", "label": "epsg", "display": "1Y Historical EPS Growth", "field": null, "name": null, "type": "prebuilt", "premium": false}
+331. {"path": ".Growth[4]", "label": "rvng", "display": "1Y Historical Revenue Growth", "field": null, "name": null, "type": "prebuilt", "premium": false}
+332. {"path": ".Growth[5]", "label": "ecfog", "display": "1Y Fwd Op. Cash Flow Growth", "field": null, "name": null, "type": "prebuilt", "premium": true}
+333. {"path": ".Growth[6]", "label": "earnings", "display": "5Y Historical EBITDA Growth", "field": null, "name": null, "type": "prebuilt", "premium": false}
+334. {"path": ".Growth[7]", "label": "cfotr", "display": "5Y Hist Op. Cash Flow Growth", "field": null, "name": null, "type": "prebuilt", "premium": false}
+335. {"path": ".Growth[8]", "label": "3YdivGwth", "display": "3Y Historical Dividend Growth", "field": null, "name": null, "type": "prebuilt", "premium": false}
+336. {"path": ".Growth[9]", "label": "epsGwth", "display": "5Y Historical EPS Growth", "field": null, "name": null, "type": "prebuilt", "premium": false}
+337. {"path": ".Growth[10]", "label": "5YrevChg", "display": "5Y Historical Revenue Growth", "field": null, "name": null, "type": "prebuilt", "premium": false}
+338. {"path": ".Growth[11]", "label": "ebitg", "display": "1Y Historical EBITDA Growth", "field": null, "name": null, "type": "prebuilt", "premium": false}
+339. {"path": ".Growth[12]", "label": "12mEpsg", "display": "1Y Forward EPS Growth", "field": null, "name": null, "type": "prebuilt", "premium": true}
+340. {"path": ".Valuation[0]", "label": "pbd", "display": "PB Premium vs Sector", "field": null, "name": null, "type": "prebuilt", "premium": true}
+341. {"path": ".Valuation[1]", "label": "divSec", "display": "Dividend Yield vs Sector", "field": null, "name": null, "type": "prebuilt", "premium": true}
+342. {"path": ".Valuation[2]", "label": "pbr", "display": "PB Ratio", "field": null, "name": null, "type": "prebuilt", "premium": false}
+343. {"path": ".Valuation[3]", "label": "psfs", "display": "PS Premium vs Sector", "field": null, "name": null, "type": "prebuilt", "premium": true}
+344. {"path": ".Valuation[4]", "label": "ps", "display": "PS Ratio", "field": null, "name": null, "type": "prebuilt", "premium": false}
+345. {"path": ".Valuation[5]", "label": "evebitd", "display": "EV/EBITDA Ratio", "field": null, "name": null, "type": "prebuilt", "premium": false}
+346. {"path": ".Valuation[6]", "label": "apef", "display": "PE Ratio", "field": null, "name": null, "type": "prebuilt", "premium": false}
+347. {"path": ".Valuation[7]", "label": "pef", "display": "Forward PE Ratio", "field": null, "name": null, "type": "prebuilt", "premium": true}
+348. {"path": ".Valuation[8]", "label": "psf", "display": "Forward PS Ratio", "field": null, "name": null, "type": "prebuilt", "premium": true}
+349. {"path": ".Valuation[9]", "label": "divDps", "display": "Dividend Yield", "field": null, "name": null, "type": "prebuilt", "premium": false}
+350. {"path": ".Valuation[10]", "label": "ped", "display": "PE Premium vs Sector", "field": null, "name": null, "type": "prebuilt", "premium": true}
+351. {"path": ".Valuation[11]", "label": "evebit", "display": "EV / EBIT Ratio", "field": null, "name": null, "type": "prebuilt", "premium": false}
+352. {"path": ".Valuation[12]", "label": "psPremSi", "display": "PS Premium vs Sub-sector", "field": null, "name": null, "type": "prebuilt", "premium": true}
+353. {"path": ".Valuation[13]", "label": "evByRev", "display": "EV / Revenue Ratio", "field": null, "name": null, "type": "prebuilt", "premium": false}
+354. {"path": ".Valuation[14]", "label": "pePremSi", "display": "PE Premium vs Sub-sector", "field": null, "name": null, "type": "prebuilt", "premium": true}
+355. {"path": ".Valuation[15]", "label": "lcpCafFcf", "display": "Price / Free Cash Flow", "field": null, "name": null, "type": "prebuilt", "premium": false}
+356. {"path": ".Valuation[16]", "label": "evByIc", "display": "EV / Invested Capital", "field": null, "name": null, "type": "prebuilt", "premium": false}
+357. {"path": ".Valuation[17]", "label": "evCafFcf", "display": "EV / Free Cash Flow", "field": null, "name": null, "type": "prebuilt", "premium": false}
+358. {"path": ".Valuation[18]", "label": "ev", "display": "Enterprise Value", "field": null, "name": null, "type": "prebuilt", "premium": false}
+359. {"path": ".Valuation[19]", "label": "pbPremSi", "display": "PB Premium vs Sub-sector", "field": null, "name": null, "type": "prebuilt", "premium": true}
+360. {"path": ".Valuation[20]", "label": "priceCfoR", "display": "Price / CFO", "field": null, "name": null, "type": "prebuilt", "premium": false}
+361. {"path": ".Valuation[21]", "label": "priceBySales", "display": "Price / Sales", "field": null, "name": null, "type": "prebuilt", "premium": false}
+362. {"path": ".Valuation[22]", "label": "dyPremSs", "display": "Dividend Yield vs Sub-sector", "field": null, "name": null, "type": "prebuilt", "premium": true}
+363. {"path": ".Valuation[23]", "label": "inddy", "display": "Sector Dividend Yield", "field": null, "name": null, "type": "prebuilt", "premium": false}
+364. {"path": ".Valuation[24]", "label": "indpb", "display": "Sector PB", "field": null, "name": null, "type": "prebuilt", "premium": false}
+365. {"path": ".Valuation[25]", "label": "indpe", "display": "Sector PE", "field": null, "name": null, "type": "prebuilt", "premium": false}
+366. {"path": ".Valuation[26]", "label": "ttmPe", "display": "TTM PE Ratio", "field": null, "name": null, "type": "prebuilt", "premium": false}
+367. {"path": ".Ownership[0]", "label": "instown", "display": "Mutual Fund Holding", "field": null, "name": null, "type": "prebuilt", "premium": false}
+368. {"path": ".Ownership[1]", "label": "domInstHldng", "display": "Domestic Institutional Holding", "field": null, "name": null, "type": "prebuilt", "premium": false}
+369. {"path": ".Ownership[2]", "label": "chMutHldng6M", "display": " MF Holding Change – 6M", "field": null, "name": null, "type": "prebuilt", "premium": false}
+370. {"path": ".Ownership[3]", "label": "strown3", "display": "Promoter Holding Change – 3M", "field": null, "name": null, "type": "prebuilt", "premium": false}
+371. {"path": ".Ownership[4]", "label": "forInstHldng", "display": "Foreign Institutional Holding", "field": null, "name": null, "type": "prebuilt", "premium": false}
+372. {"path": ".Ownership[5]", "label": "domInstHldng6M", "display": "DII Holding Change – 6M", "field": null, "name": null, "type": "prebuilt", "premium": false}
+373. {"path": ".Ownership[6]", "label": "forInstHldng6M", "display": "FII Holding Change – 6M", "field": null, "name": null, "type": "prebuilt", "premium": false}
+374. {"path": ".Ownership[7]", "label": "domInstHldng3M", "display": "DII Holding Change – 3M", "field": null, "name": null, "type": "prebuilt", "premium": false}
+375. {"path": ".Ownership[8]", "label": "chPromHldng6M", "display": "Promoter Holding Change – 6M ", "field": null, "name": null, "type": "prebuilt", "premium": false}
+376. {"path": ".Ownership[9]", "label": "instown3", "display": "MF Holding Change – 3M", "field": null, "name": null, "type": "prebuilt", "premium": false}
+377. {"path": ".Ownership[10]", "label": "strown", "display": "Promoter Holding", "field": null, "name": null, "type": "prebuilt", "premium": false}
+378. {"path": ".Ownership[11]", "label": "promShrPled", "display": "Pledged Promoter Holdings", "field": null, "name": null, "type": "prebuilt", "premium": false}
+379. {"path": ".Ownership[12]", "label": "forInstHldng3M", "display": "FII Holding Change – 3M", "field": null, "name": null, "type": "prebuilt", "premium": false}
+380. {"path": ".Ownership[13]", "label": "insiderCml1M", "display": "Insider Trades - 1M Cumulative", "field": null, "name": null, "type": "prebuilt", "premium": true}
+381. {"path": ".Ownership[14]", "label": "insiderCml3M", "display": "Insider Trades - 3M Cumulative", "field": null, "name": null, "type": "prebuilt", "premium": true}
+382. {"path": ".Ownership[15]", "label": "retailHolding", "display": "Retail Investor Holding", "field": null, "name": null, "type": "prebuilt", "premium": false}
+383. {"path": ".Ownership[16]", "label": "bulkCml1M", "display": "Bulk Deals - 1M Cumulative", "field": null, "name": null, "type": "prebuilt", "premium": true}
+384. {"path": ".Ownership[17]", "label": "bulkCml6M", "display": "Bulk Deals - 6M Cumulative", "field": null, "name": null, "type": "prebuilt", "premium": true}
+385. {"path": ".Ownership[18]", "label": "insHolding", "display": "Insurance Firms Holding", "field": null, "name": null, "type": "prebuilt", "premium": false}
+386. {"path": ".Ownership[19]", "label": "bulkCml3M", "display": "Bulk Deals - 3M Cumulative", "field": null, "name": null, "type": "prebuilt", "premium": true}
+387. {"path": ".Ownership[20]", "label": "insiderCml6M", "display": "Insider Trades - 6M Cumulative", "field": null, "name": null, "type": "prebuilt", "premium": true}
+388. {"path": ".Ownership[21]", "label": "nShareholders", "display": "No. of Shareholders", "field": null, "name": null, "type": "prebuilt", "premium": false}
+389. {"path": ".Futures & Options[0]", "label": "ftls", "display": "Lot Size", "field": null, "name": null, "type": "prebuilt", "premium": false}
+390. {"path": ".Futures & Options[1]", "label": "ftcp", "display": "Future Close Price", "field": null, "name": null, "type": "prebuilt", "premium": false}
+391. {"path": ".Futures & Options[2]", "label": "fair", "display": "Fair Value", "field": null, "name": null, "type": "prebuilt", "premium": true}
+392. {"path": ".Futures & Options[3]", "label": "1Dfoi", "display": "1D Change in Future OI", "field": null, "name": null, "type": "prebuilt", "premium": true}
+393. {"path": ".Futures & Options[4]", "label": "rolc", "display": "Rollover Cost", "field": null, "name": null, "type": "prebuilt", "premium": true}
+394. {"path": ".Futures & Options[5]", "label": "phstr", "display": "Highest Put OI Strike", "field": null, "name": null, "type": "prebuilt", "premium": true}
+395. {"path": ".Futures & Options[6]", "label": "1Dvol", "display": "1D Change in Future Volume", "field": null, "name": null, "type": "prebuilt", "premium": true}
+396. {"path": ".Futures & Options[7]", "label": "ftbas", "display": "Basis", "field": null, "name": null, "type": "prebuilt", "premium": false}
+397. {"path": ".Futures & Options[8]", "label": "putcall", "display": "Put Call Ratio", "field": null, "name": null, "type": "prebuilt", "premium": true}
+398. {"path": ".Futures & Options[9]", "label": "ccrp", "display": "Cash & Carry Profit", "field": null, "name": null, "type": "prebuilt", "premium": true}
+399. {"path": ".Futures & Options[10]", "label": "1Wpoi", "display": "1W Change in Put OI", "field": null, "name": null, "type": "prebuilt", "premium": true}
+400. {"path": ".Futures & Options[11]", "label": "ftoi", "display": "Future Open Interest", "field": null, "name": null, "type": "prebuilt", "premium": false}
+401. {"path": ".Futures & Options[12]", "label": "1Dceoi", "display": "Highest 1D OI Change CE Strike", "field": null, "name": null, "type": "prebuilt", "premium": true}
+402. {"path": ".Futures & Options[13]", "label": "1Dpeoi", "display": "Highest 1D OI Change PE Strike", "field": null, "name": null, "type": "prebuilt", "premium": true}
+403. {"path": ".Futures & Options[14]", "label": "1Wceoi", "display": "Highest 1W OI Change CE Strike", "field": null, "name": null, "type": "prebuilt", "premium": true}
+404. {"path": ".Futures & Options[15]", "label": "1Wvol", "display": "1W Change in Future Volume", "field": null, "name": null, "type": "prebuilt", "premium": true}
+405. {"path": ".Futures & Options[16]", "label": "1Wfoi", "display": "1W Change in Future OI", "field": null, "name": null, "type": "prebuilt", "premium": true}
+406. {"path": ".Futures & Options[17]", "label": "fairsp", "display": "Fair Value Spread", "field": null, "name": null, "type": "prebuilt", "premium": true}
+407. {"path": ".Futures & Options[18]", "label": "ftvol", "display": "Future Volume", "field": null, "name": null, "type": "prebuilt", "premium": false}
+408. {"path": ".Futures & Options[19]", "label": "chstr", "display": "Highest Call OI Strike", "field": null, "name": null, "type": "prebuilt", "premium": true}
+409. {"path": ".Futures & Options[20]", "label": "1Wpeoi", "display": "Highest 1W OI Change PE Strike", "field": null, "name": null, "type": "prebuilt", "premium": true}
+410. {"path": ".Futures & Options[21]", "label": "1Dcoi", "display": "1 D Change in Call OI", "field": null, "name": null, "type": "prebuilt", "premium": true}
+411. {"path": ".Futures & Options[22]", "label": "1DPoi", "display": "1D Change in Put OI", "field": null, "name": null, "type": "prebuilt", "premium": true}
+412. {"path": ".Futures & Options[23]", "label": "opcoi", "display": "Call Open Interest", "field": null, "name": null, "type": "prebuilt", "premium": false}
+413. {"path": ".Futures & Options[24]", "label": "1Wcoi", "display": "1W Change in Call OI", "field": null, "name": null, "type": "prebuilt", "premium": true}
+414. {"path": ".Futures & Options[25]", "label": "rolp", "display": "Percentage Rollover", "field": null, "name": null, "type": "prebuilt", "premium": true}
+415. {"path": ".Futures & Options[26]", "label": "csprd", "display": "Calendar Spread", "field": null, "name": null, "type": "prebuilt", "premium": true}
+416. {"path": ".Futures & Options[27]", "label": "oppoi", "display": "Put Open Interest", "field": null, "name": null, "type": "prebuilt", "premium": false}
+417. {"path": ".Price and Volume[0]", "label": "vol1mAvg", "display": "1M Average Volume", "field": null, "name": null, "type": "prebuilt", "premium": false}
+418. {"path": ".Price and Volume[1]", "label": "4wpct", "display": "1M Return", "field": null, "name": null, "type": "prebuilt", "premium": false}
+419. {"path": ".Price and Volume[2]", "label": "acVol", "display": "Daily Volume", "field": null, "name": null, "type": "prebuilt", "premium": false}
+420. {"path": ".Price and Volume[3]", "label": "12mpctN", "display": "1Y Return vs Nifty", "field": null, "name": null, "type": "prebuilt", "premium": false}
+421. {"path": ".Price and Volume[4]", "label": "lastPrice", "display": "Close Price", "field": null, "name": null, "type": "prebuilt", "premium": false}
+422. {"path": ".Price and Volume[5]", "label": "4wpctN", "display": "1M Return vs Nifty", "field": null, "name": null, "type": "prebuilt", "premium": false}
+423. {"path": ".Price and Volume[6]", "label": "vol1wChPct", "display": "1W Change in Volume", "field": null, "name": null, "type": "prebuilt", "premium": false}
+424. {"path": ".Price and Volume[7]", "label": "vol3mAvg", "display": "3M Average Volume", "field": null, "name": null, "type": "prebuilt", "premium": false}
+425. {"path": ".Price and Volume[8]", "label": "pr1w", "display": "1W Return", "field": null, "name": null, "type": "prebuilt", "premium": false}
+426. {"path": ".Price and Volume[9]", "label": "6mpctN", "display": "6M Return vs Nifty", "field": null, "name": null, "type": "prebuilt", "premium": false}
+427. {"path": ".Price and Volume[10]", "label": "52whd", "display": "% Away From 52W High", "field": null, "name": null, "type": "prebuilt", "premium": false}
+428. {"path": ".Price and Volume[11]", "label": "pr1d", "display": "1D Return", "field": null, "name": null, "type": "prebuilt", "premium": false}
+429. {"path": ".Price and Volume[12]", "label": "26wpct", "display": "6M Return", "field": null, "name": null, "type": "prebuilt", "premium": false}
+430. {"path": ".Price and Volume[13]", "label": "52wpct", "display": "1Y Return", "field": null, "name": null, "type": "prebuilt", "premium": false}
+431. {"path": ".Price and Volume[14]", "label": "pr1wN", "display": "1W Return vs Nifty", "field": null, "name": null, "type": "prebuilt", "premium": false}
+432. {"path": ".Price and Volume[15]", "label": "vol1dChPct", "display": "1D Change in Volume", "field": null, "name": null, "type": "prebuilt", "premium": false}
+433. {"path": ".Price and Volume[16]", "label": "52wld", "display": "% Away From 52W Low", "field": null, "name": null, "type": "prebuilt", "premium": false}
+434. {"path": ".Price and Volume[17]", "label": "faceValue", "display": "Face value", "field": null, "name": null, "type": "prebuilt", "premium": false}
+435. {"path": ".Price and Volume[18]", "label": "5yCagrPct", "display": "5Y CAGR", "field": null, "name": null, "type": "prebuilt", "premium": false}
+436. {"path": ".Financial Ratios[0]", "label": "qcur", "display": "Current Ratio", "field": null, "name": null, "type": "prebuilt", "premium": false}
+437. {"path": ".Financial Ratios[1]", "label": "ccnc", "display": "Cash Conversion Cycle", "field": null, "name": null, "type": "prebuilt", "premium": false}
+438. {"path": ".Financial Ratios[2]", "label": "ldbtEqt", "display": "Long Term Debt to Equity", "field": null, "name": null, "type": "prebuilt", "premium": false}
+439. {"path": ".Financial Ratios[3]", "label": "aint", "display": "Interest Coverage Ratio", "field": null, "name": null, "type": "prebuilt", "premium": false}
+440. {"path": ".Financial Ratios[4]", "label": "dbtEqt", "display": "Debt to Equity", "field": null, "name": null, "type": "prebuilt", "premium": false}
+441. {"path": ".Financial Ratios[5]", "label": "aqui", "display": "Quick Ratio", "field": null, "name": null, "type": "prebuilt", "premium": false}
+442. {"path": ".Financial Ratios[6]", "label": "netIncByLbl", "display": "Net Income / Liabilities", "field": null, "name": null, "type": "prebuilt", "premium": false}
+443. {"path": ".Financial Ratios[7]", "label": "wcTurnR", "display": "Working Capital Turnover Ratio", "field": null, "name": null, "type": "prebuilt", "premium": false}
+444. {"path": ".Financial Ratios[8]", "label": "invTurnR", "display": "Inventory Turnover Ratio", "field": null, "name": null, "type": "prebuilt", "premium": false}
+445. {"path": ".Financial Ratios[9]", "label": "asstTurnR", "display": "Asset Turnover Ratio", "field": null, "name": null, "type": "prebuilt", "premium": false}
+446. {"path": ".Financial Ratios[10]", "label": "daysOfInvOstndng", "display": "Days of Inventory Outstanding", "field": null, "name": null, "type": "prebuilt", "premium": true}
+447. {"path": ".Financial Ratios[11]", "label": "daysSalesOstndng", "display": "Days of Sales Outstanding", "field": null, "name": null, "type": "prebuilt", "premium": true}
+448. {"path": ".Financial Ratios[12]", "label": "erngPwrR", "display": "Earning Power", "field": null, "name": null, "type": "prebuilt", "premium": false}
+449. {"path": ".Financial Ratios[13]", "label": "daysPayOstndng", "display": "Days Payable Outstanding", "field": null, "name": null, "type": "prebuilt", "premium": true}
+450. {"path": ".Tickertape Special[0]", "label": "prmr", "display": "Price Momentum Rank", "field": null, "name": null, "type": "prebuilt", "premium": true}
+451. {"path": ".Tickertape Special[1]", "label": "fundamental", "display": "Fundamental Score", "field": null, "name": null, "type": "prebuilt", "premium": true}
+452. {"path": ".Tickertape Special[2]", "label": "valr", "display": "Value Momentum Rank", "field": null, "name": null, "type": "prebuilt", "premium": true}
+453. {"path": ".Tickertape Special[3]", "label": "erqr", "display": "Earnings Quality Rank", "field": null, "name": null, "type": "prebuilt", "premium": true}
+454. {"path": ".Tickertape Special[4]", "label": "ptir", "display": "Price to Intrinsic Value Rank", "field": null, "name": null, "type": "prebuilt", "premium": true}
+455. {"path": ".Analyst Ratings[0]", "label": "upside", "display": "Percentage Upside", "field": null, "name": null, "type": "prebuilt", "premium": true}
+456. {"path": ".Analyst Ratings[1]", "label": "breco", "display": "Percentage Buy Reco’s", "field": null, "name": null, "type": "prebuilt", "premium": true}
+457. {"path": ".Analyst Ratings[2]", "label": "nBreco", "display": "No. of analysts with buy reco", "field": null, "name": null, "type": "prebuilt", "premium": true}
+458. {"path": ".Analyst Ratings[3]", "label": "pctSelReco", "display": "Percentage Sell Reco's", "field": null, "name": null, "type": "prebuilt", "premium": true}
+459. {"path": ".Analyst Ratings[4]", "label": "pctHldReco", "display": "Percentage Hold Reco's", "field": null, "name": null, "type": "prebuilt", "premium": true}
+460. {"path": ".Analyst Ratings[5]", "label": "totalAnalysts", "display": "Total no. of analysts", "field": null, "name": null, "type": "prebuilt", "premium": true}
+461. {"path": ".Technical Indicators[0]", "label": "percentChangeObv", "display": "1W Change in On Balance Volume", "field": null, "name": null, "type": "prebuilt", "premium": true}
+462. {"path": ".Technical Indicators[1]", "label": "14dRsi", "display": "RSI – 14D", "field": null, "name": null, "type": "prebuilt", "premium": true}
+463. {"path": ".Technical Indicators[2]", "label": "prAvMonthEVA", "display": "% Price above 1M EMA", "field": null, "name": null, "type": "prebuilt", "premium": false}
+464. {"path": ".Technical Indicators[3]", "label": "beta", "display": "Beta", "field": null, "name": null, "type": "prebuilt", "premium": false}
+465. {"path": ".Technical Indicators[4]", "label": "relVol", "display": "Relative Volume", "field": null, "name": null, "type": "prebuilt", "premium": false}
+466. {"path": ".Technical Indicators[5]", "label": "12mVol", "display": "Volatility", "field": null, "name": null, "type": "prebuilt", "premium": false}
+467. {"path": ".Technical Indicators[6]", "label": "priceUBB", "display": "% From Upper Bollinger Band", "field": null, "name": null, "type": "prebuilt", "premium": true}
+468. {"path": ".Technical Indicators[7]", "label": "stochasticK", "display": "Stochastic %K", "field": null, "name": null, "type": "prebuilt", "premium": true}
+469. {"path": ".Technical Indicators[8]", "label": "14adx", "display": "ADX Rating – Trend Strength", "field": null, "name": null, "type": "prebuilt", "premium": true}
+470. {"path": ".Technical Indicators[9]", "label": "percentChangeADL", "display": "1W Change in AD Line", "field": null, "name": null, "type": "prebuilt", "premium": true}
+471. {"path": ".Technical Indicators[10]", "label": "williamR", "display": "William %R", "field": null, "name": null, "type": "prebuilt", "premium": true}
+472. {"path": ".Technical Indicators[11]", "label": "vWAP", "display": "VWAP", "field": null, "name": null, "type": "prebuilt", "premium": false}
+473. {"path": ".Technical Indicators[12]", "label": "pab12Mma", "display": "% Price above 1Y SMA", "field": null, "name": null, "type": "prebuilt", "premium": false}
+474. {"path": ".Technical Indicators[13]", "label": "3Ywal", "display": "Alpha", "field": null, "name": null, "type": "prebuilt", "premium": false}
+475. {"path": ".Technical Indicators[14]", "label": "1mac", "display": "MACD Line 1 – Trend Indicator", "field": null, "name": null, "type": "prebuilt", "premium": true}
+476. {"path": ".Technical Indicators[15]", "label": "2mac", "display": "MACD Line 2 – Signal Line Comp", "field": null, "name": null, "type": "prebuilt", "premium": true}
+477. {"path": ".Technical Indicators[16]", "label": "parabolSAR", "display": "% From Parabolic SAR", "field": null, "name": null, "type": "prebuilt", "premium": true}
+478. {"path": ".Technical Indicators[17]", "label": "priceLBB", "display": "% From Lower Bollinger Band", "field": null, "name": null, "type": "prebuilt", "premium": true}
+479. {"path": ".Technical Indicators[18]", "label": "12mVolN", "display": "Volatility vs Nifty", "field": null, "name": null, "type": "prebuilt", "premium": false}
+480. {"path": ".Technical Indicators[19]", "label": "superTrend", "display": "Super Trend", "field": null, "name": null, "type": "prebuilt", "premium": true}
+481. {"path": ".Technical Indicators[20]", "label": "pab1Mma", "display": "% Price above 1M SMA", "field": null, "name": null, "type": "prebuilt", "premium": false}
+482. {"path": ".Technical Indicators[21]", "label": "3Ywsh", "display": "Sharpe Ratio", "field": null, "name": null, "type": "prebuilt", "premium": false}
+483. {"path": ".Technical Indicators[22]", "label": "14ersi", "display": "RSI Exponential – 14D", "field": null, "name": null, "type": "prebuilt", "premium": true}
+484. {"path": ".Technical Indicators[23]", "label": "stochasticD", "display": "Stochastic %D", "field": null, "name": null, "type": "prebuilt", "premium": true}
+485. {"path": ".Technical Indicators[24]", "label": "sma200d", "display": "200D SMA", "field": null, "name": null, "type": "prebuilt", "premium": false}
+486. {"path": ".Technical Indicators[25]", "label": "ema50d", "display": "50D EMA", "field": null, "name": null, "type": "prebuilt", "premium": false}
+487. {"path": ".Technical Indicators[26]", "label": "ema100d", "display": "100D EMA", "field": null, "name": null, "type": "prebuilt", "premium": false}
+488. {"path": ".Technical Indicators[27]", "label": "sma100d", "display": "100D SMA", "field": null, "name": null, "type": "prebuilt", "premium": false}
+489. {"path": ".Technical Indicators[28]", "label": "ema10d", "display": "10D EMA", "field": null, "name": null, "type": "prebuilt", "premium": false}
+490. {"path": ".Technical Indicators[29]", "label": "ema200d", "display": "200D EMA", "field": null, "name": null, "type": "prebuilt", "premium": false}
+491. {"path": ".Technical Indicators[30]", "label": "sma10d", "display": "10D SMA", "field": null, "name": null, "type": "prebuilt", "premium": false}
+492. {"path": ".Technical Indicators[31]", "label": "sma50d", "display": "50D SMA", "field": null, "name": null, "type": "prebuilt", "premium": false}
+493. {"path": ".Technical Indicators[32]", "label": "maxDrawdown", "display": "1Y Max Loss", "field": null, "name": null, "type": "prebuilt", "premium": false}
+494. {"path": ".Balance Sheet & Cash Flow[0]", "label": "balApic", "display": "Additional Paid–in Capital", "field": null, "name": null, "type": "prebuilt", "premium": false}
+495. {"path": ".Balance Sheet & Cash Flow[1]", "label": "cafNcic", "display": "Net Change in Cash", "field": null, "name": null, "type": "prebuilt", "premium": false}
+496. {"path": ".Balance Sheet & Cash Flow[2]", "label": "balTotl", "display": "Total Liabilities", "field": null, "name": null, "type": "prebuilt", "premium": false}
+497. {"path": ".Balance Sheet & Cash Flow[3]", "label": "cafCfia", "display": "Investing Cash Flow", "field": null, "name": null, "type": "prebuilt", "premium": false}
+498. {"path": ".Balance Sheet & Cash Flow[4]", "label": "balNetl", "display": "Loans & Advances", "field": null, "name": null, "type": "prebuilt", "premium": false}
+499. {"path": ".Balance Sheet & Cash Flow[5]", "label": "cafCffa", "display": "Financing Cash Flow", "field": null, "name": null, "type": "prebuilt", "premium": false}
+500. {"path": ".Balance Sheet & Cash Flow[6]", "label": "balLti", "display": "Long Term Investments", "field": null, "name": null, "type": "prebuilt", "premium": false}
+501. {"path": ".Balance Sheet & Cash Flow[7]", "label": "cafTcdp", "display": "Total Cash Dividend Paid", "field": null, "name": null, "type": "prebuilt", "premium": false}
+502. {"path": ".Balance Sheet & Cash Flow[8]", "label": "balRtne", "display": "Reserves & Surplus", "field": null, "name": null, "type": "prebuilt", "premium": false}
+503. {"path": ".Balance Sheet & Cash Flow[9]", "label": "cafCexp", "display": "Capital Expenditure", "field": null, "name": null, "type": "prebuilt", "premium": false}
+504. {"path": ".Balance Sheet & Cash Flow[10]", "label": "balNppe", "display": "Net Property,Plant & Equipment", "field": null, "name": null, "type": "prebuilt", "premium": false}
+505. {"path": ".Balance Sheet & Cash Flow[11]", "label": "cafCfoa", "display": "Operating Cash Flow", "field": null, "name": null, "type": "prebuilt", "premium": false}
+506. {"path": ".Balance Sheet & Cash Flow[12]", "label": "balGint", "display": "Goodwill & Intangibles", "field": null, "name": null, "type": "prebuilt", "premium": false}
+507. {"path": ".Balance Sheet & Cash Flow[13]", "label": "balTca", "display": "Total Current Assets", "field": null, "name": null, "type": "prebuilt", "premium": false}
+508. {"path": ".Balance Sheet & Cash Flow[14]", "label": "cafCiwc", "display": "Change in Working Capital", "field": null, "name": null, "type": "prebuilt", "premium": false}
+509. {"path": ".Balance Sheet & Cash Flow[15]", "label": "balTdeb", "display": "Total Debt", "field": null, "name": null, "type": "prebuilt", "premium": false}
+510. {"path": ".Balance Sheet & Cash Flow[16]", "label": "balAccp", "display": "Accounts Payable", "field": null, "name": null, "type": "prebuilt", "premium": false}
+511. {"path": ".Balance Sheet & Cash Flow[17]", "label": "balTltd", "display": "Long Term Debt", "field": null, "name": null, "type": "prebuilt", "premium": false}
+512. {"path": ".Balance Sheet & Cash Flow[18]", "label": "balTcso", "display": "Common Shares Outstanding", "field": null, "name": null, "type": "prebuilt", "premium": false}
+513. {"path": ".Balance Sheet & Cash Flow[19]", "label": "balDit", "display": "Deferred Tax Liabilities (Net)", "field": null, "name": null, "type": "prebuilt", "premium": false}
+514. {"path": ".Balance Sheet & Cash Flow[20]", "label": "balTeq", "display": "Total Equity", "field": null, "name": null, "type": "prebuilt", "premium": false}
+515. {"path": ".Balance Sheet & Cash Flow[21]", "label": "balTrec", "display": "Total Receivables", "field": null, "name": null, "type": "prebuilt", "premium": false}
+516. {"path": ".Balance Sheet & Cash Flow[22]", "label": "balTota", "display": "Total Assets", "field": null, "name": null, "type": "prebuilt", "premium": false}
+517. {"path": ".Balance Sheet & Cash Flow[23]", "label": "balTcl", "display": "Total Current Liabilities", "field": null, "name": null, "type": "prebuilt", "premium": false}
+518. {"path": ".Balance Sheet & Cash Flow[24]", "label": "balMint", "display": "Minority Interest", "field": null, "name": null, "type": "prebuilt", "premium": false}
+519. {"path": ".Balance Sheet & Cash Flow[25]", "label": "balComs", "display": "Share Capital", "field": null, "name": null, "type": "prebuilt", "premium": false}
+520. {"path": ".Balance Sheet & Cash Flow[26]", "label": "balCsti", "display": "Cash and Equivalent", "field": null, "name": null, "type": "prebuilt", "premium": false}
+521. {"path": ".Balance Sheet & Cash Flow[27]", "label": "balTinv", "display": "Total Inventory", "field": null, "name": null, "type": "prebuilt", "premium": false}
+522. {"path": ".Balance Sheet & Cash Flow[28]", "label": "balTdep", "display": "Total Deposits – Banks", "field": null, "name": null, "type": "prebuilt", "premium": false}
+523. {"path": ".Balance Sheet & Cash Flow[29]", "label": "balDta", "display": "Deferred Tax Assets (Net)", "field": null, "name": null, "type": "prebuilt", "premium": false}
+524. {"path": ".Balance Sheet & Cash Flow[30]", "label": "balNca", "display": "Non Current Assets", "field": null, "name": null, "type": "prebuilt", "premium": false}
+525. {"path": ".Balance Sheet & Cash Flow[31]", "label": "cafFcf", "display": "Free Cash Flow", "field": null, "name": null, "type": "prebuilt", "premium": false}
+526. {"path": ".Balance Sheet & Cash Flow[32]", "label": "balNcl", "display": "Non Current Liabilties", "field": null, "name": null, "type": "prebuilt", "premium": false}
+527. {"path": ".Balance Sheet & Cash Flow[33]", "label": "bookValue", "display": "Book Value", "field": null, "name": null, "type": "prebuilt", "premium": false}
+528. {"path": ".Balance Sheet & Cash Flow[34]", "label": "balOcl", "display": "Other Current Liabilities", "field": null, "name": null, "type": "prebuilt", "premium": false}
+529. {"path": ".Balance Sheet & Cash Flow[35]", "label": "balOca", "display": "Other Current Assets", "field": null, "name": null, "type": "prebuilt", "premium": false}
+530. {"path": ".Balance Sheet & Cash Flow[36]", "label": "balOthl", "display": "Other Liabilities", "field": null, "name": null, "type": "prebuilt", "premium": false}
+531. {"path": ".Balance Sheet & Cash Flow[37]", "label": "balOtha", "display": "Other Assets", "field": null, "name": null, "type": "prebuilt", "premium": false}
+532. {"path": ".ETFs[0]", "label": "expenseRatio", "display": "Expense Ratio", "field": null, "name": null, "type": "prebuilt", "premium": false}
+533. {"path": ".ETFs[1]", "label": "trackErr", "display": "Tracking Error", "field": null, "name": null, "type": "prebuilt", "premium": false}
+534. {"path": ".Income Statement[0]", "label": "incEbi", "display": "EBITDA", "field": null, "name": null, "type": "prebuilt", "premium": false}
+535. {"path": ".Income Statement[1]", "label": "incNinc", "display": "Net Income", "field": null, "name": null, "type": "prebuilt", "premium": false}
+536. {"path": ".Income Statement[2]", "label": "incPyr", "display": "Payout Ratio", "field": null, "name": null, "type": "prebuilt", "premium": false}
+537. {"path": ".Income Statement[3]", "label": "incEps", "display": "Earnings Per Share", "field": null, "name": null, "type": "prebuilt", "premium": false}
+538. {"path": ".Income Statement[4]", "label": "incToi", "display": "Taxes & Other Items", "field": null, "name": null, "type": "prebuilt", "premium": false}
+539. {"path": ".Income Statement[5]", "label": "incDps", "display": "Dividend Per Share", "field": null, "name": null, "type": "prebuilt", "premium": false}
+540. {"path": ".Income Statement[6]", "label": "incPbi", "display": "PBIT", "field": null, "name": null, "type": "prebuilt", "premium": false}
+541. {"path": ".Income Statement[7]", "label": "incIoi", "display": "Interest & Other Items", "field": null, "name": null, "type": "prebuilt", "premium": false}
+542. {"path": ".Income Statement[8]", "label": "incTrev", "display": "Total Revenue", "field": null, "name": null, "type": "prebuilt", "premium": false}
+543. {"path": ".Income Statement[9]", "label": "incDep", "display": "Depreciation & Amortization", "field": null, "name": null, "type": "prebuilt", "premium": false}
+544. {"path": ".Income Statement[10]", "label": "incPbt", "display": "PBT", "field": null, "name": null, "type": "prebuilt", "premium": false}
+545. {"path": ".Income Statement[11]", "label": "incPfc", "display": "Power & Fuel Cost", "field": null, "name": null, "type": "prebuilt", "premium": false}
+546. {"path": ".Income Statement[12]", "label": "incRaw", "display": "Raw Materials", "field": null, "name": null, "type": "prebuilt", "premium": false}
+547. {"path": ".Income Statement[13]", "label": "incOpe", "display": "Operating & Other expenses", "field": null, "name": null, "type": "prebuilt", "premium": false}
+548. {"path": ".Income Statement[14]", "label": "incEpc", "display": "Employee Cost", "field": null, "name": null, "type": "prebuilt", "premium": false}
+549. {"path": ".Income Statement[15]", "label": "incSga", "display": "Selling & Administrative Expenses", "field": null, "name": null, "type": "prebuilt", "premium": false}
+550. {"path": ".Income Statement[16]", "label": "qIncNincK", "display": "Net Income (Q)", "field": null, "name": null, "type": "prebuilt", "premium": false}
+551. {"path": ".Income Statement[17]", "label": "qIncTrevK", "display": "Total revenue (Q)", "field": null, "name": null, "type": "prebuilt", "premium": false}
+552. {"path": ".Income Statement[18]", "label": "qIncEpsK", "display": "EPS (Q)", "field": null, "name": null, "type": "prebuilt", "premium": false}
+553. {"path": ".Income Statement[19]", "label": "qIncEbiK", "display": "EBITDA (Q)", "field": null, "name": null, "type": "prebuilt", "premium": false}
+554. {"path": ".Income Statement[20]", "label": "qIncOpeK", "display": "Operating and Other Expenses (Q)", "field": null, "name": null, "type": "prebuilt", "premium": false}
+555. {"path": ".Income Statement[21]", "label": "qIncPbiK", "display": "PBIT (Q)", "field": null, "name": null, "type": "prebuilt", "premium": false}
+556. {"path": ".Income Statement[22]", "label": "qIncPbtK", "display": "PBT (Q)", "field": null, "name": null, "type": "prebuilt", "premium": false}
