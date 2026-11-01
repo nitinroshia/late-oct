@@ -1,0 +1,755 @@
+{
+  "info": {
+    "type": "stock",
+    "info": {
+      "sector": "Oil & Gas - Refining & Marketing",
+      "name": "Reliance Industries Ltd",
+      "ticker": "RELIANCE",
+      "exchange": "NSE",
+      "description": "Reliance Industries Limited is engaged in refining, manufacturing of refined petroleum products, petrochemicals, including manufacturing of basic chemicals, fertilizers and nitrogen compounds, plastic and synthetic rubber in primary forms.",
+      "tags": [
+        {
+          "name": "Oil & Gas - Refining & Marketing",
+          "visible": true,
+          "type": "sub-sector"
+        },
+        {
+          "name": "Ambani Group",
+          "visible": true,
+          "type": "custom"
+        },
+        {
+          "name": "5G",
+          "visible": true,
+          "type": "custom"
+        }
+      ]
+    },
+    "ratios": {
+      "risk": 1.5781437172377613,
+      "3mAvgVol": 12677301.578125,
+      "4wpct": -1.4467005076142054,
+      "52wHigh": 1611.8,
+      "52wLow": 1152.2,
+      "52wpct": -21.74000671817265,
+      "beta": 0.993986158341716,
+      "bps": 802.4150717820694,
+      "divYield": 0.5150631554795276,
+      "eps": 59.6896623124349,
+      "inddy": 1.8883970190374813,
+      "indpb": 1.2364723828238668,
+      "indpe": 11.011828897872322,
+      "marketCap": 1576405.43572578,
+      "mrktCapRank": 1,
+      "pb": 1.4517495121182356,
+      "pe": 19.516006632321634,
+      "roe": 7.709406669173635,
+      "nShareholders": 5072457,
+      "lastPrice": 1164.9,
+      "ttmPe": 21.095526860783654,
+      "marketCapLabel": "Largecap",
+      "12mVol": 21.64491061242089,
+      "mrktCapf": 1576405.43572578,
+      "apef": 19.516006632321634,
+      "pbr": 1.4517495121182356,
+      "etfLiq": 0.006315622406977602,
+      "etfLiqLabel": "High"
+    },
+    "sid": "RELI",
+    "gic": {
+      "sector": "Energy",
+      "industrygroup": "Energy",
+      "industry": "Oil, Gas & Consumable Fuels",
+      "subindustry": "Oil & Gas Refining & Marketing",
+      "short": "Energy"
+    },
+    "isin": "INE002A01018",
+    "slug": "/stocks/reliance-industries-RELI",
+    "tradable": true,
+    "labels": {
+      "sector": {
+        "title": "Energy",
+        "extra": "",
+        "description": "Oil & Gas - Refining & Marketing"
+      },
+      "marketCap": {
+        "title": "Largecap",
+        "extra": "Companies with market capitalisation above 20,000 cr are considered large cap",
+        "description": "With a market cap of \u20b915,76,405 cr, stock is ranked 1"
+      },
+      "risk": {
+        "title": "Low Risk",
+        "extra": "Stocks which are <2 times as volatile as Nifty are considered low risk stocks",
+        "description": "Stock is 1.58x as volatile as Nifty"
+      }
+    }
+  },
+  "summary": {
+    "financialSummary": {
+      "fiscalYearToData": [
+        {
+          "year": "2022",
+          "revenue": 715734,
+          "profit": 60705
+        },
+        {
+          "year": "2023",
+          "revenue": 890011,
+          "profit": 66702
+        },
+        {
+          "year": "2024",
+          "revenue": 917121,
+          "profit": 69621
+        },
+        {
+          "year": "2025",
+          "revenue": 982671,
+          "profit": 69648
+        },
+        {
+          "year": "2026",
+          "revenue": 1086181,
+          "profit": 80775
+        }
+      ]
+    },
+    "shareHoldings": [
+      {
+        "title": "Total Promoter Holding",
+        "message": "In last 6 months, promoter holding in the company has almost stayed constant",
+        "description": "Increasing promoter holding is considered good and reflects management\u2019s positive view about the future outlook",
+        "mood": "Neutral"
+      },
+      {
+        "title": "Low Pledged Promoter Holding",
+        "message": "Pledged promoter holdings is insignificant",
+        "description": "Lower pledged promoter holdings is considered better",
+        "mood": "Positive"
+      },
+      {
+        "title": "Mutual Fund Holding",
+        "message": "In last 3 months, mutual fund holding of the company has almost stayed constant",
+        "description": "Increasing Mutual Fund holdings are generally considered good, as it reflects that fund managers are becoming more bullish about the stock",
+        "mood": "Neutral"
+      }
+    ],
+    "news": [],
+    "events": [
+      {
+        "title": "Analysts/Institutional Investor Meet/Con. Call Updates",
+        "desc": "Audio recording of the discussion on the Unaudited Financial Results (Consolidated and Standalone) of the Company for the quarter and half year ended September 30, 2026, at the analyst meet held on October 30, 2026, is available on the website of the Company.",
+        "date": "2026-10-31T12:04:03.000Z",
+        "type": "announcement",
+        "attachement": "https://nsearchives.nseindia.com/corporate/kavinavora_31102026173331_SE_31102026_AR.pdf",
+        "subType": null,
+        "value": null
+      },
+      {
+        "title": "Investor Presentation",
+        "desc": "Reliance Industries Limited has informed the Exchange about Investor Presentation",
+        "date": "2026-10-30T14:17:12.000Z",
+        "type": "announcement",
+        "attachement": "https://nsearchives.nseindia.com/corporate/kavinavora_30102026194557_SE_30102026_IP.pdf",
+        "subType": null,
+        "value": null
+      },
+      {
+        "title": "Cash Dividend",
+        "desc": null,
+        "date": "2026-06-05T00:00:00.000Z",
+        "type": "cashDividend",
+        "subType": "Final",
+        "value": "6"
+      }
+    ],
+    "aboutAndPeers": [
+      {
+        "name": "Reliance Industries Ltd",
+        "ticker": "RELIANCE",
+        "sid": "RELI",
+        "sector": "Oil & Gas - Refining & Marketing",
+        "slug": "/stocks/reliance-industries-RELI",
+        "ratios": {
+          "ttmPe": 19.19870217666277,
+          "breco": 100,
+          "52wpct": -21.74000671817265,
+          "marketCap": 15764054.3572578,
+          "apef": 19.516006632321634
+        },
+        "description": "Reliance Industries Limited is engaged in refining, manufacturing of refined petroleum products, petrochemicals, including manufacturing of basic chemicals, fertilizers and nitrogen compounds, plastic and synthetic rubber in primary forms."
+      },
+      {
+        "name": "Indian Oil Corporation Limited",
+        "ticker": "IOC",
+        "sid": "IOC",
+        "sector": "Oil & Gas - Refining & Marketing",
+        "slug": "/stocks/indian-oil-corporation-IOC",
+        "ratios": {
+          "ttmPe": 3.890339355036387,
+          "breco": 62.96296296296296,
+          "52wpct": -20.402421870221996,
+          "marketCap": 1837879.1755474498,
+          "apef": 4.365896579761363
+        }
+      },
+      {
+        "name": "Bharat Petroleum Corporation Limited",
+        "ticker": "BPCL",
+        "sid": "BPCL",
+        "sector": "Oil & Gas - Refining & Marketing",
+        "slug": "/stocks/bharat-petroleum-corporation-BPCL",
+        "ratios": {
+          "ttmPe": 7.821410690629554,
+          "breco": 62.96296296296296,
+          "52wpct": -20.32997762863536,
+          "marketCap": 1236040.2135312,
+          "apef": 4.7827987885951995
+        }
+      },
+      {
+        "name": "Hindustan Petroleum Corp Ltd",
+        "ticker": "HINDPETRO",
+        "sid": "HPCL",
+        "sector": "Oil & Gas - Refining & Marketing",
+        "slug": "/stocks/hindustan-petroleum-corp-HPCL",
+        "ratios": {
+          "ttmPe": 50.41921209595959,
+          "breco": 44.44444444444444,
+          "52wpct": -27.503991484832355,
+          "marketCap": 724629.9581643499,
+          "apef": 4.015262231688402
+        }
+      },
+      {
+        "name": "Mangalore Refinery and Petrochemicals Ltd",
+        "ticker": "MRPL",
+        "sid": "MRPL",
+        "sector": "Oil & Gas - Refining & Marketing",
+        "slug": "/stocks/mangalore-refinery-and-petrochemicals-MRPL",
+        "ratios": {
+          "ttmPe": 6.874501128997236,
+          "breco": 50,
+          "52wpct": 6.5014146881535195,
+          "marketCap": 303462.47823755,
+          "apef": 15.767724814637315
+        }
+      },
+      {
+        "name": "Chennai Petroleum Corporation Ltd",
+        "ticker": "CHENNPETRO",
+        "sid": "CHPC",
+        "sector": "Oil & Gas - Refining & Marketing",
+        "slug": "/stocks/chennai-petroleum-corporation-CHPC",
+        "ratios": {
+          "ttmPe": 3.94750414955225,
+          "breco": 100,
+          "52wpct": 70.7909604519774,
+          "marketCap": 225079.5811,
+          "apef": 7.2543133754471585
+        }
+      }
+    ],
+    "forecast": {
+      "totalReco": 24,
+      "percBuyReco": 100
+    },
+    "brands": [
+      {
+        "brandId": "RELI_1",
+        "name": "Reliance Fresh",
+        "description": " Retail chain store"
+      },
+      {
+        "brandId": "RELI_2",
+        "name": "Reliance Jio",
+        "description": "Mobile network brand"
+      }
+    ],
+    "keyRatios": [
+      {
+        "backL": "ttmPe",
+        "value": 19.19870217666277
+      },
+      {
+        "backL": "pbr",
+        "value": 1.4517495121182356
+      },
+      {
+        "backL": "divYield",
+        "value": 0.5150631554795276
+      },
+      {
+        "backL": "indpe",
+        "value": 11.011828897872322
+      },
+      {
+        "backL": "indpb",
+        "value": 1.2364723828238668
+      },
+      {
+        "backL": "inddy",
+        "value": 1.8883970190374813
+      }
+    ],
+    "investorPresentations": [
+      {
+        "annId": "xgrxlFmmaNZAnpBzgJmgXl5b-LfDetz10uw6EOqUGFI",
+        "broadcastTime": "2026-10-30T14:17:12.000Z",
+        "description": "Reliance Industries Limited has informed the Exchange about Investor Presentation",
+        "sid": "RELI",
+        "subject": "Investor Presentation",
+        "attachment": true
+      }
+    ]
+  },
+  "financials_income": [
+    {
+      "displayPeriod": "FY 2022",
+      "endDate": "2022-03-31T00:00:00.000Z",
+      "reporting": "consolidated",
+      "incTrev": 715734,
+      "incCrev": null,
+      "incGpro": null,
+      "incOpc": null,
+      "incRaw": 494449,
+      "incPfc": 17902,
+      "incEpc": 18758,
+      "incSga": 63513,
+      "incOpe": -7069,
+      "incEbi": 128181,
+      "incDep": 29782,
+      "incPbi": 98399,
+      "incIoi": 14584,
+      "incPbt": 83815,
+      "incToi": 23110,
+      "incNinc": 60705,
+      "incEps": 40.74179933195428,
+      "incDps": 3.6314446794796136,
+      "incPyr": 0.0891331443143069
+    },
+    {
+      "displayPeriod": "FY 2023",
+      "endDate": "2023-03-31T00:00:00.000Z",
+      "reporting": "consolidated",
+      "incTrev": 890011,
+      "incCrev": null,
+      "incGpro": null,
+      "incOpc": null,
+      "incRaw": 618746,
+      "incPfc": 25062,
+      "incEpc": 24872,
+      "incSga": 67369,
+      "incOpe": -376,
+      "incEbi": 154338,
+      "incDep": 40303,
+      "incPbi": 114035,
+      "incIoi": 19571,
+      "incPbt": 94464,
+      "incToi": 27762,
+      "incNinc": 66702,
+      "incEps": 44.75333309339779,
+      "incDps": 4.085375264414566,
+      "incPyr": 0.09128650274804355
+    },
+    {
+      "displayPeriod": "FY 2024",
+      "endDate": "2024-03-31T00:00:00.000Z",
+      "reporting": "consolidated",
+      "incTrev": 917121,
+      "incCrev": null,
+      "incGpro": null,
+      "incOpc": null,
+      "incRaw": 590226,
+      "incPfc": 22137,
+      "incEpc": 25679,
+      "incSga": 77292,
+      "incOpe": 23497,
+      "incEbi": 178290,
+      "incDep": 50832,
+      "incPbi": 127458,
+      "incIoi": 23118,
+      "incPbt": 104340,
+      "incToi": 34719,
+      "incNinc": 69621,
+      "incEps": 48.96377586673034,
+      "incDps": 5,
+      "incPyr": 0.10211630764769869
+    },
+    {
+      "displayPeriod": "FY 2025",
+      "endDate": "2025-03-31T00:00:00.000Z",
+      "reporting": "consolidated",
+      "incTrev": 982671,
+      "incCrev": null,
+      "incGpro": null,
+      "incOpc": null,
+      "incRaw": 644813,
+      "incPfc": 23823,
+      "incEpc": 28559,
+      "incSga": 88760,
+      "incOpe": 13294,
+      "incEbi": 183422,
+      "incDep": 53136,
+      "incPbi": 130286,
+      "incIoi": 24269,
+      "incPbt": 106017,
+      "incToi": 36369,
+      "incNinc": 69648,
+      "incEps": 51.467772424080316,
+      "incDps": 5.5,
+      "incPyr": 0.10686298903091258
+    },
+    {
+      "displayPeriod": "FY 2026",
+      "endDate": "2026-03-31T00:00:00.000Z",
+      "reporting": "consolidated",
+      "incTrev": 1086181,
+      "incCrev": null,
+      "incGpro": null,
+      "incOpc": null,
+      "incRaw": 698930,
+      "incPfc": 22069,
+      "incEpc": 30318,
+      "incSga": 104723,
+      "incOpe": 22230,
+      "incEbi": 207911,
+      "incDep": 57688,
+      "incPbi": 150223,
+      "incIoi": 27061,
+      "incPbt": 123162,
+      "incToi": 42387,
+      "incNinc": 80775,
+      "incEps": 59.6896623124349,
+      "incDps": 6,
+      "incPyr": 0.10051991865181059
+    },
+    {
+      "incTrev": 1220737,
+      "incOpe": 1004741,
+      "incEbi": 215996,
+      "incDep": 59845,
+      "incPbi": 156151,
+      "incIoi": 30016,
+      "incPbt": 126135,
+      "incToi": 44025,
+      "incNinc": 82110,
+      "incEps": 60.676272711389544,
+      "incDps": 6,
+      "incPyr": 0.09888544124223603,
+      "displayPeriod": "TTM",
+      "reporting": "",
+      "endDate": "",
+      "incRaw": null,
+      "incPfc": null,
+      "incEpc": null,
+      "incSga": null
+    }
+  ],
+  "financials_balance": [
+    {
+      "displayPeriod": "FY 2022",
+      "endDate": "2022-03-31T00:00:00.000Z",
+      "reporting": "consolidated",
+      "balCsti": 144296,
+      "balTrec": 23640,
+      "balTinv": 107778,
+      "balOca": 71305,
+      "balTca": 347019,
+      "balNetl": null,
+      "balNppe": 771160,
+      "balGint": 29144,
+      "balLti": 286146,
+      "balOtha": 65153,
+      "balTota": 1498622,
+      "balAccp": 159330,
+      "balTdep": null,
+      "balOcl": 149332,
+      "balTcl": 308662,
+      "balTltd": 237890,
+      "balTdeb": 319158,
+      "balDit": 48601,
+      "balMint": 109499,
+      "balOthl": 14485,
+      "balTotl": 609638,
+      "balComs": 6765,
+      "balApic": 114796,
+      "balRtne": 657924,
+      "balOeq": 0,
+      "balTeq": 888984,
+      "balTlse": 1498622,
+      "balTcso": 1490.31597,
+      "balTpso": null,
+      "balNca": 1151603,
+      "balCa": 347019,
+      "balNcl": 300976,
+      "balDta": null
+    },
+    {
+      "displayPeriod": "FY 2023",
+      "endDate": "2023-03-31T00:00:00.000Z",
+      "reporting": "consolidated",
+      "balCsti": 187137,
+      "balTrec": 28448,
+      "balTinv": 140008,
+      "balOca": 69703,
+      "balTca": 425296,
+      "balNetl": null,
+      "balNppe": 973652,
+      "balGint": 44905,
+      "balLti": 117087,
+      "balOtha": 44942,
+      "balTota": 1605882,
+      "balAccp": 147172,
+      "balTdep": null,
+      "balOcl": 248571,
+      "balTcl": 395743,
+      "balTltd": 312253,
+      "balTdeb": 451664,
+      "balDit": 58775,
+      "balMint": 113009,
+      "balOthl": 10230,
+      "balTotl": 777001,
+      "balComs": 6766,
+      "balApic": 99792,
+      "balRtne": 609314,
+      "balOeq": 0,
+      "balTeq": 828881,
+      "balTlse": 1605882,
+      "balTcso": 1490.5569790961722,
+      "balTpso": null,
+      "balNca": 1180586,
+      "balCa": 425296,
+      "balNcl": 381258,
+      "balDta": null
+    },
+    {
+      "displayPeriod": "FY 2024",
+      "endDate": "2024-03-31T00:00:00.000Z",
+      "reporting": "consolidated",
+      "balCsti": 203395,
+      "balTrec": 31628,
+      "balTinv": 152770,
+      "balOca": 82307,
+      "balTca": 470100,
+      "balNetl": null,
+      "balNppe": 1053542,
+      "balGint": 65298,
+      "balLti": 119502,
+      "balOtha": 46606,
+      "balTota": 1755048,
+      "balAccp": 178377,
+      "balTdep": null,
+      "balOcl": 218990,
+      "balTcl": 397367,
+      "balTltd": 240127,
+      "balTdeb": 350719,
+      "balDit": 71303,
+      "balMint": 132307,
+      "balOthl": 120463,
+      "balTotl": 829260,
+      "balComs": 6766,
+      "balApic": 99802,
+      "balRtne": 686913,
+      "balOeq": 0,
+      "balTeq": 925788,
+      "balTlse": 1755048,
+      "balTcso": 1353.2188028,
+      "balTpso": null,
+      "balNca": 1284948,
+      "balCa": 470100,
+      "balNcl": 431893,
+      "balDta": null
+    },
+    {
+      "displayPeriod": "FY 2025",
+      "endDate": "2025-03-31T00:00:00.000Z",
+      "reporting": "consolidated",
+      "balCsti": 225211,
+      "balTrec": 42121,
+      "balTinv": 146062,
+      "balOca": 85876,
+      "balTca": 499270,
+      "balNetl": null,
+      "balNppe": 1151837,
+      "balGint": 109914,
+      "balLti": 123672,
+      "balOtha": 65020,
+      "balTota": 1949713,
+      "balAccp": 186789,
+      "balTdep": null,
+      "balOcl": 266948,
+      "balTcl": 453737,
+      "balTltd": 254041,
+      "balTdeb": 374313,
+      "balDit": 83045,
+      "balMint": 166426,
+      "balOthl": 149264,
+      "balTotl": 940087,
+      "balComs": 13532,
+      "balApic": 93104,
+      "balRtne": 736564,
+      "balOeq": 0,
+      "balTeq": 1009626,
+      "balTlse": 1949713,
+      "balTcso": 1353.2515463,
+      "balTpso": null,
+      "balNca": 1450443,
+      "balCa": 499270,
+      "balNcl": 486350,
+      "balDta": null
+    },
+    {
+      "displayPeriod": "FY 2026",
+      "endDate": "2026-03-31T00:00:00.000Z",
+      "reporting": "consolidated",
+      "balCsti": 243408,
+      "balTrec": 58491,
+      "balTinv": 166941,
+      "balOca": 125409,
+      "balTca": 594249,
+      "balNetl": null,
+      "balNppe": 1252316,
+      "balGint": 110165,
+      "balLti": 150901,
+      "balOtha": 69915,
+      "balTota": 2177546,
+      "balAccp": 158842,
+      "balTdep": null,
+      "balOcl": 382412,
+      "balTcl": 541254,
+      "balTltd": 286949,
+      "balTdeb": 402962,
+      "balDit": 97367,
+      "balMint": 181836,
+      "balOthl": 166110,
+      "balTotl": 1091680,
+      "balComs": 13532,
+      "balApic": 93118,
+      "balRtne": 797380,
+      "balOeq": 0,
+      "balTeq": 1085866,
+      "balTlse": 2177546,
+      "balTcso": 1353.2472634,
+      "balTpso": null,
+      "balNca": 1583297,
+      "balCa": 594249,
+      "balNcl": 550426,
+      "balDta": null
+    }
+  ],
+  "financials_cashflow": [
+    {
+      "displayPeriod": "FY 2022",
+      "endDate": "2022-03-31T00:00:00.000Z",
+      "reporting": "consolidated",
+      "cafCiwc": -3072,
+      "cafCfoa": 110654,
+      "cafCexp": 100145,
+      "cafCfia": -109162,
+      "cafTcdp": 4297,
+      "cafCffa": 17289,
+      "cafFee": null,
+      "cafNcic": 18781,
+      "cafFcf": 10509
+    },
+    {
+      "displayPeriod": "FY 2023",
+      "endDate": "2023-03-31T00:00:00.000Z",
+      "reporting": "consolidated",
+      "cafCiwc": -25931,
+      "cafCfoa": 115032,
+      "cafCexp": 140988,
+      "cafCfia": -93001,
+      "cafTcdp": 5083,
+      "cafCffa": 10455,
+      "cafFee": null,
+      "cafNcic": 32486,
+      "cafFcf": -25956
+    },
+    {
+      "displayPeriod": "FY 2024",
+      "endDate": "2024-03-31T00:00:00.000Z",
+      "reporting": "consolidated",
+      "cafCiwc": -5595,
+      "cafCfoa": 158788,
+      "cafCexp": 152883,
+      "cafCfia": -113581,
+      "cafTcdp": 6089,
+      "cafCffa": -16646,
+      "cafFee": null,
+      "cafNcic": 28561,
+      "cafFcf": 5905
+    },
+    {
+      "displayPeriod": "FY 2025",
+      "endDate": "2025-03-31T00:00:00.000Z",
+      "reporting": "consolidated",
+      "cafCiwc": 11799,
+      "cafCfoa": 178703,
+      "cafCexp": 139967,
+      "cafCfia": -137535,
+      "cafTcdp": 7180,
+      "cafCffa": -31891,
+      "cafFee": null,
+      "cafNcic": 9277,
+      "cafFcf": 38736
+    },
+    {
+      "displayPeriod": "FY 2026",
+      "endDate": "2026-03-31T00:00:00.000Z",
+      "reporting": "consolidated",
+      "cafCiwc": 2889,
+      "cafCfoa": 192113,
+      "cafCexp": 122916,
+      "cafCfia": -101089,
+      "cafTcdp": 7879,
+      "cafCffa": -51549,
+      "cafFee": null,
+      "cafNcic": 39475,
+      "cafFcf": 69197
+    }
+  ],
+  "checklists": [
+    {
+      "state": "checked",
+      "type": "basic",
+      "icid": "IC001",
+      "title": "Intrinsic value",
+      "explanation": "Intrinsic value is the calculated value of the company and may differ from current stock price. If intrinsic value > current price, price increase is expected in the future to reduce the gap and vice-versa",
+      "description": "Current price is less than the intrinsic value"
+    },
+    {
+      "state": "unchecked",
+      "type": "basic",
+      "icid": "IC002",
+      "title": "ROE vs FD rates",
+      "explanation": "Fixed Deposit rate is a virtually risk-free rate where the investor assumes almost no risk on their investment. If stock's long term average ROE is lower than this rate, investors are better off investing the amount in a FD",
+      "description": "Stock has not been able to generate better return on equity than bank FD"
+    },
+    {
+      "state": "unchecked",
+      "type": "basic",
+      "icid": "IC003",
+      "title": "Dividend Returns",
+      "explanation": "A dividend is the distribution of reward from a portion of company's earnings and is paid to its shareholders. Good dividend returns indicate good health and outlook for the company",
+      "description": "Stock doesn't offer attractive dividend returns"
+    },
+    {
+      "state": "checked",
+      "type": "basic",
+      "icid": "IC004",
+      "title": "Entry point",
+      "explanation": "High demand for a stock increases its price. If the price is pushed up to a level which is not justified, then it's considered to be in the overbought zone, which is not a good time to buy the stock",
+      "description": "Good time to consider, as stock is not in overbought zone"
+    },
+    {
+      "state": "checked",
+      "type": "basic",
+      "icid": "IC005",
+      "title": "No Red Flags",
+      "explanation": "ASM and GSM lists are measures to safeguard investors against volatility and unjustified stock prices. Pledging holdings means taking loans against held promoter shares. Stocks in ASM/GSM list or with high pledged promoter holding should be handled with caution. Unsolicited tips are sometimes circulated to manipulate the market. Beware of these stocks",
+      "description": "Stock not in ASM/GSM lists and not a lot of promoter holding is pledged"
+    }
+  ]
+}
