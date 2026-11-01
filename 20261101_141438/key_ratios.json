@@ -1,0 +1,46 @@
+{
+  "endpoint": "key-ratios",
+  "url": "https://api.upstox.com/v2/fundamentals/INE002A01018/key-ratios",
+  "http_status": 200,
+  "request_params": {},
+  "response": {
+    "status": "success",
+    "data": [
+      {
+        "name": "P/E",
+        "company_value": "17.86",
+        "sector_value": "16.26"
+      },
+      {
+        "name": "P/B",
+        "company_value": "1.74",
+        "sector_value": "1.34"
+      },
+      {
+        "name": "ROA",
+        "company_value": "4.18%",
+        "sector_value": "7.87%"
+      },
+      {
+        "name": "ROE",
+        "company_value": "8.69%",
+        "sector_value": "16.84%"
+      },
+      {
+        "name": "ROCE",
+        "company_value": "10.38%",
+        "sector_value": "18.5%"
+      },
+      {
+        "name": "Quick Ratio",
+        "company_value": "0.79",
+        "sector_value": "0.47"
+      },
+      {
+        "name": "EV/EBITDA",
+        "company_value": "8.49",
+        "sector_value": "7.02"
+      }
+    ]
+  }
+}

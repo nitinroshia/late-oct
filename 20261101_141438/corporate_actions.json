@@ -1,0 +1,47 @@
+{
+  "endpoint": "corporate-actions",
+  "url": "https://api.upstox.com/v2/fundamentals/INE002A01018/corporate-actions",
+  "http_status": 200,
+  "request_params": {},
+  "response": {
+    "status": "success",
+    "data": [
+      {
+        "name": "Dividend",
+        "expiry_date": "05 Jun 2026",
+        "amount": 6.0,
+        "ratio": null,
+        "event_details": [
+          {
+            "name": "Announcement date",
+            "value": "24 Apr 2026"
+          },
+          {
+            "name": "Ex dividend date",
+            "value": "05 Jun 2026"
+          },
+          {
+            "name": "Record date",
+            "value": "05 Jun 2026"
+          },
+          {
+            "name": "Dividend type",
+            "value": "Final"
+          },
+          {
+            "name": "Amount",
+            "value": "6.0"
+          },
+          {
+            "name": "Dividend %",
+            "value": "60.0"
+          },
+          {
+            "name": "Details",
+            "value": "Rs.6.0000 per share(60%)Final Dividend"
+          }
+        ]
+      }
+    ]
+  }
+}

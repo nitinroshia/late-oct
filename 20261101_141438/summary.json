@@ -1,0 +1,42 @@
+[
+  {
+    "endpoint": "profile",
+    "http_status": 200,
+    "status": "SUCCESS"
+  },
+  {
+    "endpoint": "balance_sheet",
+    "http_status": 200,
+    "status": "SUCCESS"
+  },
+  {
+    "endpoint": "cash_flow",
+    "http_status": 200,
+    "status": "SUCCESS"
+  },
+  {
+    "endpoint": "income_statement",
+    "http_status": 200,
+    "status": "SUCCESS"
+  },
+  {
+    "endpoint": "share_holdings",
+    "http_status": 200,
+    "status": "SUCCESS"
+  },
+  {
+    "endpoint": "key_ratios",
+    "http_status": 200,
+    "status": "SUCCESS"
+  },
+  {
+    "endpoint": "corporate_actions",
+    "http_status": 200,
+    "status": "SUCCESS"
+  },
+  {
+    "endpoint": "competitors",
+    "http_status": 400,
+    "status": "FAILED"
+  }
+]

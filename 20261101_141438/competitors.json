@@ -1,0 +1,20 @@
+{
+  "endpoint": "competitors",
+  "url": "https://api.upstox.com/v2/fundamentals/INE002A01018/competitors",
+  "http_status": 400,
+  "request_params": {},
+  "response": {
+    "status": "error",
+    "errors": [
+      {
+        "errorCode": "UDAPI100011",
+        "message": "Invalid Instrument key",
+        "propertyPath": "getCompetitors.instrumentKey",
+        "invalidValue": "INE002A01018",
+        "error_code": "UDAPI100011",
+        "property_path": "getCompetitors.instrumentKey",
+        "invalid_value": "INE002A01018"
+      }
+    ]
+  }
+}
